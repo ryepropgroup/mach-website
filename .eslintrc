@@ -16,6 +16,9 @@
   "rules": {
     "no-console": "warn",
     "no-var": "error",
+    "chakra-ui/props-order": "error",
+    "chakra-ui/props-shorthand": "error",
+    "chakra-ui/require-specific-component": "error",
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
     "import/first": "error",
