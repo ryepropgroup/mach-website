@@ -4,7 +4,7 @@
   "parserOptions": {
     "project": ["./tsconfig.json"]
   },
-  "plugins": ["import", "simple-import-sort", "@typescript-eslint"],
+  "plugins": ["import", "simple-import-sort", "@typescript-eslint", "chakra-ui"],
   "extends": [
     "next/core-web-vitals",
     "eslint:recommended",
