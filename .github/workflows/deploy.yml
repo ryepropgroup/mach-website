@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: '16.x'
       - name: 'Install dependencies'
-        run: yarn install --prod --frozen-lockfile --ignore-scripts
+        run: yarn install --frozen-lockfile --ignore-scripts
       - name: 'Build app'
         run: yarn export && touch ./out/.nojekyll
       - name: 'Deploy app'
