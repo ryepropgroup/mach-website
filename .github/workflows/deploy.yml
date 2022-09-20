@@ -3,14 +3,23 @@ on:
     branches:
       - main
 jobs:
-  build_and_deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'
         uses: actions/checkout@v2
-      - name: 'Build and deploy'
-        uses: tsg-iitkgp/next-build-export-action@main
+      - name: 'Use Node.js 16.x'
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16.x'
+      - name: 'Install dependencies'
+        run: yarn install --prod --frozen-lockfile
+      - name: 'Build app'
+        run: yarn export && touch ./out/.nojekyll
+      - name: 'Deploy app'
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: gh-pages
+          build_dir: out
         env:
-          BUILD_DIR: .
-          PAGES_BRANCH: gh-pages
-          TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
