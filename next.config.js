@@ -39,14 +39,6 @@ const nextConfig = {
   },
 };
 
-// manage i18n
-if (process.env.EXPORT !== "true") {
-  nextConfig.i18n = {
-    locales: ["en", "jp"],
-    defaultLocale: "en",
-  };
-}
-
 const KEYS_TO_OMIT = [
   "webpackDevMiddleware",
   "configOrigin",
@@ -56,6 +48,7 @@ const KEYS_TO_OMIT = [
   "amp",
   "assetPrefix",
   "experimental",
+  "i18n",
 ];
 
 module.exports = (_phase, { defaultConfig }) => {
