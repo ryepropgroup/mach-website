@@ -1,42 +1,80 @@
 {
   "root": true,
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "project": ["./tsconfig.json"]
+  "env": {
+    "node": true
   },
-  "plugins": ["import", "simple-import-sort", "@typescript-eslint", "chakra-ui"],
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "plugins": [
+    "import",
+    "simple-import-sort"
+  ],
   "extends": [
-    "next/core-web-vitals",
-    "eslint:recommended",
-    "plugin:jsx-a11y/recommended",
-    "plugin:tailwind/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    "eslint:recommended"
   ],
   "rules": {
-    "no-console": "warn",
-    "no-var": "error",
-    "chakra-ui/props-order": "error",
-    "chakra-ui/props-shorthand": "error",
-    "chakra-ui/require-specific-component": "error",
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
     "import/first": "error",
     "import/newline-after-import": "error",
     "import/no-duplicates": "error"
   },
-  "settings": {
-    "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"]
-    },
-    "import/resolver": {
-      "typescript": {
-        "alwaysTryTypes": true,
-        "project": "tsconfig.json"
+  "overrides": [
+    {
+      "files": [
+        "**/*.ts",
+        "**/*.tsx"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "project": [
+          "./tsconfig.json"
+        ]
+      },
+      "plugins": [
+        "import",
+        "simple-import-sort",
+        "@typescript-eslint",
+        "chakra-ui"
+      ],
+      "extends": [
+        "next/core-web-vitals",
+        "eslint:recommended",
+        "plugin:jsx-a11y/recommended",
+        "plugin:tailwind/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+      ],
+      "rules": {
+        "no-console": "warn",
+        "no-var": "error",
+        "chakra-ui/props-order": "error",
+        "chakra-ui/props-shorthand": "error",
+        "chakra-ui/require-specific-component": "error",
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error",
+        "import/first": "error",
+        "import/newline-after-import": "error",
+        "import/no-duplicates": "error"
+      },
+      "settings": {
+        "import/parsers": {
+          "@typescript-eslint/parser": [
+            ".ts",
+            ".tsx"
+          ]
+        },
+        "import/resolver": {
+          "typescript": {
+            "alwaysTryTypes": true,
+            "project": "tsconfig.json"
+          }
+        },
+        "react": {
+          "version": "detect"
+        }
       }
-    },
-    "react": {
-      "version": "detect"
     }
-  }
+  ]
 }
