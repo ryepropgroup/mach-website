@@ -6,7 +6,7 @@ const description = "";
 const author = "MACH";
 const keywords: string[] = [];
 
-const Header = ({ title = titleDefault }) => {
+export default function Header({ title = titleDefault }) {
   return (
     <>
       <Head>
@@ -67,6 +67,4 @@ const Header = ({ title = titleDefault }) => {
       </Head>
     </>
   );
-};
-
-export default Header;
+}
