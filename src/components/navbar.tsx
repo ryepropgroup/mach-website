@@ -1,26 +1,27 @@
-import {HamburgerIcon} from "@chakra-ui/icons";
+import {HamburgerIcon}   from "@chakra-ui/icons";
 import {
   Box, Button,
   ButtonGroup,
   Container,
   Flex,
   HStack, IconButton, Image,
+  Link,
   useColorModeValue,
-}                      from "@chakra-ui/react";
+}                        from "@chakra-ui/react";
 
 export default function Navbar(): JSX.Element {
   const isDesktop = true;//useBreakpointValue({base: false, lg: true})
   return (
-    <Flex as="section" pos="static" align="flex-start" pb={{base: '12', md: '24'}}>
+    <Flex as="section" pos="static" align="flex-start" pb={{base: '12', md: '24'}} pl="10">
       <Box as="nav" bg="bg-surface" shadow={useColorModeValue('sm', 'sm-dark')}>
         <Container py={{base: '4', lg: '5'}}>
           <HStack justify="space-between" spacing="10">
             <Image alt="mach logo" src="/img/mach_logo.png"></Image>
             {isDesktop ? (
-              <Flex justify="space-between" flex="1">
+              <Flex justify="space-between" flex="1" pl="10">
                 <ButtonGroup spacing="8" variant="link">
-                  {['About', 'Engine', 'Team', 'Sponsors', 'Contact'].map(( item ) => (
-                    <Button key={item}>{item}</Button>
+                  {['About','Engine', 'Team', 'Sponsors','Contact'].map(( item ) => (
+                    <NavItem key={item} item={item}></NavItem>
                   ))}
                 </ButtonGroup>
               </Flex>
@@ -32,4 +33,9 @@ export default function Navbar(): JSX.Element {
       </Box>
     </Flex>
   );
+}
+const NavItem = ({item}:{item:string}):JSX.Element=>{
+  return(
+  <Button><Link href={`/${item.toLowerCase()}`}>{item}</Link></Button>
+  )
 }
