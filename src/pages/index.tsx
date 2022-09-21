@@ -1,17 +1,24 @@
-import {Box, Center, Link, LinkProps, Text, TextProps} from "@chakra-ui/react";
+import {
+  Box,
+  Center,
+  Link,
+  LinkProps,
+  Text,
+  TextProps,
+} from "@chakra-ui/react";
 
-import Navbar from '../components/navbar'
+import Navbar from "../components/navbar";
 
 const initialStyle: TextProps = {
   as: "span",
-  color: "white",
+  color: "gray.100",
   fontSize: "6xl",
   fontWeight: 700,
 };
 
 const acronymStyle: TextProps = {
   as: "span",
-  color: "gray.400",
+  color: "gray.300",
   fontSize: "5xl",
   fontWeight: 700,
 };
@@ -37,7 +44,7 @@ const lreStyle: TextProps = {
 export default function Index() {
   return (
     <Box h="100vh" bg="black">
-      <Navbar/>
+      <Navbar />
       <Center>
         <Box>
           <Text {...initialStyle}>M</Text>
