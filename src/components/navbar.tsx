@@ -53,7 +53,7 @@ export default function Navbar() {
 const NavItem = ({ item }: { item: string }) => {
   return (
     <Button variant="link">
-      <Link href={`/${item.toLowerCase()}`}>
+      <Link href={`/mach-website/${item.toLowerCase()}`}>
         <Text color="gray.200" fontSize="3xl">
           {item}
         </Text>
