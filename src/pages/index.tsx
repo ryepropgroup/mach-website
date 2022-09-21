@@ -1,5 +1,7 @@
 import {Box, Center, Link, LinkProps, Text, TextProps} from "@chakra-ui/react";
 
+import Navbar from '../components/navbar'
+
 const initialStyle: TextProps = {
   as: "span",
   color: "white",
@@ -35,6 +37,7 @@ const lreStyle: TextProps = {
 export default function Index() {
   return (
     <Box h="100vh" bg="black">
+      <Navbar/>
       <Center>
         <Box>
           <Text {...initialStyle}>M</Text>
