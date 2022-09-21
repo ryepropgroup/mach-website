@@ -5,6 +5,10 @@ export default extendTheme({
     heading: `'Poppins', sans-serif`,
     body: `'Poppins', sans-serif`,
   },
+  fontSizes: {
+    "6xl": "6rem", //96px
+    "5xl": "4rem", //64px
+  },
   colors: {
     teal: {
       "50": "#E8FDFC",

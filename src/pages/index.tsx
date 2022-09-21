@@ -14,14 +14,14 @@ import Navbar from "../components/navbar";
 const initialStyle: TextProps = {
   as: "span",
   color: "gray.100",
-  fontSize: "6xl",
+  fontSize: "6xl", // to convert to rem/chakra xl values
   fontWeight: 700,
 };
 
 const acronymStyle: TextProps = {
   as: "span",
   color: "gray.300",
-  fontSize: "5xl",
+  fontSize: "5xl", // to convert to rem/chakra xl values
   fontWeight: 700,
 };
 
@@ -49,24 +49,22 @@ export default function Index() {
       <Header title="MACH :: Home" />
       <Box h="100vh" bg="black">
         <Navbar />
-        <Center>
-          <Box>
-            <Text {...initialStyle}>M</Text>
-            <Text {...acronymStyle}>etropolitan</Text>
-            <br />
-            <Text {...initialStyle}>A</Text>
-            <Text {...acronymStyle}>erospace</Text>
-            <Text {...initialStyle} fontSize="5xl">
-              {" &"}
-            </Text>
-            <br />
-            <Text {...initialStyle}>C</Text>
-            <Text {...acronymStyle}>ombustion</Text>
-            <br />
-            <Text {...initialStyle}>H</Text>
-            <Text {...acronymStyle}>ub</Text>
-          </Box>
-        </Center>
+        <Box ml="17%">
+          <Text {...initialStyle}>M</Text>
+          <Text {...acronymStyle}>etropolitan</Text>
+          <br />
+          <Text {...initialStyle}>A</Text>
+          <Text {...acronymStyle}>erospace</Text>
+          <Text {...initialStyle} fontSize="5xl">
+            {" &"}
+          </Text>
+          <br />
+          <Text {...initialStyle}>C</Text>
+          <Text {...acronymStyle}>ombustion</Text>
+          <br />
+          <Text {...initialStyle}>H</Text>
+          <Text {...acronymStyle}>ub</Text>
+        </Box>
         <Center>
           <Box>
             <Text {...normalStyle}>is {"a "}</Text>
