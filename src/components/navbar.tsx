@@ -26,7 +26,10 @@ export default function Navbar() {
       <Box as="nav" bg="bg-surface" shadow={useColorModeValue("sm", "sm-dark")}>
         <Container py={{ base: "4", lg: "5" }}>
           <HStack justify="space-between" spacing="10">
-            <Image alt="mach logo" src="/img/mach_logo.png"></Image>
+            <Image
+              alt="mach logo"
+              src="/mach-website/img/mach_logo.png"
+            ></Image>
             {isDesktop ? (
               <Flex justify="space-between" flex="1" pl="10">
                 <ButtonGroup spacing="8" variant="link">
