@@ -5,9 +5,9 @@ import {
   Container,
   Flex,
   HStack, IconButton, Image,
-  Link,
+  Link, Text,
   useColorModeValue,
-}                        from "@chakra-ui/react";
+} from "@chakra-ui/react";
 
 export default function Navbar(): JSX.Element {
   const isDesktop = true;//useBreakpointValue({base: false, lg: true})
@@ -36,6 +36,6 @@ export default function Navbar(): JSX.Element {
 }
 const NavItem = ({item}:{item:string}):JSX.Element=>{
   return(
-  <Button><Link href={`/${item.toLowerCase()}`}>{item}</Link></Button>
+    <Button variant="link"><Link href={`/${item.toLowerCase()}`}><Text color="gray.200" fontSize="3xl">{item}</Text></Link></Button>
   )
 }
