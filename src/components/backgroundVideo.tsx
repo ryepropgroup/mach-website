@@ -1,9 +1,13 @@
 import { CSSProperties, useEffect, useRef, useState } from "react";
 
 const style: CSSProperties = {
+  height: "100vh",
+  left: 0,
+  objectFit: "cover",
   position: "fixed",
-  width: "100%",
-  zIndex: "-1",
+  top: 0,
+  width: "100vw",
+  zIndex: "-2",
 };
 
 export default function BackgroundVideo() {
