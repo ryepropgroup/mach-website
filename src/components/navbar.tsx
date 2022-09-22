@@ -27,7 +27,11 @@ export default function Navbar() {
         <Container py={{ base: "4", lg: "5" }}>
           <HStack justify="space-between" spacing="10">
             <Image
+              cursor="pointer"
               alt="mach logo"
+              onClick={() => {
+                window.location.href = "/mach-website";
+              }}
               src="/mach-website/img/mach_logo.png"
             ></Image>
             {isDesktop ? (
