@@ -14,7 +14,9 @@ import {
   TextProps,
 } from "@chakra-ui/react";
 
+import CopyrightFooter from "@/components/copyrightFooter";
 import Navbar from "@/components/navbar";
+import SocialsFooter from "@/components/socialsFooter";
 import Header from "@/config";
 import { bgStyle } from "@/styles";
 
@@ -518,6 +520,8 @@ export default function FAQ() {
           </Accordion>
         </Box>
       </Center>
+      <SocialsFooter />
+      <CopyrightFooter />
     </>
   );
 }
