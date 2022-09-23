@@ -14,7 +14,6 @@ import {
   TextProps,
 } from "@chakra-ui/react";
 
-import CopyrightFooter from "@/components/copyrightFooter";
 import Navbar from "@/components/navbar";
 import SocialsFooter from "@/components/socialsFooter";
 import Header from "@/config";
@@ -521,7 +520,6 @@ export default function FAQ() {
         </Box>
       </Center>
       <SocialsFooter />
-      <CopyrightFooter />
     </>
   );
 }
