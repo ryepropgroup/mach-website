@@ -26,14 +26,16 @@ export default function Navbar() {
       <Box as="nav" bg="bg-surface" shadow={useColorModeValue("sm", "sm-dark")}>
         <Container py={{ base: "4", lg: "5" }}>
           <HStack justify="space-between" spacing="10">
-            <Image
-              cursor="pointer"
-              alt="mach logo"
-              onClick={() => {
-                window.location.href = "/mach-website";
-              }}
-              src="/mach-website/img/mach_logo.png"
-            ></Image>
+            <Link href="/mach-website/index">
+              <Image
+                cursor="pointer"
+                alt="mach logo"
+                onClick={() => {
+                  window.location.href = "/mach-website";
+                }}
+                src="/mach-website/img/mach_logo.png"
+              ></Image>
+            </Link>
             {isDesktop ? (
               <Flex justify="space-between" flex="1" pl="10">
                 <ButtonGroup spacing="8" variant="link">
