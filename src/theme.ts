@@ -1,10 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
 
 export default extendTheme({
-  fonts: {
-    heading: `'Poppins', sans-serif`,
-    body: `'Poppins', sans-serif`,
-  },
   fontSizes: {
     "6xl": "6rem", //96px
     "5xl": "4rem", //64px
@@ -28,7 +24,7 @@ export default extendTheme({
       "200": "#EFE79A",
       "300": "#E9DE72",
       "400": "#E2D44A",
-      "500": "#DCCB23",
+      "500": "#DFE877",
       "600": "#B0A21C",
       "700": "#847A15",
       "800": "#58510E",
@@ -56,7 +52,19 @@ export default extendTheme({
       "600": "#666666",
       "700": "#4D4D4D",
       "800": "#333333",
-      "900": "#1A1A1A",
+      "900": "#1E1E1E",
+    },
+    cyan: {
+      "50": "#E9FAFB",
+      "100": "#C2F1F5",
+      "200": "#9BE8EE",
+      "300": "#77E0E8",
+      "400": "#4CD6E1",
+      "500": "#25CDDA",
+      "600": "#1EA4AE",
+      "700": "#167B83",
+      "800": "#0F5257",
+      "900": "#07292C",
     },
   },
 });

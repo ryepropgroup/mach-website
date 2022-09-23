@@ -37,11 +37,16 @@ export default function Navbar() {
             {isDesktop ? (
               <Flex justify="space-between" flex="1" pl="10">
                 <ButtonGroup spacing="8" variant="link">
-                  {["About", "Engine", "Team", "Sponsors", "Contact"].map(
-                    (item) => (
-                      <NavItem key={item} item={item}></NavItem>
-                    )
-                  )}
+                  {[
+                    "About",
+                    "Engine",
+                    "Team",
+                    "Sponsors",
+                    "FAQ",
+                    "Contact",
+                  ].map((item) => (
+                    <NavItem key={item} item={item}></NavItem>
+                  ))}
                 </ButtonGroup>
               </Flex>
             ) : (
@@ -61,7 +66,7 @@ const NavItem = ({ item }: { item: string }) => {
   return (
     <Button variant="link">
       <Link href={`/mach-website/${item.toLowerCase()}`}>
-        <Text color="gray.200" fontSize="3xl">
+        <Text color="gray.200" fontFamily="Poppins, sans-serif" fontSize="3xl">
           {item}
         </Text>
       </Link>

@@ -1,6 +1,5 @@
 import {
   Box,
-  BoxProps,
   Center,
   Link,
   LinkProps,
@@ -11,10 +10,12 @@ import {
 import BackgroundVideo from "@/components/backgroundVideo";
 import Navbar from "@/components/navbar";
 import Header from "@/config";
+import { bgStyle } from "@/styles";
 
 const initialStyle: TextProps = {
   as: "span",
   color: "gray.100",
+  fontFamily: "Poppins, sans-serif",
   fontSize: "6xl", // to convert to rem/chakra xl values
   fontWeight: 700,
 };
@@ -22,6 +23,7 @@ const initialStyle: TextProps = {
 const acronymStyle: TextProps = {
   as: "span",
   color: "gray.300",
+  fontFamily: "Poppins, sans-serif",
   fontSize: "5xl", // to convert to rem/chakra xl values
   fontWeight: 700,
 };
@@ -29,29 +31,22 @@ const acronymStyle: TextProps = {
 const normalStyle: TextProps = {
   as: "span",
   color: "white",
+  fontFamily: "Poppins, sans-serif",
   fontSize: "4xl",
 };
 
 const linkStyle: LinkProps = {
   color: "purple.400",
+  fontFamily: "Poppins, sans-serif",
   fontSize: "4xl",
 };
 
 const lreStyle: TextProps = {
   as: "span",
   color: "teal.300",
+  fontFamily: "Poppins, sans-serif",
   fontSize: "4xl",
   fontWeight: 700,
-};
-
-const bgStyle: BoxProps = {
-  pos: "fixed",
-  zIndex: -1,
-  top: 0,
-  left: 0,
-  w: "100vw",
-  h: "100vh",
-  objectFit: "cover",
 };
 
 export default function Index() {
