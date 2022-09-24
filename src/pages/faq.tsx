@@ -93,7 +93,7 @@ export default function FAQ() {
             ; we&rsquo;re always happy to talk about rockets.
           </Text>
           <br />
-          <Accordion allowToggle>
+          <Accordion allowMultiple defaultIndex={[-1]}>
             <AccordionItem>
               <h2>
                 <AccordionButton>
