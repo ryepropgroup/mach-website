@@ -31,10 +31,18 @@ const introStyleFirst: TextProps = {
   color: "gray.100",
   fontFamily: "Inter, sans-serif",
   fontSize: "3xl",
+  fontWeight: 700,
   lineHeight: "200%",
 };
 
 const introStyleSecond: TextProps = {
+  color: "gray.100",
+  fontFamily: "Inter, sans-serif",
+  fontSize: "3xl",
+  lineHeight: "200%",
+};
+
+const introStyleThird: TextProps = {
   color: "gray.100",
   fontFamily: "Inter, sans-serif",
   fontSize: "xl",
@@ -49,7 +57,7 @@ const linkStyle: LinkProps = {
 };
 
 const questionStyle: TextProps = {
-  color: "gray.100",
+  color: "teal.300",
   fontFamily: "Inter, sans-serif",
   fontSize: "2xl",
   fontWeight: 700,
@@ -61,7 +69,8 @@ const answerStyle: TextProps = {
   color: "gray.100",
   fontFamily: "Inter, sans-serif",
   fontSize: "xl",
-  lineHeight: "200%",
+  lineHeight: "48px",
+  marginBottom: "20px",
 };
 
 export default function FAQ() {
@@ -76,13 +85,14 @@ export default function FAQ() {
           <br />
           <Text {...introStyleFirst}>
             Rockets are complicated. It took us a very long time to learn what
-            we have, and we are constantly learning more. We&rsquo;ve collected
-            some questions we&rsquo;ve received from varying levels of technical
-            background, and hopefully this will answer some of your questions
-            too!
+            we have, and we are constantly learning more.
           </Text>
-          <br />
           <Text {...introStyleSecond}>
+            We&rsquo;ve collected some questions we&rsquo;ve received from
+            varying levels of technical background, and hopefully this will
+            answer some of your questions too!
+          </Text>
+          <Text {...introStyleThird}>
             We&rsquo;ve tried our best to make these answers concise yet
             accurate, but rockets are complicated. If we&rsquo;ve simplified too
             much or got too technical, or you have more questions that we
@@ -94,6 +104,28 @@ export default function FAQ() {
           </Text>
           <br />
           <Accordion allowMultiple defaultIndex={[-1]}>
+            <AccordionItem>
+              <h2>
+                <AccordionButton>
+                  <Text {...questionStyle}>
+                    What is a rocket engine anyway?
+                  </Text>
+                  <AccordionIcon />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel pb={4}>
+                <Text {...answerStyle}>
+                  A rocket engine is a type of combustion engine, burning fuel
+                  with oxygen and using the resulting energy to achieve a
+                  purpose.{" "}
+                  <b>
+                    Rockets carry not only fuel, but their own oxidizer as well.
+                  </b>{" "}
+                  The high speed exhaust products are expelled through a nozzle,
+                  propelling the rocket forward per Newton’s second law.
+                </Text>
+              </AccordionPanel>
+            </AccordionItem>
             <AccordionItem>
               <h2>
                 <AccordionButton>
@@ -471,11 +503,11 @@ export default function FAQ() {
                 <Text {...answerStyle}>
                   As a student design team, we completely understand that our
                   members get busy with exams, projects, and life in general.{" "}
-                  <Text as="span" {...answerStyle} fontWeight={700}>
+                  <b>
                     The most important thing is letting us know if you need some
                     time away from the team so we can redistribute tasks and
                     still meet our deadlines.
-                  </Text>{" "}
+                  </b>{" "}
                   We realize how difficult university can be, and no effort put
                   into our team goes unappreciated.
                 </Text>
