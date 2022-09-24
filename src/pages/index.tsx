@@ -55,7 +55,7 @@ export default function Index() {
       <Header title="MACH :: Home" />
       <BackgroundVideo />
       <Box {...bgStyle} bg="rgba(0, 0, 0, 0.9)">
-        <Box {...bgStyle} bg="rgba(0, 76, 155, 0.1)"></Box>
+        <Box {...bgStyle} bg="rgba(0, 76, 155, 0.1)" />
       </Box>
       <Box>
         <Navbar />

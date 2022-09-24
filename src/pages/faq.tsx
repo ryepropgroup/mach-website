@@ -68,7 +68,7 @@ export default function FAQ() {
   return (
     <>
       <Header title="MACH :: FAQ" />
-      <Box {...bgStyle} bg="black" />
+      <Box {...bgStyle} bg="#000b17" />
       <Navbar />
       <Center>
         <Box w="56vw">
