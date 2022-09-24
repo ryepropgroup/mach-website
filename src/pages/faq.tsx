@@ -104,7 +104,7 @@ export default function FAQ() {
           </Text>
           <br />
           <Accordion allowMultiple defaultIndex={[-1]}>
-            <AccordionItem>
+            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
                   <Text {...questionStyle}>
@@ -126,7 +126,7 @@ export default function FAQ() {
                 </Text>
               </AccordionPanel>
             </AccordionItem>
-            <AccordionItem>
+            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
                   <Text {...questionStyle}>
@@ -166,7 +166,7 @@ export default function FAQ() {
                 </Text>
               </AccordionPanel>
             </AccordionItem>
-            <AccordionItem>
+            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
                   <Text {...questionStyle}>
@@ -189,7 +189,7 @@ export default function FAQ() {
                 </Text>
               </AccordionPanel>
             </AccordionItem>
-            <AccordionItem>
+            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
                   <Text {...questionStyle}>
@@ -223,7 +223,7 @@ export default function FAQ() {
                 </Text>
               </AccordionPanel>
             </AccordionItem>
-            <AccordionItem>
+            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
                   <Text {...questionStyle}>
@@ -254,7 +254,7 @@ export default function FAQ() {
           </Accordion>
           <br />
           <Accordion allowMultiple defaultIndex={[-1]}>
-            <AccordionItem>
+            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
                   <Text {...questionStyle}>
@@ -287,7 +287,7 @@ export default function FAQ() {
                 </Text>
               </AccordionPanel>
             </AccordionItem>
-            <AccordionItem>
+            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
                   <Text {...questionStyle}>
@@ -310,7 +310,7 @@ export default function FAQ() {
                 </Text>
               </AccordionPanel>
             </AccordionItem>
-            <AccordionItem>
+            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
                   <Text {...questionStyle}>
@@ -335,7 +335,7 @@ export default function FAQ() {
           </Accordion>
           <br />
           <Accordion allowMultiple defaultIndex={[-1]}>
-            <AccordionItem>
+            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
                   <Text {...questionStyle}>
@@ -380,7 +380,7 @@ export default function FAQ() {
                 </Text>
               </AccordionPanel>
             </AccordionItem>
-            <AccordionItem>
+            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
                   <Text {...questionStyle}>Why is water used as coolant?</Text>
@@ -414,7 +414,7 @@ export default function FAQ() {
                 </Text>
               </AccordionPanel>
             </AccordionItem>
-            <AccordionItem>
+            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
                   <Text {...questionStyle}>
@@ -447,7 +447,7 @@ export default function FAQ() {
           </Accordion>
           <br />
           <Accordion allowMultiple defaultIndex={[-1]}>
-            <AccordionItem>
+            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
                   <Text {...questionStyle}>
@@ -481,7 +481,7 @@ export default function FAQ() {
                 </Text>
               </AccordionPanel>
             </AccordionItem>
-            <AccordionItem>
+            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
                   <Text {...questionStyle}>
@@ -513,7 +513,7 @@ export default function FAQ() {
                 </Text>
               </AccordionPanel>
             </AccordionItem>
-            <AccordionItem>
+            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
                   <Text {...questionStyle}>
@@ -535,7 +535,7 @@ export default function FAQ() {
                 </Text>
               </AccordionPanel>
             </AccordionItem>
-            <AccordionItem>
+            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
                   <Text {...questionStyle}>
