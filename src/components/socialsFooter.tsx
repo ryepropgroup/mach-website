@@ -7,29 +7,29 @@ import {
 
 export default function SocialsFooter() {
   return (
-    <Center m="1%">
+    <Center m="2%">
       <Link mx="0.5%" href="https://www.facebook.com/rupropulsion/">
         <IconButton
-          as={AiOutlineFacebook}
           color="white"
           bg="black"
           aria-label="MACH Facebook"
+          icon={<AiOutlineFacebook size="50px" />}
         />
       </Link>
       <Link mx="0.5%" href="https://www.instagram.com/mach_tmu/">
         <IconButton
-          as={AiOutlineInstagram}
           color="white"
           bg="black"
           aria-label="MACH Instagram"
+          icon={<AiOutlineInstagram size="50px" />}
         />
       </Link>
       <Link mx="0.5%" href="https://www.linkedin.com/company/rupropulsion/">
         <IconButton
-          as={AiOutlineLinkedin}
           color="white"
           bg="black"
           aria-label="MACH LinkedIn"
+          icon={<AiOutlineLinkedin size="50px" />}
         />
       </Link>
     </Center>
