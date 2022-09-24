@@ -12,6 +12,7 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const isDesktop = true; // useBreakpointValue({base: false, lg: true})
@@ -63,10 +64,21 @@ export default function Navbar() {
   );
 }
 const NavItem = ({ item }: { item: string }) => {
+  const [opacity, setOpacity] = useState("100%");
+  useEffect(() => {
+    if (window.location.href.split("/").slice(-1)[0] === item.toLowerCase()) {
+      setOpacity("25%");
+    }
+  }, [item]);
   return (
     <Button variant="link">
       <Link href={`/mach-website/${item.toLowerCase()}`}>
-        <Text color="gray.200" fontFamily="Poppins, sans-serif" fontSize="3xl">
+        <Text
+          color="gray.200"
+          fontFamily="Poppins, sans-serif"
+          fontSize="3xl"
+          opacity={opacity}
+        >
           {item}
         </Text>
       </Link>
