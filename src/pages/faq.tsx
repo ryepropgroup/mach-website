@@ -219,6 +219,9 @@ export default function FAQ() {
                 </Text>
               </AccordionPanel>
             </AccordionItem>
+          </Accordion>
+          <br />
+          <Accordion allowMultiple defaultIndex={[-1]}>
             <AccordionItem>
               <h2>
                 <AccordionButton>
@@ -297,6 +300,9 @@ export default function FAQ() {
                 </Text>
               </AccordionPanel>
             </AccordionItem>
+          </Accordion>
+          <br />
+          <Accordion allowMultiple defaultIndex={[-1]}>
             <AccordionItem>
               <h2>
                 <AccordionButton>
@@ -406,6 +412,9 @@ export default function FAQ() {
                 </Text>
               </AccordionPanel>
             </AccordionItem>
+          </Accordion>
+          <br />
+          <Accordion allowMultiple defaultIndex={[-1]}>
             <AccordionItem>
               <h2>
                 <AccordionButton>
