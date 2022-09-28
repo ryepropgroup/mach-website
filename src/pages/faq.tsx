@@ -7,11 +7,8 @@ import {
   Box,
   Center,
   Heading,
-  HeadingProps,
   Link,
-  LinkProps,
   Text,
-  TextProps,
 } from "@chakra-ui/react";
 
 import Navbar from "@/components/navbar";
