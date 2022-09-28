@@ -2,8 +2,9 @@ import { extendTheme } from "@chakra-ui/react";
 
 export default extendTheme({
   fontSizes: {
-    "6xl": "6rem", //96px
-    "5xl": "4rem", //64px
+    "6xl": "6rem", // 96px
+    "5xl": "4rem", // 64px
+    "4xl": "2rem", // 32px
   },
   colors: {
     teal: {

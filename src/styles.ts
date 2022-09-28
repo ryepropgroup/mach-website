@@ -1,4 +1,10 @@
-import { BoxProps, HeadingProps, LinkProps, TextProps } from "@chakra-ui/react";
+import {
+  BoxProps,
+  HeadingProps,
+  LinkProps,
+  ListItemProps,
+  TextProps,
+} from "@chakra-ui/react";
 
 export const bgStyle: BoxProps = {
   pos: "fixed",
@@ -61,4 +67,29 @@ export const answerStyle: TextProps = {
   fontSize: "xl",
   lineHeight: "48px",
   marginBottom: "20px",
+};
+
+export const teamHeadingStyle: TextProps = {
+  color: "teal.300", // TODO: each team heading will eventually have its own color so this will need to be removed
+  fontFamily: "Inter, sans-serif",
+  fontSize: "4xl",
+  fontWeight: 700,
+  flex: 1,
+  lineHeight: "48px",
+  textAlign: "left",
+};
+
+export const teamDetailsStyle: TextProps = {
+  color: "gray.100",
+  fontFamily: "Inter, sans-serif",
+  fontSize: "xl",
+  lineHeight: "48px",
+  marginBottom: "20px",
+};
+
+export const listItemStyle: ListItemProps = {
+  color: "gray.100",
+  fontFamily: "Inter, sans-serif",
+  fontSize: "xl",
+  lineHeight: "48px",
 };
