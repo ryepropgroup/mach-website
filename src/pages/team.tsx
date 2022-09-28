@@ -11,7 +11,7 @@ import {
   ListItem,
   Text,
 } from "@chakra-ui/react";
-import { FaRocket } from "react-icons/all";
+import { FaRocket } from "react-icons/fa";
 
 import Navbar from "@/components/navbar";
 import SocialsFooter from "@/components/socialsFooter";
@@ -41,7 +41,6 @@ export default function Team() {
             our members.
           </Text>
           <br />
-          <br />
           <Text color="white">
             From a tiny group of students with a big project, we’ve grown to a
             team of {/*TODO: BOLD THIS UNTIL END OF SENTENCE*/}over 70 active
@@ -54,9 +53,6 @@ export default function Team() {
             caffeinated moment in between, {/*TODO:BOLD UNTIL FOR*/}a common
             passion for rocketry has become so much more for everyone at MACH.
           </Text>
-          <br />
-          <br />
-          <br />
           <br />
           <Heading {...headingStyle}>Subteams</Heading>
           <Text color="white">
@@ -280,26 +276,26 @@ export default function Team() {
               Please note that our general recruitment cycle is currently
               closed. However, we are still open to select new members who meet
               any of the following prerequisites:
-              <List>
-                <ListItem>
-                  <ListIcon as={FaRocket} color="turquoise" />
-                  Senior-year or graduate engineering students, particularly
-                  those specializing in avionics and CFD
-                </ListItem>
-                <ListItem>
-                  <ListIcon as={FaRocket} color="turquoise" />
-                  Computer science students with experience in [??]
-                </ListItem>
-                <ListItem>
-                  <ListIcon as={FaRocket} color="turquoise" />
-                  Webdevs so our webdevs can stop doing webdev
-                </ListItem>
-                <ListItem>
-                  <ListIcon as={FaRocket} color="turquoise" />
-                  Safety & bizdev pls
-                </ListItem>
-              </List>
             </Text>
+            <List>
+              <ListItem>
+                <ListIcon as={FaRocket} color="turquoise" />
+                Senior-year or graduate engineering students, particularly those
+                specializing in avionics and CFD
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaRocket} color="turquoise" />
+                Computer science students with experience in [??]
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaRocket} color="turquoise" />
+                Webdevs so our webdevs can stop doing webdev
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaRocket} color="turquoise" />
+                Safety & bizdev pls
+              </ListItem>
+            </List>
           </Box>
         </Box>
       </Center>
