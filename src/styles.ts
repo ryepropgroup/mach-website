@@ -1,4 +1,4 @@
-import { BoxProps } from "@chakra-ui/react";
+import { BoxProps, HeadingProps, LinkProps, TextProps } from "@chakra-ui/react";
 
 export const bgStyle: BoxProps = {
   pos: "fixed",
@@ -8,4 +8,57 @@ export const bgStyle: BoxProps = {
   w: "100vw",
   h: "100vh",
   objectFit: "cover",
+};
+export const headingStyle: HeadingProps = {
+  bgClip: "text",
+  bgGradient: "linear(to-r, cyan.300, yellow.500)",
+  fontFamily: "Inter, sans-serif",
+  fontSize: "5xl",
+  fontWeight: 700,
+};
+
+export const introStyleFirst: TextProps = {
+  color: "gray.100",
+  fontFamily: "Inter, sans-serif",
+  fontSize: "3xl",
+  fontWeight: 700,
+  lineHeight: "200%",
+};
+
+export const introStyleSecond: TextProps = {
+  color: "gray.100",
+  fontFamily: "Inter, sans-serif",
+  fontSize: "3xl",
+  lineHeight: "200%",
+};
+
+export const introStyleThird: TextProps = {
+  color: "gray.100",
+  fontFamily: "Inter, sans-serif",
+  fontSize: "xl",
+  lineHeight: "200%",
+};
+
+export const linkStyle: LinkProps = {
+  color: "purple.400",
+  fontFamily: "Inter, sans-serif",
+  fontSize: "xl",
+  fontWeight: 700,
+};
+
+export const questionStyle: TextProps = {
+  color: "teal.300",
+  fontFamily: "Inter, sans-serif",
+  fontSize: "2xl",
+  fontWeight: 700,
+  flex: 1,
+  textAlign: "left",
+};
+
+export const answerStyle: TextProps = {
+  color: "gray.100",
+  fontFamily: "Inter, sans-serif",
+  fontSize: "xl",
+  lineHeight: "48px",
+  marginBottom: "20px",
 };

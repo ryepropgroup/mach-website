@@ -17,61 +17,16 @@ import {
 import Navbar from "@/components/navbar";
 import SocialsFooter from "@/components/socialsFooter";
 import Header from "@/config";
-import { bgStyle } from "@/styles";
-
-const headingStyle: HeadingProps = {
-  bgClip: "text",
-  bgGradient: "linear(to-r, cyan.300, yellow.500)",
-  fontFamily: "Inter, sans-serif",
-  fontSize: "5xl",
-  fontWeight: 700,
-};
-
-const introStyleFirst: TextProps = {
-  color: "gray.100",
-  fontFamily: "Inter, sans-serif",
-  fontSize: "3xl",
-  fontWeight: 700,
-  lineHeight: "200%",
-};
-
-const introStyleSecond: TextProps = {
-  color: "gray.100",
-  fontFamily: "Inter, sans-serif",
-  fontSize: "3xl",
-  lineHeight: "200%",
-};
-
-const introStyleThird: TextProps = {
-  color: "gray.100",
-  fontFamily: "Inter, sans-serif",
-  fontSize: "xl",
-  lineHeight: "200%",
-};
-
-const linkStyle: LinkProps = {
-  color: "purple.400",
-  fontFamily: "Inter, sans-serif",
-  fontSize: "xl",
-  fontWeight: 700,
-};
-
-const questionStyle: TextProps = {
-  color: "teal.300",
-  fontFamily: "Inter, sans-serif",
-  fontSize: "2xl",
-  fontWeight: 700,
-  flex: 1,
-  textAlign: "left",
-};
-
-const answerStyle: TextProps = {
-  color: "gray.100",
-  fontFamily: "Inter, sans-serif",
-  fontSize: "xl",
-  lineHeight: "48px",
-  marginBottom: "20px",
-};
+import {
+  answerStyle,
+  bgStyle,
+  headingStyle,
+  introStyleFirst,
+  introStyleSecond,
+  introStyleThird,
+  linkStyle,
+  questionStyle,
+} from "@/styles";
 
 export default function FAQ() {
   return (
