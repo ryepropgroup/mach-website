@@ -93,3 +93,11 @@ export const listItemStyle: ListItemProps = {
   fontSize: "xl",
   lineHeight: "48px",
 };
+
+export const engineDetailsStyle: TextProps = {
+  color: "gray.100",
+  fontFamily: "Inter, sans-serif",
+  fontSize: "2xl",
+  lineHeight: "48px",
+  marginBottom: "20px",
+};
