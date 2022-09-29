@@ -1,6 +1,7 @@
 import {
   Accordion,
   AccordionButton,
+  AccordionIcon,
   AccordionItem,
   AccordionPanel,
   Box,
@@ -81,19 +82,25 @@ export default function Team() {
             {/*COMBUSTION DYNAMICS SECTION*/}
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <AccordionButton>
-                <Heading {...teamHeadingStyle}>
-                  {/*TODO: make umar color idk*/}Combustion Dynamics
-                </Heading>
+                <Box>
+                  <Heading {...teamHeadingStyle}>
+                    {/*TODO: make umar color idk*/}Combustion Dynamics
+                  </Heading>
+                  <br />
+                  <Text {...teamDetailsStyle} textAlign="left">
+                    is responsible for the design, iteration, manufacturing, and
+                    testing of the combustion chamber, nozzle, injector, and
+                    cooling system for Borealis and future engines.
+                  </Text>
+                </Box>
+                <AccordionIcon />
               </AccordionButton>
               <AccordionPanel>
                 <Text {...teamDetailsStyle}>
-                  {/*TODO: bold up until 'future engines'*/}is responsible for
-                  the design, iteration, manufacturing, and testing of the
-                  combustion chamber, nozzle, injector, and cooling system for
-                  Borealis and future engines. Using calculations, published
-                  references, and simulations, the Borealis was meticulously
-                  designed, then redesigned, and redesigned, and redesigned…
-                  until it became the engine we have now.
+                  {/*TODO: bold up until 'future engines'*/}Using calculations,
+                  published references, and simulations, the Borealis was
+                  meticulously designed, then redesigned, and redesigned, and
+                  redesigned… until it became the engine we have now.
                 </Text>
                 <br />
                 <Text {...teamDetailsStyle}>
@@ -117,21 +124,28 @@ export default function Team() {
             {/*PROPELLANT MANAGEMENT SECTION*/}
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <AccordionButton>
-                <Heading {...teamHeadingStyle}>
-                  {/*TODO: make umar color idk*/}Propellant Management
-                </Heading>
+                <Box>
+                  <Heading {...teamHeadingStyle}>
+                    {/*TODO: make umar color idk*/}Propellant Management
+                  </Heading>
+                  <br />
+                  <Text {...teamDetailsStyle} textAlign="left">
+                    is responsible for the design, sourcing, assembly, and
+                    testing of the propellant, pressurization, coolant, and test
+                    stand systems.
+                  </Text>
+                </Box>
+                <AccordionIcon />
               </AccordionButton>
               <AccordionPanel>
                 <Text {...teamDetailsStyle}>
-                  {/*TODO: bold up until 'test stand systems'*/}
-                  is responsible for the design, sourcing, assembly, and testing
-                  of the propellant, pressurization, coolant, and test stand
-                  systems. Using extensive research, calculations, and hands-on
-                  experience, the PM subteam develops all the hardware used to
-                  directly support the engine. A robust and failsafe propellant
-                  system and other supporting ground infrastructure are
-                  absolutely critical to the safe and successful operation of
-                  Borealis and all subsequent engines.
+                  {/*TODO: bold up until 'test stand systems'*/}Using extensive
+                  research, calculations, and hands-on experience, the PM
+                  subteam develops all the hardware used to directly support the
+                  engine. A robust and failsafe propellant system and other
+                  supporting ground infrastructure are absolutely critical to
+                  the safe and successful operation of Borealis and all
+                  subsequent engines.
                 </Text>
                 <br />
                 <Text {...teamDetailsStyle}>
@@ -158,22 +172,28 @@ export default function Team() {
             {/*TRANSFER & CONTROL SECTION*/}
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <AccordionButton>
-                <Heading {...teamHeadingStyle}>
-                  {/*TODO: make umar color idk*/}Transfer & Control
-                </Heading>
+                <Box>
+                  <Heading {...teamHeadingStyle}>
+                    {/*TODO: make umar color idk*/}Transfer & Control
+                  </Heading>
+                  <Text {...teamDetailsStyle} textAlign="left">
+                    is responsible for the development, sourcing, integration,
+                    and testing of data acquisition, telemetry, control, and
+                    communication systems.
+                  </Text>
+                </Box>
+                <AccordionIcon />
               </AccordionButton>
               <AccordionPanel>
                 <Text {...teamDetailsStyle}>
                   {/*TODO: bold from 'is responsible' to 'communication systems'*/}
-                  is responsible for the development, sourcing, integration, and
-                  testing of data acquisition, telemetry, control, and
-                  communication systems. Working alongside CD and PM, the T&C
-                  subteam designs all of the extensive electrical hardware and
-                  software systems needed for Borealis and future engines. A
-                  liquid rocket engine is an extremely complex system requiring
-                  accurate and reliable control of ignitors, valves, actuators,
-                  and telemetry to safely and reliably operate. As the Borealis
-                  is an instrumentation engine that will continue to be used for
+                  Working alongside CD and PM, the T&C subteam designs all of
+                  the extensive electrical hardware and software systems needed
+                  for Borealis and future engines. A liquid rocket engine is an
+                  extremely complex system requiring accurate and reliable
+                  control of ignitors, valves, actuators, and telemetry to
+                  safely and reliably operate. As the Borealis is an
+                  instrumentation engine that will continue to be used for
                   research, the necessity for high-quality data collection makes
                   the T&C subteam even more critical.
                 </Text>
@@ -199,22 +219,28 @@ export default function Team() {
             </AccordionItem>
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <AccordionButton>
-                <Heading {...teamHeadingStyle}>
-                  {/*TODO: make umar color idk*/}Safety
-                </Heading>
+                <Box>
+                  <Heading {...teamHeadingStyle}>
+                    {/*TODO: make umar color idk*/}Safety
+                  </Heading>
+                  <br />
+                  <Text {...teamDetailsStyle} textAlign="left">
+                    is responsible for risk assessment, documentation,
+                    cybersecurity, legal & controlled goods compliance, as well
+                    as training & supervision of our members on equipment,
+                    procedure, radio communications, first aid, and more.
+                  </Text>
+                </Box>
+                <AccordionIcon />
               </AccordionButton>
               <AccordionPanel>
                 <Text {...teamDetailsStyle}>
-                  {/*TODO: bold from start to 'first aid, and more.' */}
-                  is responsible for risk assessment, documentation,
-                  cybersecurity, legal & controlled goods compliance, as well as
-                  training & supervision of our members on equipment, procedure,
-                  radio communications, first aid, and more. The goals of this
-                  subteam are straightforward, but the tasks to accomplish them
-                  are expansive and ever-changing. Rocketry is a field with very
-                  high risks, and the Safety subteam is essential to minimize
-                  those risks and ensure MACH’s continual operation and
-                  compliance with industry standards.
+                  {/*TODO: bold from start to 'first aid, and more.' */}The
+                  goals of this subteam are straightforward, but the tasks to
+                  accomplish them are expansive and ever-changing. Rocketry is a
+                  field with very high risks, and the Safety subteam is
+                  essential to minimize those risks and ensure MACH’s continual
+                  operation and compliance with industry standards.
                 </Text>
                 <br />
                 <Text {...teamDetailsStyle}>
@@ -238,21 +264,28 @@ export default function Team() {
             </AccordionItem>
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <AccordionButton>
-                <Heading {...teamHeadingStyle}>
-                  {/*TODO: make umar color idk*/}Business Development
-                </Heading>
+                <Box>
+                  <Heading {...teamHeadingStyle}>
+                    {/*TODO: make umar color idk*/}Business Development
+                  </Heading>
+                  <br />
+                  <Text {...teamDetailsStyle} textAlign="left">
+                    is responsible for fundraising, finance, sponsorships,
+                    advisors, recruitment, outreach, legal compliance, and
+                    external relations for the team.
+                  </Text>
+                </Box>
+                <AccordionIcon />
               </AccordionButton>
               <AccordionPanel>
                 <Text {...teamDetailsStyle}>
-                  {/*TODO: bold from start to 'external relations for the team.'*/}
-                  is responsible for fundraising, finance, sponsorships,
-                  advisors, recruitment, outreach, legal compliance, and
-                  external relations for the team. Rocketry is an extremely
-                  costly endeavor in time, money, and talent without immediate
-                  potential for profit. The BizDev subteam is indispensable to
-                  ensure MACH has the financial, technical, and intellectual
-                  support we need to become one of the few student teams and
-                  companies to develop a liquid rocket engine.
+                  {/*TODO: bold from start to 'external relations for the team.'*/}{" "}
+                  Rocketry is an extremely costly endeavor in time, money, and
+                  talent without immediate potential for profit. The BizDev
+                  subteam is indispensable to ensure MACH has the financial,
+                  technical, and intellectual support we need to become one of
+                  the few student teams and companies to develop a liquid rocket
+                  engine.
                 </Text>
                 <br />
                 <Text {...teamDetailsStyle}>
