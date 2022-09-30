@@ -96,7 +96,7 @@ export default function Team() {
                     cooling system for Borealis and future engines.
                   </Text>
                 </Box>
-                <AccordionIcon />
+                <AccordionIcon color="teal.300" />
               </AccordionButton>
               <AccordionPanel>
                 <Text {...teamDetailsStyle}>
@@ -138,7 +138,7 @@ export default function Team() {
                     stand systems.
                   </Text>
                 </Box>
-                <AccordionIcon />
+                <AccordionIcon color="teal.300" />
               </AccordionButton>
               <AccordionPanel>
                 <Text {...teamDetailsStyle}>
@@ -185,7 +185,7 @@ export default function Team() {
                     communication systems.
                   </Text>
                 </Box>
-                <AccordionIcon />
+                <AccordionIcon color="teal.300" />
               </AccordionButton>
               <AccordionPanel>
                 <Text {...teamDetailsStyle}>
@@ -234,7 +234,7 @@ export default function Team() {
                     procedure, radio communications, first aid, and more.
                   </Text>
                 </Box>
-                <AccordionIcon />
+                <AccordionIcon color="teal.300" />
               </AccordionButton>
               <AccordionPanel>
                 <Text {...teamDetailsStyle}>
@@ -278,7 +278,7 @@ export default function Team() {
                     external relations for the team.
                   </Text>
                 </Box>
-                <AccordionIcon />
+                <AccordionIcon color="teal.300" />
               </AccordionButton>
               <AccordionPanel>
                 <Text {...teamDetailsStyle}>
