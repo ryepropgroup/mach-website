@@ -23,6 +23,33 @@ export const headingStyle: HeadingProps = {
   fontWeight: 700,
 };
 
+export const cdHeadingStyle: HeadingProps = {
+  bgClip: "text",
+  bgGradient: "linear(to-r, cyan.300, red.400, red.900)",
+  fontFamily: "Inter, sans-serif",
+  fontSize: "4xl",
+  fontWeight: 700,
+  lineHeight: "48px",
+  textAlign: "left",
+};
+export const pmHeadingStyle: HeadingProps = {
+  bgClip: "text",
+  bgGradient: "linear(to-r, cyan.300, blue.400, blue.900)",
+  fontFamily: "Inter, sans-serif",
+  fontSize: "4xl",
+  fontWeight: 700,
+  lineHeight: "48px",
+  textAlign: "left",
+};
+export const tcHeadingStyle: HeadingProps = {
+  bgClip: "text",
+  bgGradient: "linear(to-r, cyan.300, orange.600)",
+  fontFamily: "Inter, sans-serif",
+  fontSize: "4xl",
+  fontWeight: 700,
+  lineHeight: "48px",
+  textAlign: "left",
+};
 export const introStyleFirst: TextProps = {
   color: "gray.100",
   fontFamily: "Inter, sans-serif",

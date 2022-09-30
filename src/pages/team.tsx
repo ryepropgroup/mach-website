@@ -20,9 +20,12 @@ import SocialsFooter from "@/components/socialsFooter";
 import Header from "@/config";
 import {
   bgStyle,
+  cdHeadingStyle,
   headingStyle,
   introStyleSecond,
   listItemStyle,
+  pmHeadingStyle,
+  tcHeadingStyle,
   teamDetailsStyle,
   teamHeadingStyle,
 } from "@/styles";
@@ -83,7 +86,7 @@ export default function Team() {
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <AccordionButton>
                 <Box>
-                  <Heading {...teamHeadingStyle}>
+                  <Heading {...cdHeadingStyle}>
                     {/*TODO: make umar color idk*/}Combustion Dynamics
                   </Heading>
                   <br />
@@ -125,7 +128,7 @@ export default function Team() {
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <AccordionButton>
                 <Box>
-                  <Heading {...teamHeadingStyle}>
+                  <Heading {...pmHeadingStyle}>
                     {/*TODO: make umar color idk*/}Propellant Management
                   </Heading>
                   <br />
@@ -173,7 +176,7 @@ export default function Team() {
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <AccordionButton>
                 <Box>
-                  <Heading {...teamHeadingStyle}>
+                  <Heading {...tcHeadingStyle}>
                     {/*TODO: make umar color idk*/}Transfer & Control
                   </Heading>
                   <Text {...teamDetailsStyle} textAlign="left">
