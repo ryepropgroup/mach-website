@@ -2,6 +2,7 @@ import {
   Box,
   Center,
   Heading,
+  Link,
   List,
   ListIcon,
   ListItem,
@@ -12,7 +13,14 @@ import { FaRocket } from "react-icons/fa";
 import Navbar from "@/components/navbar";
 import SocialsFooter from "@/components/socialsFooter";
 import Header from "@/config";
-import { bgStyle, h1Style, liStyle, p1Style, p2Style } from "@/styles";
+import {
+  bgStyle,
+  h1Style,
+  linkStyle,
+  liStyle,
+  p1Style,
+  p2Style,
+} from "@/styles";
 
 export default function About() {
   return (
@@ -25,37 +33,56 @@ export default function About() {
           <Heading {...h1Style}>About Us</Heading>
           <br />
           <Text {...p1Style}>
-            MACH was founded in 2017 as Ryerson Propulsion Group, with the goal
-            of building a liquid engine for a suborbital sounding rocket. We are
-            aiming to be one of the first teams in Canada to test and fly a
-            Student Researched and Developed bipropellant liquid rocket engine.
+            <Text as="span" color="teal.300">
+              MACH
+            </Text>{" "}
+            was founded in 2017 as <Text as="b">R</Text>yerson{" "}
+            <Text as="b">P</Text>ropulsion <Text as="b">G</Text>roup, with the
+            goal of building a liquid engine for a suborbital sounding rocket.
+            We are aiming to be one of the first teams in Canada to test and fly
+            a Student Researched and Developed bipropellant{" "}
+            <Text as="b">liquid rocket engine</Text>.
           </Text>
           <br />
           <Text {...p2Style}>
-            Our first engine and its supporting systems - the Borealis, has
-            completed the preliminary design phase and is currently being
+            Our first engine and its supporting systems - the{" "}
+            <Text as="span" color="teal.300">
+              Borealis
+            </Text>
+            , has completed the preliminary design phase and is currently being
             manufactured for testing.
           </Text>
           <Text {...p2Style}>
             We will be conducting a series of tests in the next several months,
-            working towards a static hot-fire within the year.
+            working towards a{" "}
+            <Text as="b">static hot-fire within the year</Text>.
           </Text>
           <Text {...p2Style}>
             Using the experience and data from Borealis, we will refine our
-            design methodology to develop a flightweight engine and propellant
-            system, then integrate it into an airframe for flight testing.
+            design methodology to develop a{" "}
+            <Text as="b">flightweight engine and propellant system</Text>, then
+            integrate it into an airframe for flight testing.
           </Text>
           <br />
           <Text {...p1Style}>
             As a student design team, MACH offers more than just yearly
-            competitions. Our primary goal is to provide a unique and
-            challenging real-world engineering experience to our members.
+            competitions. Our primary goal is to provide a{" "}
+            <Text as="b">unique and challenging</Text>{" "}
+            <Text as="span" color="teal.300" font-weight={700}>
+              real-world engineering experience
+            </Text>{" "}
+            to our members.
           </Text>
           <Text {...p1Style}>
-            Our team takes on one of the most challenging projects in the
-            aerospace sector, offering a unique opportunity to participate in a
-            research, design, manufacturing, and testing process rarely found
-            outside of cutting-edge space industry.
+            Our team takes on one of the{" "}
+            <Text as="span" color="teal.300" font-weight={700}>
+              most challenging projects
+            </Text>{" "}
+            in the aerospace sector, offering a unique opportunity to
+            participate in a <Text as="b">research</Text>,{" "}
+            <Text as="b">design</Text>, <Text as="b">manufacturing</Text>, and{" "}
+            <Text as="b">testing</Text> process rarely found outside of
+            cutting-edge space industry.
           </Text>
           <br />
           <Text {...p2Style}>
@@ -71,24 +98,46 @@ export default function About() {
             </ListItem>
             <ListItem {...liStyle}>
               <ListIcon as={FaRocket} color="teal.300" />
-              Participated in the setup and hot-fire test of a Rocketdyne LR-101
-              liquid engine, which helped bring the Mercury astronauts to space.
+              Participated in the setup and{" "}
+              <Link
+                {...linkStyle}
+                href="/mach-website/uploadthestupidvideo"
+                isExternal
+              >
+                hot-fire test
+              </Link>{" "}
+              of a Rocketdyne LR-101 liquid engine, which helped bring the
+              Mercury astronauts to space.
             </ListItem>
             <ListItem {...liStyle}>
               <ListIcon as={FaRocket} color="teal.300" />
-              Published and presented a research paper on our design methodology
-              at the 2022 CI/CS Combustion Conference.
+              Published and presented a{" "}
+              <Link
+                {...linkStyle}
+                href="/mach-website/uploadresearchpaper"
+                isExternal
+              >
+                research paper
+              </Link>{" "}
+              on our design methodology at the 2022 CI/CS Combustion Conference.
             </ListItem>
             <ListItem {...liStyle}>
               <ListIcon as={FaRocket} color="teal.300" />
-              Participated in and assisted with Launch Canada 2022, the first
-              student rocketry competition ever held in Canada.
+              Participated in and assisted with{" "}
+              <Link
+                {...linkStyle}
+                href="https://www.launchcanada.org"
+                isExternal
+              >
+                Launch Canada 2022
+              </Link>
+              , the first student rocketry competition ever held in Canada.
             </ListItem>
             <ListItem {...liStyle}>
               <ListIcon as={FaRocket} color="teal.300" />
-              Hosted “Rocketry Bootcamp” for our team as well as the TMU
-              engineering community, a workshop series on rocket engine design
-              and manufacturing.
+              Hosted <Text as="b">“Rocketry Bootcamp”</Text> for our team as
+              well as the TMU engineering community, a workshop series on rocket
+              engine design and manufacturing.
             </ListItem>
           </List>
         </Box>
