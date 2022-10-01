@@ -1,9 +1,9 @@
-import { Box, Center, Heading, Image, Link, Text } from "@chakra-ui/react";
+import { Box, Center, Heading, Link, Text } from "@chakra-ui/react";
 
 import Navbar from "@/components/navbar";
 import SocialsFooter from "@/components/socialsFooter";
 import Header from "@/config";
-import { bgStyle, h1Style, linkStyle,p1Style, p2Style } from "@/styles";
+import { bgStyle, h1Style, linkStyle, p1Style, p2Style } from "@/styles";
 
 export default function Engine() {
   return (
