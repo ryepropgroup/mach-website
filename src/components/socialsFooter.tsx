@@ -1,9 +1,5 @@
 import { Center, IconButton, Link } from "@chakra-ui/react";
-import {
-  AiOutlineFacebook,
-  AiOutlineInstagram,
-  AiOutlineLinkedin,
-} from "react-icons/ai";
+import { AiOutlineInstagram, AiOutlineLinkedin } from "react-icons/ai";
 
 export default function SocialsFooter() {
   return (
