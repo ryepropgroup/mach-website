@@ -15,116 +15,52 @@ export const bgStyle: BoxProps = {
   h: "100vh",
   objectFit: "cover",
 };
-export const headingStyle: HeadingProps = {
-  bgClip: "text",
-  bgGradient: "linear(to-r, cyan.300, yellow.500)",
-  fontFamily: "Inter, sans-serif",
-  fontSize: "5xl",
-  fontWeight: 700,
-};
-
-export const cdHeadingStyle: HeadingProps = {
-  bgClip: "text",
-  bgGradient: "linear(to-r, cyan.300, red.400, red.900)",
-  fontFamily: "Inter, sans-serif",
-  fontSize: "4xl",
-  fontWeight: 700,
-  lineHeight: "48px",
-  textAlign: "left",
-};
-export const pmHeadingStyle: HeadingProps = {
-  bgClip: "text",
-  bgGradient: "linear(to-r, cyan.300, blue.400, blue.900)",
-  fontFamily: "Inter, sans-serif",
-  fontSize: "4xl",
-  fontWeight: 700,
-  lineHeight: "48px",
-  textAlign: "left",
-};
-export const tcHeadingStyle: HeadingProps = {
-  bgClip: "text",
-  bgGradient: "linear(to-r, cyan.300, orange.600)",
-  fontFamily: "Inter, sans-serif",
-  fontSize: "4xl",
-  fontWeight: 700,
-  lineHeight: "48px",
-  textAlign: "left",
-};
-export const introStyleFirst: TextProps = {
-  color: "gray.100",
-  fontFamily: "Inter, sans-serif",
-  fontSize: "3xl",
-  fontWeight: 700,
-  lineHeight: "200%",
-};
-
-export const introStyleSecond: TextProps = {
-  color: "gray.100",
-  fontFamily: "Inter, sans-serif",
-  fontSize: "3xl",
-  lineHeight: "200%",
-};
-
-export const introStyleThird: TextProps = {
-  color: "gray.100",
-  fontFamily: "Inter, sans-serif",
-  fontSize: "xl",
-  lineHeight: "200%",
-};
 
 export const linkStyle: LinkProps = {
   color: "purple.400",
-  fontFamily: "Inter, sans-serif",
-  fontSize: "xl",
-  fontWeight: 700,
+  fontWeight: "bold",
 };
 
-export const questionStyle: TextProps = {
-  color: "teal.300",
-  fontFamily: "Inter, sans-serif",
-  fontSize: "2xl",
-  fontWeight: 700,
-  flex: 1,
-  textAlign: "left",
-};
-
-export const answerStyle: TextProps = {
-  color: "gray.100",
-  fontFamily: "Inter, sans-serif",
-  fontSize: "xl",
-  lineHeight: "48px",
-  marginBottom: "20px",
-};
-
-export const teamHeadingStyle: TextProps = {
-  color: "teal.300", // TODO: each team heading will eventually have its own color so this will need to be removed
-  fontFamily: "Inter, sans-serif",
+export const h1Style: HeadingProps = {
+  as: "h1",
+  bgClip: "text",
+  bgGradient: "linear(to-r, cyan.300 0%, yellow.500 25%)",
   fontSize: "4xl",
-  fontWeight: 700,
+  fontWeight: "bold",
+};
+
+export const h2Style: HeadingProps = {
+  color: "teal.300",
+  fontSize: "3xl",
+  fontWeight: "bold",
+};
+
+export const h3Style: HeadingProps = {
+  color: "teal.300",
+  fontSize: "2xl",
+  fontWeight: "bold",
   flex: 1,
   lineHeight: "48px",
+  marginBottom: "20px",
   textAlign: "left",
 };
 
-export const teamDetailsStyle: TextProps = {
+export const p1Style: TextProps = {
   color: "gray.100",
-  fontFamily: "Inter, sans-serif",
-  fontSize: "xl",
-  lineHeight: "48px",
-  marginBottom: "20px",
-};
-
-export const listItemStyle: ListItemProps = {
-  color: "gray.100",
-  fontFamily: "Inter, sans-serif",
-  fontSize: "xl",
-  lineHeight: "48px",
-};
-
-export const engineDetailsStyle: TextProps = {
-  color: "gray.100",
-  fontFamily: "Inter, sans-serif",
   fontSize: "2xl",
+  fontWeight: "normal",
+  lineHeight: "72px",
+};
+
+export const p2Style: TextProps = {
+  color: "gray.100",
+  fontSize: "xl",
   lineHeight: "48px",
   marginBottom: "20px",
+};
+
+export const liStyle: ListItemProps = {
+  color: "gray.100",
+  fontSize: "xl",
+  lineHeight: "48px",
 };

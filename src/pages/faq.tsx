@@ -15,36 +15,34 @@ import Navbar from "@/components/navbar";
 import SocialsFooter from "@/components/socialsFooter";
 import Header from "@/config";
 import {
-  answerStyle,
   bgStyle,
-  headingStyle,
-  introStyleFirst,
-  introStyleSecond,
-  introStyleThird,
+  h1Style,
+  h3Style,
   linkStyle,
-  questionStyle,
+  p1Style,
+  p2Style,
 } from "@/styles";
 
 export default function FAQ() {
   return (
     <>
       <Header title="MACH :: FAQ" />
-      <Box {...bgStyle} bg="#000b17" />
+      <Box {...bgStyle} bg="black" />
       <Navbar />
       <Center>
-        <Box w="56vw">
-          <Heading {...headingStyle}>Frequently Asked Questions</Heading>
+        <Box w="64vw">
+          <Heading {...h1Style}>Frequently Asked Questions</Heading>
           <br />
-          <Text {...introStyleFirst}>
+          <Text {...p1Style}>
             Rockets are complicated. It took us a very long time to learn what
             we have, and we are constantly learning more.
           </Text>
-          <Text {...introStyleSecond}>
+          <Text {...p1Style}>
             We&rsquo;ve collected some questions we&rsquo;ve received from
             varying levels of technical background, and hopefully this will
             answer some of your questions too!
           </Text>
-          <Text {...introStyleThird}>
+          <Text {...p1Style}>
             We&rsquo;ve tried our best to make these answers concise yet
             accurate, but rockets are complicated. If we&rsquo;ve simplified too
             much or got too technical, or you have more questions that we
@@ -59,14 +57,12 @@ export default function FAQ() {
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
-                  <Text {...questionStyle}>
-                    What is a rocket engine anyway?
-                  </Text>
-                  <AccordionIcon />
+                  <Text {...h3Style}>What is a rocket engine anyway?</Text>
+                  <AccordionIcon color="teal.300" />
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
-                <Text {...answerStyle}>
+                <Text {...p2Style}>
                   A rocket engine is a type of combustion engine, burning fuel
                   with oxygen and using the resulting energy to achieve a
                   purpose.{" "}
@@ -81,14 +77,14 @@ export default function FAQ() {
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
-                  <Text {...questionStyle}>
+                  <Text {...h3Style}>
                     What is a liquid rocket? What makes it different?
                   </Text>
-                  <AccordionIcon />
+                  <AccordionIcon color="teal.300" />
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
-                <Text {...answerStyle}>
+                <Text {...p2Style}>
                   Rocket engines can be liquid, solid, or hybrid depending on
                   the type of propellants used. Solid rocket motors typically
                   use relatively stable fuel and oxidizers mixed with a binder.
@@ -99,7 +95,7 @@ export default function FAQ() {
                   reignited. The majority of hobby and student rocketry teams
                   use premade off-the-shelf solid motors for propulsion.
                 </Text>
-                <Text {...answerStyle}>
+                <Text {...p2Style}>
                   Liquid engines, straightforwardly, store their fuel and
                   oxidizer in liquid form. In addition to the control not
                   possible in solid motors, these engines can achieve much
@@ -109,7 +105,7 @@ export default function FAQ() {
                   launch vehicles like the Saturn V, Space Shuttle, Falcon 9,
                   and Electron are largely or completely liquid-fueled.
                 </Text>
-                <Text {...answerStyle}>
+                <Text {...p2Style}>
                   Hybrid is another type of rocket engine which typically uses
                   solid fuel grains with a liquid oxidizer. There are a variety
                   of approaches to these systems, but in general they combine
@@ -121,14 +117,14 @@ export default function FAQ() {
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
-                  <Text {...questionStyle}>
+                  <Text {...h3Style}>
                     What is a &ldquo;bipropellant&rdquo; liquid engine?
                   </Text>
-                  <AccordionIcon />
+                  <AccordionIcon color="teal.300" />
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
-                <Text {...answerStyle}>
+                <Text {...p2Style}>
                   Over decades of rocketry, many thousands of combinations of
                   fuels and oxidizers in various forms have been tested, some of
                   them successfully. Bipropellants are a broad categorization of
@@ -144,15 +140,15 @@ export default function FAQ() {
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
-                  <Text {...questionStyle}>
+                  <Text {...h3Style}>
                     What does &ldquo;pressure-fed&rdquo; mean, and why does
                     Borealis use it?
                   </Text>
-                  <AccordionIcon />
+                  <AccordionIcon color="teal.300" />
                 </AccordionButton>
               </h2>
               <AccordionPanel>
-                <Text {...answerStyle}>
+                <Text {...p2Style}>
                   Like any engine, a liquid rocket requires a consistent and
                   controllable flow of fuel and oxidizer to function. Because
                   the chamber pressures in a rocket are extremely high, any
@@ -166,7 +162,7 @@ export default function FAQ() {
                   latter uses a turbopump instead, which is much lighter than a
                   pressurization tank, but also much more complex.
                 </Text>
-                <Text {...answerStyle}>
+                <Text {...p2Style}>
                   The Borealis currently uses a pressure-fed system for its
                   relative simplicity and reliability, but we are actively
                   exploring self-pressurizing supercharged nitrous oxide for our
@@ -178,15 +174,15 @@ export default function FAQ() {
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
-                  <Text {...questionStyle}>
+                  <Text {...h3Style}>
                     What is &ldquo;flightweight&rdquo;? Why isn&rsquo;t
                     Borealis?
                   </Text>
-                  <AccordionIcon />
+                  <AccordionIcon color="teal.300" />
                 </AccordionButton>
               </h2>
               <AccordionPanel>
-                <Text {...answerStyle}>
+                <Text {...p2Style}>
                   Borealis was designed as a static test engine, this means it
                   was never meant to be integrated into an airframe and flown.
                   This can be seen in design elements such as the heavy cooling
@@ -209,14 +205,14 @@ export default function FAQ() {
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
-                  <Text {...questionStyle}>
+                  <Text {...h3Style}>
                     What do you hope to learn from Borealis?
                   </Text>
-                  <AccordionIcon />
+                  <AccordionIcon color="teal.300" />
                 </AccordionButton>
               </h2>
               <AccordionPanel>
-                <Text {...answerStyle}>
+                <Text {...p2Style}>
                   The primary technical goal of the Borealis engine is to
                   collect high quality combustion data. This data will be used
                   to validate and improve our design methodology and conduct
@@ -228,7 +224,7 @@ export default function FAQ() {
                   engines, as well as the effects of different propellant flow
                   rates and ratios.
                 </Text>
-                <Text {...answerStyle}>
+                <Text {...p2Style}>
                   Perhaps more importantly, through the development and
                   construction of our first engine and supporting systems, our
                   team has gained an incredible amount of experience. This
@@ -242,14 +238,14 @@ export default function FAQ() {
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
-                  <Text {...questionStyle}>
+                  <Text {...h3Style}>
                     What&rsquo;s the plan for your next engine?
                   </Text>
-                  <AccordionIcon />
+                  <AccordionIcon color="teal.300" />
                 </AccordionButton>
               </h2>
               <AccordionPanel>
-                <Text {...answerStyle}>
+                <Text {...p2Style}>
                   Our first flightweight engine and propellant system is
                   currently in the design phase. We are planning a carbon
                   phenolic ablative engine, coupled with structural stacked
@@ -265,14 +261,14 @@ export default function FAQ() {
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
-                  <Text {...questionStyle}>
+                  <Text {...h3Style}>
                     What are your long-term plans after that?
                   </Text>
-                  <AccordionIcon />
+                  <AccordionIcon color="teal.300" />
                 </AccordionButton>
               </h2>
               <AccordionPanel>
-                <Text {...answerStyle}>
+                <Text {...p2Style}>
                   Liquid rocket engines can achieve horrendous levels of
                   complexity, so a successful flight test is only the beginning
                   of our journey. Long-term projects of varying ambitions are
@@ -290,14 +286,14 @@ export default function FAQ() {
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
-                  <Text {...questionStyle}>
+                  <Text {...h3Style}>
                     What fuel and oxidizer does Borealis use?
                   </Text>
-                  <AccordionIcon />
+                  <AccordionIcon color="teal.300" />
                 </AccordionButton>
               </h2>
               <AccordionPanel>
-                <Text {...answerStyle}>
+                <Text {...p2Style}>
                   The Borealis engine uses ethanol as the fuel and nitrous oxide
                   as the oxidizer; we&rsquo;ve been calling this relatively
                   uncommon combination &ldquo;EthaNOS&rdquo; for short. Our
@@ -313,7 +309,7 @@ export default function FAQ() {
                   are confident in seeking approval for more conventional
                   propellant combinations like Kerolox.
                 </Text>
-                <Text {...answerStyle}>
+                <Text {...p2Style}>
                   During the research phase of our engine design, we realized
                   that a relatively miniscule amount of research has been
                   published on ethanol and nitrous oxide rocket engines.
@@ -335,12 +331,12 @@ export default function FAQ() {
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
-                  <Text {...questionStyle}>Why is water used as coolant?</Text>
-                  <AccordionIcon />
+                  <Text {...h3Style}>Why is water used as coolant?</Text>
+                  <AccordionIcon color="teal.300" />
                 </AccordionButton>
               </h2>
               <AccordionPanel>
-                <Text {...answerStyle}>
+                <Text {...p2Style}>
                   A counterintuitive quirk of rocket engines is the scalability
                   of cooling systems. Because combustion temperature is
                   dependent on the propellant combination, a larger engine
@@ -354,7 +350,7 @@ export default function FAQ() {
                   combustion data possible compared to alternative methods like
                   heatsink engines.
                 </Text>
-                <Text {...answerStyle}>
+                <Text {...p2Style}>
                   From the beginning, our coolant system was also designed to
                   withstand very high pressures and ethanol flow. After our
                   initial hot-fire, we will use Borealis to conduct extensive
@@ -369,14 +365,14 @@ export default function FAQ() {
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
-                  <Text {...questionStyle}>
+                  <Text {...h3Style}>
                     What tests are planned before the hot-fire?
                   </Text>
-                  <AccordionIcon />
+                  <AccordionIcon color="teal.300" />
                 </AccordionButton>
               </h2>
               <AccordionPanel>
-                <Text {...answerStyle}>
+                <Text {...p2Style}>
                   As excited as we are to begin hot-fire testing of the
                   Borealis, it is even more important that we do so safely and
                   collect useful data out of our testing. As a result, our
@@ -402,14 +398,14 @@ export default function FAQ() {
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
-                  <Text {...questionStyle}>
+                  <Text {...h3Style}>
                     What prerequisite knowledge do I need to join MACH?
                   </Text>
-                  <AccordionIcon />
+                  <AccordionIcon color="teal.300" />
                 </AccordionButton>
               </h2>
               <AccordionPanel>
-                <Text {...answerStyle}>
+                <Text {...p2Style}>
                   Many of our members have become integral parts of our team
                   without prior academic knowledge. Although material from STEM
                   courses will give you a head start, much of what we&rsquo;re
@@ -421,7 +417,7 @@ export default function FAQ() {
                   start and learn more about the technical subteams if you want
                   to join them down the line.
                 </Text>
-                <Text {...answerStyle}>
+                <Text {...p2Style}>
                   That said, onboarding is a lengthy process for us to catch new
                   members up on the details of what we&rsquo;re doing. As a
                   result, our general recruitment isn&rsquo;t open year-round,
@@ -436,14 +432,14 @@ export default function FAQ() {
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
-                  <Text {...questionStyle}>
+                  <Text {...h3Style}>
                     How much time commitment should I expect if I want to join?
                   </Text>
-                  <AccordionIcon />
+                  <AccordionIcon color="teal.300" />
                 </AccordionButton>
               </h2>
               <AccordionPanel>
-                <Text {...answerStyle}>
+                <Text {...p2Style}>
                   Each week, each subteam conducts 1-hour meetings during the
                   weekdays; we also host 2-hour general meetings with all
                   subteams every weekend. Additionally, team members are
@@ -452,7 +448,7 @@ export default function FAQ() {
                   task groups within or across subteams is highly encouraged and
                   facilitated on our communications platforms.
                 </Text>
-                <Text {...answerStyle}>
+                <Text {...p2Style}>
                   As a student design team, we completely understand that our
                   members get busy with exams, projects, and life in general.{" "}
                   <b>
@@ -468,14 +464,14 @@ export default function FAQ() {
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
-                  <Text {...questionStyle}>
+                  <Text {...h3Style}>
                     Can I contribute to the team virtually?
                   </Text>
-                  <AccordionIcon />
+                  <AccordionIcon color="teal.300" />
                 </AccordionButton>
               </h2>
               <AccordionPanel>
-                <Text {...answerStyle}>
+                <Text {...p2Style}>
                   While we try to accommodate virtual attendance for members who
                   cannot physically attend any specific meeting, we highly
                   encourage all members to join our in-person sessions. As we
@@ -490,14 +486,14 @@ export default function FAQ() {
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
                 <AccordionButton>
-                  <Text {...questionStyle}>
+                  <Text {...h3Style}>
                     I joined the team but took a break, can I rejoin?
                   </Text>
-                  <AccordionIcon />
+                  <AccordionIcon color="teal.300" />
                 </AccordionButton>
               </h2>
               <AccordionPanel>
-                <Text {...answerStyle}>
+                <Text {...p2Style}>
                   {/*TODO: link to contact page*/}
                   As students ourselves, we totally understand if life gets in
                   the way sometimes. If you&rsquo;ve taken a break from the

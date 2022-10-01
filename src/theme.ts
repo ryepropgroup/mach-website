@@ -1,12 +1,24 @@
 import { extendTheme } from "@chakra-ui/react";
 
 export default extendTheme({
+  fonts: {
+    body: "Inter, sans-serif",
+    heading: "Inter, sans-serif",
+  },
   fontSizes: {
-    "6xl": "6rem", // 96px
-    "5xl": "4rem", // 64px
-    "4xl": "2rem", // 32px
+    "6xl": "96px", // initial size
+    "5xl": "64px", // acronym size
+    "4xl": "48px", // h1 size
+    "3xl": "40px", // h2 size
+    "2xl": "32px", // h3/large paragraph size
+    xl: "20px", // normal paragraph size
   },
   colors: {
+    black: "#000B17",
+    blackAlpha: {
+      "100": "rgba(0, 76, 155, 0.1)",
+      "900": "rgba(0, 0, 0, 0.9)",
+    },
     teal: {
       "50": "#E8FDFC",
       "100": "#BDF9F7",
@@ -53,7 +65,7 @@ export default extendTheme({
       "600": "#666666",
       "700": "#4D4D4D",
       "800": "#333333",
-      "900": "#1E1E1E",
+      "900": "#19232E",
     },
     cyan: {
       "50": "#E9FAFB",
@@ -73,7 +85,7 @@ export default extendTheme({
       "200": "#FFB08A",
       "300": "#FF905C",
       "400": "#FF712E",
-      "500": "#FF5200",
+      "500": "#FF6464",
       "600": "#CC4200",
       "700": "#993100",
       "800": "#662100",
@@ -84,7 +96,7 @@ export default extendTheme({
       "100": "#B8DAFF",
       "200": "#8AC3FF",
       "300": "#5CABFF",
-      "400": "#2E94FF",
+      "400": "#3296FF",
       "500": "#007CFF",
       "600": "#0064CC",
       "700": "#004B99",
@@ -92,16 +104,28 @@ export default extendTheme({
       "900": "#001933",
     },
     orange: {
-      "50": "#FEF6E6",
+      "50": "#FF9664",
       "100": "#FDE6BA",
       "200": "#FBD78D",
-      "300": "#FAC761",
+      "300": "#FAC864",
       "400": "#F8B734",
       "500": "#F7A708",
       "600": "#C68606",
       "700": "#946405",
       "800": "#634303",
       "900": "#312102",
+    },
+    green: {
+      "50": "#E5FFEE",
+      "100": "#B8FFCF",
+      "200": "#8AFFB0",
+      "300": "#64FF96",
+      "400": "#2EFF71",
+      "500": "#00FF52",
+      "600": "#00CC42",
+      "700": "#009931",
+      "800": "#006621",
+      "900": "#003310",
     },
   },
 });
