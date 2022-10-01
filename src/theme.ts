@@ -11,7 +11,9 @@ export default extendTheme({
     "4xl": "48px", // h1 size
     "3xl": "40px", // h2 size
     "2xl": "32px", // h3/large paragraph size
-    xl: "20px", // normal paragraph size
+    xl: "20px", // normal paragraph/card name size
+    lg: "16px", // card position size
+    md: "12px", // card desc size
   },
   colors: {
     black: "#000B17",

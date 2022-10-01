@@ -10,10 +10,12 @@ import {
   List,
   ListIcon,
   ListItem,
+  SimpleGrid,
   Text,
 } from "@chakra-ui/react";
 import { FaRocket } from "react-icons/fa";
 
+import LeadCard from "@/components/leadCard";
 import Navbar from "@/components/navbar";
 import SocialsFooter from "@/components/socialsFooter";
 import Header from "@/config";
@@ -31,8 +33,8 @@ export default function Team() {
   /*TODO: SMALL STYLES*/
   return (
     <>
-      <Header title="MACH :: Team" />
-      <Box {...bgStyle} bg="#000b17" />
+      <Header title="MACH :: Our Team" />
+      <Box {...bgStyle} bg="black" />
       <Navbar />
       <Center>
         <Box w="64vw">
@@ -64,6 +66,56 @@ export default function Team() {
             caffeinated moment in between, {/*TODO:BOLD UNTIL FOR*/}a common
             passion for rocketry has become so much more for everyone at MACH.
           </Text>
+          <br />
+          <Heading {...h2Style}>Team Leads</Heading>
+          <br />
+          <Center w="56vw">
+            <SimpleGrid minChildWidth="200px" spacing="20px">
+              <LeadCard name="Umar Shabbir" pos="Team Director">
+                As a 4th year aerospace engineering student, Umar has been lucky
+                enough to work alongside leading industry professionals in the
+                world of rocketry during his undergrad! Besides a love for
+                anything combustible, he also loves photography, weird foods,
+                and fat cats.
+              </LeadCard>
+              <LeadCard name="Yiwei Luo" pos="Combustion Dynamics Lead">
+                A 4th year aerospace engineering student and lifelong enthusiast
+                of anything that flies. He has far too many hobbies and not
+                enough time, but tries to make some stuff and write some stuff.
+              </LeadCard>
+              <LeadCard name="Orion Moore" pos="Combustion Dynamics Lead?">
+                Write your bio already!!!!!!!!!!
+              </LeadCard>
+              <LeadCard name="Shivesh Maraj" pos="Propellant Management Lead">
+                Shivesh is a 3rd year aerospace engineering student. In addition
+                to his interests in space exploration and rocketry, he is an
+                avid golfer and a self-proclaimed amateur DJ.
+              </LeadCard>
+              <LeadCard name="Ahad Razak" pos="Propellant Management Lead">
+                Ahad is a 3rd year Aerospace student. His interests include
+                cooking, reading comics, and working out.
+              </LeadCard>
+              <LeadCard
+                name="Georgia Jovanovic"
+                pos="Transfer & Control Hardware Lead"
+              >
+                Georgia is a 5th year electrical engineering student set to
+                graduate in April 2023. Along with her passion for rocketry she
+                enjoys sailing and a few other unconventional hobbies!
+              </LeadCard>
+              <LeadCard name="Jack Sinclair" pos="Safety Officer">
+                Jack is a 1st year Aerospace Engineering student. His interests
+                are gaming, space exploration and habitats, and videos of
+                raccoons eating.
+              </LeadCard>
+              <LeadCard name="Laxan Puveendran" pos="Finance Lead">
+                Laxan is a 3rd year industrial engineering student. He’s the
+                finance lead for MACH, who’s worked on creating the team budget
+                and processing cheque reimbursements for team members. His
+                interests include playing soccer, gaming, and watching movies.
+              </LeadCard>
+            </SimpleGrid>
+          </Center>
           <br />
           <Heading
             {...h2Style}
