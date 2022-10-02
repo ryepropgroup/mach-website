@@ -48,7 +48,6 @@ export const h3Style: HeadingProps = {
 export const p1Style: TextProps = {
   color: "gray.100",
   fontSize: "2xl",
-  fontWeight: "normal",
   lineHeight: "72px",
 };
 

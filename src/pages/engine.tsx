@@ -1,9 +1,38 @@
-import { Box, Center, Heading, Link, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Center,
+  Heading,
+  Image,
+  Link,
+  SimpleGrid,
+  Table,
+  TableCellProps,
+  TableColumnHeaderProps,
+  TableContainer,
+  Tbody,
+  Td,
+  Text,
+  Th,
+  Thead,
+  Tr,
+} from "@chakra-ui/react";
 
 import Navbar from "@/components/navbar";
 import SocialsFooter from "@/components/socialsFooter";
 import Header from "@/config";
 import { bgStyle, h1Style, linkStyle, p1Style, p2Style } from "@/styles";
+
+const thStyle: TableColumnHeaderProps = {
+  color: "gray.100",
+  fontSize: "xl",
+  lineHeight: "72px",
+};
+
+const tdStyle: TableCellProps = {
+  color: "gray.100",
+  fontSize: "lg",
+  lineHeight: "48px",
+};
 
 export default function Engine() {
   return (
@@ -17,7 +46,7 @@ export default function Engine() {
           <br />
           <Text {...p1Style}>
             The{" "}
-            <Text as="span" color="teal.300" fontWeight={700}>
+            <Text as="span" color="teal.300" fontWeight="bold">
               Borealis
             </Text>{" "}
             is a pressure-fed, bipropellant, semi-regeneratively cooled liquid
@@ -29,19 +58,46 @@ export default function Engine() {
             development.
           </Text>
           <br />
-          <Box h="656px" />
+          <Box bg="gray.900" rounded="lg">
+            <Image
+              alt="Sectioned render of the Borealis Engine"
+              rounded="lg"
+              src="/mach-website/img/engine/Engine_Sectioned_Render.png"
+            />
+          </Box>
           <br />
           <Heading {...h1Style} fontSize="40px">
             Design Specifications
           </Heading>
           <br />
-          <Box h="402px" />
+          <Box bg="gray.900" rounded="lg">
+            <TableContainer>
+              <Table size="sm">
+                <Thead>
+                  <Tr>
+                    <Th {...thStyle}>Specific Impulse</Th>
+                    <Th {...thStyle}>Total Thrust</Th>
+                    <Th {...thStyle}>Chamber Temperature</Th>
+                    <Th {...thStyle}>Chamber Pressure</Th>
+                  </Tr>
+                </Thead>
+                <Tbody>
+                  <Tr>
+                    <Td {...tdStyle}>152 s</Td>
+                    <Td {...tdStyle}>1200 N</Td>
+                    <Td {...tdStyle}>2800 K</Td>
+                    <Td {...tdStyle}>4.83 MPa</Td>
+                  </Tr>
+                </Tbody>
+              </Table>
+            </TableContainer>
+          </Box>
           <br />
           <Text {...p2Style}>
-            Borealis is fueled by ethanol and nitrous oxide, a combination we’ve
-            been calling “EthaNOS” for short. Both propellants are pressurized
-            by a common nitrogen system, and pump-fed water is initially used as
-            a coolant.
+            Borealis is fueled by ethanol and nitrous oxide, a combination
+            we&rsquo;ve been calling &ldquo;EthaNOS&rdquo; for short. Both
+            propellants are pressurized by a common nitrogen system, and
+            pump-fed water is initially used as a coolant.
           </Text>
           <Text {...p2Style}>
             The engine telemetry includes on-chamber thermocouples to collect
@@ -56,17 +112,41 @@ export default function Engine() {
             engine and propellant system.
           </Text>
           <br />
-          <Box h="1180px" />
+          <SimpleGrid minChildWidth="392px" spacing="20px">
+            <Box bg="gray.900" rounded="lg">
+              <Image
+                alt="Instrumentation schematic of the Borealis Engine"
+                rounded="lg"
+                src="/mach-website/img/engine/Instrumentation_Schematic.png"
+              />
+            </Box>
+            <Box bg="gray.900" rounded="lg">
+              <Image
+                alt="Piping and instrumentation diagram of the Borealis engine"
+                rounded="lg"
+                src="/mach-website/img/engine/PM_PID_V3.2_Compacted.png"
+              />
+            </Box>
+            <Box bg="gray.900" rounded="lg">
+              <Image
+                alt="Compacted block diagram of the Borealis Engine"
+                rounded="lg"
+                src="/mach-website/img/engine/TC_Block_Diagram_Compacted.png"
+              />
+            </Box>
+          </SimpleGrid>
           <br />
           <Text {...p2Style}>
-            After our initial hot-fire, we’ll continue to use Borealis as a
-            research and development engine while we work on flightweight
+            After our initial hot-fire, we&rsquo;ll continue to use Borealis as
+            a research and development engine while we work on flightweight
             successors. Major experiments are slated to test and collect
             extensive data on design variations for injectors, cooling systems,
             propellant ratio, and more.
           </Text>
           <br />
-          <Text {...p1Style}>Have questions? It’s only rocket science.</Text>
+          <Text {...p1Style}>
+            Have questions? It&rsquo;s only rocket science.
+          </Text>
           <br />
           <Text {...p1Style}>
             See if we already have answers in our{" "}
