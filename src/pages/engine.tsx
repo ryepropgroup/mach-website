@@ -20,7 +20,16 @@ import {
 import Navbar from "@/components/navbar";
 import SocialsFooter from "@/components/socialsFooter";
 import Header from "@/config";
-import { bgStyle, h1Style, linkStyle, p1Style, p2Style } from "@/styles";
+import {
+  b1Style,
+  b2Style,
+  bgStyle,
+  emStyle,
+  h1Style,
+  linkStyle,
+  p1Style,
+  p2Style,
+} from "@/styles";
 
 const thStyle: TableColumnHeaderProps = {
   color: "gray.100",
@@ -45,17 +54,26 @@ export default function Engine() {
           <Heading {...h1Style}>The Borealis</Heading>
           <br />
           <Text {...p1Style}>
-            The{" "}
-            <Text as="span" color="teal.300" fontWeight="bold">
-              Borealis
+            The <Text {...b2Style}>Borealis</Text> is a{" "}
+            <Text {...emStyle}>
+              pressure-fed, bipropellant, semi-regeneratively cooled <br />
             </Text>{" "}
-            is a pressure-fed, bipropellant, semi-regeneratively cooled liquid
-            rocket engine.
+            <Text
+              {...b1Style}
+              bgGradient="linear(to-r, cyan.300 0%, orange.50 50%)"
+              bgClip="text"
+            >
+              liquid rocket engine
+            </Text>
+            .
           </Text>
           <Text {...p1Style}>
-            Borealis is a static instrumentation engine, collecting high-quality
-            data for design validation, combustion research, and future
-            development.
+            Borealis is a{" "}
+            <Text {...b1Style}>static instrumentation engine</Text>, collecting
+            high-quality data for{" "}
+            <Text {...emStyle}>
+              design validation, combustion research, and future development.
+            </Text>
           </Text>
           <br />
           <Box bg="gray.900" rounded="lg">
@@ -94,22 +112,40 @@ export default function Engine() {
           </Box>
           <br />
           <Text {...p2Style}>
-            Borealis is fueled by ethanol and nitrous oxide, a combination
-            we&rsquo;ve been calling &ldquo;EthaNOS&rdquo; for short. Both
-            propellants are pressurized by a common nitrogen system, and
-            pump-fed water is initially used as a coolant.
+            Borealis is <Text {...emStyle}>fueled by</Text>{" "}
+            <Text {...b1Style}>ethanol</Text> and{" "}
+            <Text {...b1Style}>nitrous oxide</Text>, a combination we&rsquo;ve
+            been calling &ldquo;
+            <Text
+              {...b1Style}
+              bgGradient="linear(to-r, cyan.300 0%, yellow.500 66%)"
+              bgClip="text"
+            >
+              EthaNOS
+            </Text>
+            &rdquo; for short. Both propellants are pressurized by a common{" "}
+            <Text {...b1Style}>nitrogen</Text> system, and pump-fed{" "}
+            <Text {...b1Style}>water</Text> is initially used as a coolant.
           </Text>
           <Text {...p2Style}>
-            The engine telemetry includes on-chamber thermocouples to collect
-            three-dimensional combustion data, strain gauges to measure chamber
-            expansion, and an in-chamber pressure transducer. Additionally, the
-            fluid systems have a full suite of temperature and pressure sensors,
-            and a load cell is used to measure thrust.
+            The <Text {...b2Style}>engine telemetry</Text> includes on-chamber{" "}
+            <Text {...b1Style}>thermocouples</Text> to collect three-dimensional
+            combustion data, <Text {...b1Style}>strain gauges</Text> to measure
+            chamber expansion, and an in-chamber{" "}
+            <Text {...b1Style}>pressure transducer</Text>. Additionally, the
+            fluid systems have a full suite of{" "}
+            <Text {...b1Style}>temperature</Text> and{" "}
+            <Text {...b1Style}>pressure sensors</Text>, and a{" "}
+            <Text {...b1Style}>load cell</Text> is used to measure thrust.
           </Text>
           <Text {...p2Style}>
-            A powerful data acquisition, control, and communication system
-            ensures high quality data collection and safe operation of the
-            engine and propellant system.
+            A powerful{" "}
+            <Text {...b2Style}>
+              data acquisition, control, and communication system
+            </Text>{" "}
+            ensures <Text {...b1Style}>high quality data collection</Text> and{" "}
+            <Text {...b1Style}>safe operation</Text> of the engine and
+            propellant system.
           </Text>
           <br />
           <SimpleGrid minChildWidth="392px" spacing="20px">
@@ -140,8 +176,11 @@ export default function Engine() {
             After our initial hot-fire, we&rsquo;ll continue to use Borealis as
             a research and development engine while we work on flightweight
             successors. Major experiments are slated to test and collect
-            extensive data on design variations for injectors, cooling systems,
-            propellant ratio, and more.
+            extensive data on design variations for{" "}
+            <Text {...emStyle}>injectors</Text>,{" "}
+            <Text {...emStyle}>cooling systems</Text>,{" "}
+            <Text {...emStyle}>propellant ratio</Text>,{" "}
+            <Text {...emStyle}>and more</Text>.
           </Text>
           <br />
           <Text {...p1Style}>
@@ -150,11 +189,11 @@ export default function Engine() {
           <br />
           <Text {...p1Style}>
             See if we already have answers in our{" "}
-            <Link {...linkStyle} fontSize="2xl" href="/mach-website/faq">
+            <Link {...linkStyle} href="/mach-website/faq">
               FAQ
             </Link>
             , or{" "}
-            <Link {...linkStyle} fontSize="2xl" href="/mach-website/contact">
+            <Link {...linkStyle} href="/mach-website/contact">
               contact us
             </Link>
             !

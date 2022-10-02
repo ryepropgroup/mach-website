@@ -26,13 +26,13 @@ export const h1Style: HeadingProps = {
   bgClip: "text",
   bgGradient: "linear(to-r, cyan.300 0%, yellow.500 25%)",
   fontSize: "4xl",
-  fontWeight: "bold",
+  fontWeight: "extrabold",
 };
 
 export const h2Style: HeadingProps = {
   color: "teal.300",
   fontSize: "3xl",
-  fontWeight: "bold",
+  fontWeight: "extrabold",
 };
 
 export const h3Style: HeadingProps = {
@@ -69,8 +69,9 @@ export const b2Style: TextProps = {
 };
 
 export const emStyle: TextProps = {
-  as: "span",
+  as: "em",
   color: "white",
+  fontStyle: "normal",
 };
 
 export const liStyle: ListItemProps = {
