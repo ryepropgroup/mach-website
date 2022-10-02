@@ -58,6 +58,21 @@ export const p2Style: TextProps = {
   marginBottom: "20px",
 };
 
+export const b1Style: TextProps = {
+  as: "b",
+  color: "white",
+};
+
+export const b2Style: TextProps = {
+  as: "b",
+  color: "teal.300",
+};
+
+export const emStyle: TextProps = {
+  as: "span",
+  color: "white",
+};
+
 export const liStyle: ListItemProps = {
   color: "gray.100",
   fontSize: "xl",
