@@ -7,7 +7,6 @@ import {
   b2Style,
   bgStyle,
   h1Style,
-  h2Style,
   linkStyle,
   p1Style,
   p2Style,
@@ -25,7 +24,7 @@ export default function Sponsors() {
           <br />
           <Text {...p1Style}>
             Without the genuine <Text {...b2Style}>intrigue</Text>,{" "}
-            <Text {...b2Style}>vision</Text>, and
+            <Text {...b2Style}>vision</Text>, and{" "}
             <Text {...b2Style}>generosity</Text> of{" "}
             <Text {...b1Style}>our sponsors</Text>,{" "}
             <Text {...b1Style}>we would not be where we are today.</Text>
