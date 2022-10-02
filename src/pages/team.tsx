@@ -7,6 +7,7 @@ import {
   Box,
   Center,
   Heading,
+  Link,
   List,
   ListIcon,
   ListItem,
@@ -20,17 +21,20 @@ import Navbar from "@/components/navbar";
 import SocialsFooter from "@/components/socialsFooter";
 import Header from "@/config";
 import {
+  b1Style,
+  b2Style,
   bgStyle,
+  em1Style,
   h1Style,
   h2Style,
   h3Style,
+  linkStyle,
   liStyle,
   p1Style,
   p2Style,
 } from "@/styles";
 
 export default function Team() {
-  /*TODO: SMALL STYLES*/
   return (
     <>
       <Header title="MACH :: Our Team" />
@@ -41,9 +45,12 @@ export default function Team() {
           <Heading {...h1Style}>Our Team</Heading>
           <br />
           <Text {...p1Style}>
-            MACH is divided into five subteams. Our technical subteams are
-            Combustion Dynamics, Propellant Management, and Transfer & Control,
-            supported by the Safety and Business Development subteams.
+            MACH is divided into five subteams. Our technical subteams are{" "}
+            <Text {...em1Style}>Combustion Dynamics</Text>,{" "}
+            <Text {...em1Style}>Propellant Management</Text>, and{" "}
+            <Text {...em1Style}>Transfer &amp; Control</Text>, supported by the{" "}
+            <Text {...em1Style}>Safety</Text> and{" "}
+            <Text {...em1Style}>Business Development</Text> subteams.
           </Text>
           <Text {...p1Style}>
             <br />
@@ -55,20 +62,33 @@ export default function Team() {
           </Text>
           <br />
           <Text {...p2Style}>
-            From a tiny group of students with a big project, we’ve grown to a
-            team of {/*TODO: BOLD THIS UNTIL END OF SENTENCE*/}over 70 active
-            members. Not only do we have a large number of engineering students
-            of every specialization, members from unexpected disciplines and
-            outside of TMU have also joined us along the way.
+            From a tiny group of students with a big project, we&rsquo;ve grown
+            to a team of <Text {...b1Style}>over 70 active members</Text>. Not
+            only do we have a large number of engineering students of every
+            specialization, members from unexpected disciplines and outside of
+            TMU have also joined us along the way.
           </Text>
-          <Text {...p2Style} fontWeight="bold">
+          <Text {...p2Style} {...b1Style}>
             Through early mornings, sleepless nights, and every heavily
-            caffeinated moment in between, {/*TODO:BOLD UNTIL FOR*/}a common
-            passion for rocketry has become so much more for everyone at MACH.
+            caffeinated moment in between,{" "}
+            <Text {...b2Style}>
+              a common passion for rocketry has become so much more
+            </Text>{" "}
+            for everyone at MACH.
           </Text>
-          <br />
-          <Heading {...h2Style}>Team Leads</Heading>
-          <br />
+          <Text {...p2Style}>
+            <br />
+          </Text>
+          <Heading
+            {...h2Style}
+            bgGradient="linear(to-r, cyan.300 0%, yellow.500 25%)"
+            bgClip="text"
+          >
+            Team Leads
+          </Heading>
+          <Text {...p2Style}>
+            <br />
+          </Text>
           <Center w="56vw">
             <SimpleGrid minChildWidth="200px" spacing="20px">
               <LeadCard name="Umar Shabbir" pos="Team Director">
@@ -97,7 +117,7 @@ export default function Team() {
               </LeadCard>
               <LeadCard
                 name="Georgia Jovanovic"
-                pos="Transfer & Control Hardware Lead"
+                pos="Transfer &amp; Control Hardware Lead"
               >
                 Georgia is a 5th year electrical engineering student set to
                 graduate in April 2023. Along with her passion for rocketry she
@@ -109,10 +129,11 @@ export default function Team() {
                 raccoons eating.
               </LeadCard>
               <LeadCard name="Laxan Puveendran" pos="Finance Lead">
-                Laxan is a 3rd year industrial engineering student. He’s the
-                finance lead for MACH, who’s worked on creating the team budget
-                and processing cheque reimbursements for team members. His
-                interests include playing soccer, gaming, and watching movies.
+                Laxan is a 3rd year industrial engineering student. He&rsquo;s
+                the finance lead for MACH, who&rsquo;s worked on creating the
+                team budget and processing cheque reimbursements for team
+                members. His interests include playing soccer, gaming, and
+                watching movies.
               </LeadCard>
             </SimpleGrid>
           </Center>
@@ -126,15 +147,19 @@ export default function Team() {
           </Heading>
           <br />
           <Text {...p2Style}>
-            {/*TODO: bold from 'experiential learning' to 'countless other' , then do turquoise + bold to the end*/}
             The development of the Borealis has been an incredible and ongoing
-            journey for all of us. Every subteam offers experiential learning,
-            industry knowledge, professional connections, and countless other
-            opportunities and experiences we’ve never found in our classes,
-            internships, or any other team.
+            journey for all of us. Every subteam offers{" "}
+            <Text {...b1Style}>
+              experiential learning, industry knowledge, professional
+              connections, and countless other{" "}
+              <Text {...b2Style}>
+                opportunities and experiences we&rsquo;ve never found in our
+                classes, internships, or any other team
+              </Text>
+            </Text>
+            .
           </Text>
           <Accordion allowMultiple defaultIndex={[-1]}>
-            {/*COMBUSTION DYNAMICS SECTION*/}
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <AccordionButton>
                 <Box>
@@ -163,7 +188,7 @@ export default function Team() {
                   {/*TODO: bold up until 'future engines'*/}Using calculations,
                   published references, and simulations, the Borealis was
                   meticulously designed, then redesigned, and redesigned, and
-                  redesigned… until it became the engine we have now.
+                  redesigned&hellip; until it became the engine we have now.
                 </Text>
                 <Text {...p2Style}>
                   Currently, the CD subteam is working on manufacturing the
@@ -175,15 +200,17 @@ export default function Team() {
                 </Text>
                 <Text {...p2Style}>
                   {/*TODO: turquoise from 'novel research' to 'design for manufacturing'*/}
-                  This subteam offers extensive experience in novel research,
-                  parametric design, finite element analysis & computational
-                  fluid dynamics, rapid prototyping, material science, industry
-                  practices, computer aided design, design for manufacturing,
-                  and much more.
+                  This subteam offers extensive experience in{" "}
+                  <Text {...em1Style}>
+                    novel research, parametric design, finite element analysis &
+                    computational fluid dynamics, rapid prototyping, material
+                    science, industry practices, computer aided design, design
+                    for manufacturing
+                  </Text>
+                  , and much more.
                 </Text>
               </AccordionPanel>
             </AccordionItem>
-            {/*PROPELLANT MANAGEMENT SECTION*/}
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <AccordionButton>
                 <Box>
@@ -209,13 +236,12 @@ export default function Team() {
               </AccordionButton>
               <AccordionPanel>
                 <Text {...p2Style}>
-                  {/*TODO: bold up until 'test stand systems'*/}Using extensive
-                  research, calculations, and hands-on experience, the PM
-                  subteam develops all the hardware used to directly support the
-                  engine. A robust and failsafe propellant system and other
-                  supporting ground infrastructure are absolutely critical to
-                  the safe and successful operation of Borealis and all
-                  subsequent engines.
+                  Using extensive research, calculations, and hands-on
+                  experience, the PM subteam develops all the hardware used to
+                  directly support the engine. A robust and failsafe propellant
+                  system and other supporting ground infrastructure are
+                  absolutely critical to the safe and successful operation of
+                  Borealis and all subsequent engines.
                 </Text>
                 <Text {...p2Style}>
                   Currently, the PM subteam is working on assembly, testing, and
@@ -228,16 +254,17 @@ export default function Team() {
                   develop structural tanks.
                 </Text>
                 <Text {...p2Style}>
-                  {/*TODO: turquoise from 'industry practices' to 'tool use'*/}
-                  This subteam offers extensive experience in industry
-                  practices, hydraulic & pneumatic systems, aerospace valves &
-                  actuators, finite element analysis & computational fluid
-                  dynamics, pressurized systems & procedure, tool use, and much
-                  more.
+                  This subteam offers extensive experience in{" "}
+                  <Text {...em1Style}>
+                    industry practices, hydraulic &amp; pneumatic systems,
+                    aerospace valves &amp; actuators, finite element analysis
+                    &amp; computational fluid dynamics, pressurized systems
+                    &amp; procedure, tool use
+                  </Text>
+                  , and much more.
                 </Text>
               </AccordionPanel>
             </AccordionItem>
-            {/*TRANSFER & CONTROL SECTION*/}
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <AccordionButton>
                 <Box>
@@ -246,7 +273,7 @@ export default function Team() {
                     bgGradient="linear(to-r, cyan.300 0%, orange.300 25%)"
                     bgClip="text"
                   >
-                    Transfer & Control
+                    Transfer &amp; Control
                   </Heading>
                   <Text
                     {...p2Style}
@@ -263,7 +290,6 @@ export default function Team() {
               </AccordionButton>
               <AccordionPanel>
                 <Text {...p2Style}>
-                  {/*TODO: bold from 'is responsible' to 'communication systems'*/}
                   Working alongside CD and PM, the T&C subteam designs all of
                   the extensive electrical hardware and software systems needed
                   for Borealis and future engines. A liquid rocket engine is an
@@ -282,13 +308,15 @@ export default function Team() {
                   avionics-integrated control systems after Borealis.
                 </Text>
                 <Text {...p2Style}>
-                  {/*TODO: turqouise from 'scientific data acquisition' to 'physical and radio communications'*/}
-                  This subteam offers extensive experience in scientific data
-                  acquisition, signal processing, sensor systems, aerospace
-                  hardware integration, industry communication standards,
-                  real-time control & telemetry, mission-critical systems,
-                  circuit & PCB design, physical & radio communications, and
-                  much more.
+                  This subteam offers extensive experience in{" "}
+                  <Text {...em1Style}>
+                    scientific data acquisition, signal processing, sensor
+                    systems, aerospace hardware integration, industry
+                    communication standards, real-time control &amp; telemetry,
+                    mission-critical systems, circuit &amp; PCB design, physical
+                    &amp; radio communications
+                  </Text>
+                  , and much more.
                 </Text>
               </AccordionPanel>
             </AccordionItem>
@@ -309,21 +337,21 @@ export default function Team() {
                     textAlign="left"
                   >
                     is responsible for risk assessment, documentation,
-                    cybersecurity, legal & controlled goods compliance, as well
-                    as training & supervision of our members on equipment,
-                    procedure, radio communications, first aid, and more.
+                    cybersecurity, legal &amp; controlled goods compliance, as
+                    well as training &amp; supervision of our members on
+                    equipment, procedure, radio communications, first aid, and
+                    more.
                   </Text>
                 </Box>
                 <AccordionIcon color="teal.300" />
               </AccordionButton>
               <AccordionPanel>
                 <Text {...p2Style}>
-                  {/*TODO: bold from start to 'first aid, and more.' */}The
-                  goals of this subteam are straightforward, but the tasks to
-                  accomplish them are expansive and ever-changing. Rocketry is a
-                  field with very high risks, and the Safety subteam is
-                  essential to minimize those risks and ensure MACH’s continual
-                  operation and compliance with industry standards.
+                  The goals of this subteam are straightforward, but the tasks
+                  to accomplish them are expansive and ever-changing. Rocketry
+                  is a field with very high risks, and the Safety subteam is
+                  essential to minimize those risks and ensure MACH&rsquo;s
+                  continual operation and compliance with industry standards.
                 </Text>
                 <Text {...p2Style}>
                   Currently, the Safety subteam is heavily involved in creating
@@ -334,12 +362,15 @@ export default function Team() {
                   for the Borealis and all future projects.
                 </Text>
                 <Text {...p2Style}>
-                  {/*TODO: turquoise from 'data modeling' to 'radio operations,'*/}
                   This subteam offers extensive experience in industry standard
-                  practices & tools in data modeling, risk management, standard
-                  operating procedures, logistics management, legal & CGP
-                  compliance, cybersecurity, first aid training, radio
-                  operations, and much more.
+                  practices &amp; tools in{" "}
+                  <Text {...em1Style}>
+                    data modeling, risk management, standard operating
+                    procedures, logistics management, legal &amp; CGP
+                    compliance, cybersecurity, first aid training, radio
+                    operations
+                  </Text>
+                  , and much more.
                 </Text>
               </AccordionPanel>
             </AccordionItem>
@@ -368,7 +399,6 @@ export default function Team() {
               </AccordionButton>
               <AccordionPanel>
                 <Text {...p2Style}>
-                  {/*TODO: bold from start to 'external relations for the team.'*/}{" "}
                   Rocketry is an extremely costly endeavor in time, money, and
                   talent without immediate potential for profit. The BizDev
                   subteam is indispensable to ensure MACH has the financial,
@@ -385,26 +415,37 @@ export default function Team() {
                   aerostructure integration and future engines.
                 </Text>
                 <Text {...p2Style}>
-                  {/*TODO: turqoise from 'project management' to 'research applications'*/}
-                  This subteam offers extensive experience in project
-                  management, technical communication, financial management,
-                  public outreach, startup fundraising, legal compliance,
-                  research applications, and much more.
+                  This subteam offers extensive experience in{" "}
+                  <Text {...em1Style}>
+                    project management, technical communication, financial
+                    management, public outreach, startup fundraising, legal
+                    compliance, research applications
+                  </Text>
+                  , and much more.
                 </Text>
               </AccordionPanel>
             </AccordionItem>
           </Accordion>
           {/*JOIN US SECTION*/}
-          <Heading {...h1Style} fontSize="40px">
+          <Heading {...h1Style} fontSize="3xl">
             Join Us
           </Heading>
           <br />
           <Text {...p2Style}>
-            {/*TODO: Link for contact and FAQ*/}
-            If what we’re doing sounds awesome and you’d like to join MACH,
-            please reach out to us through the contact form. Please also check
-            out our FAQ to learn more about what we’re doing and what to expect
-            as part of the team.
+            If what we&rsquo;re doing sounds awesome and you&rsquo;d like to
+            join MACH, please reach out to us through the{" "}
+            <Link {...linkStyle} href="/mach-website/contact">
+              contact
+            </Link>{" "}
+            form.
+          </Text>
+          <Text {...p2Style}>
+            Please also check out our{" "}
+            <Link {...linkStyle} href="/mach-website/faq">
+              FAQ
+            </Link>{" "}
+            to learn more about what we&rsquo;re doing and what to expect as
+            part of the team.
           </Text>
           <Box bg="gray.900" borderRadius="lg">
             <Box m="1%">
@@ -429,7 +470,7 @@ export default function Team() {
                 </ListItem>
                 <ListItem {...liStyle}>
                   <ListIcon as={FaRocket} color="teal.300" />
-                  Safety & bizdev pls
+                  Safety &amp; bizdev pls
                 </ListItem>
               </List>
             </Box>

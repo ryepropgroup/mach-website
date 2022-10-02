@@ -68,7 +68,13 @@ export const b2Style: TextProps = {
   color: "teal.300",
 };
 
-export const emStyle: TextProps = {
+export const em1Style: TextProps = {
+  as: "em",
+  color: "teal.300",
+  fontStyle: "normal",
+};
+
+export const em2Style: TextProps = {
   as: "em",
   color: "white",
   fontStyle: "normal",

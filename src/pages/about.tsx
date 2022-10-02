@@ -17,7 +17,7 @@ import {
   b1Style,
   b2Style,
   bgStyle,
-  emStyle,
+  em2Style,
   h1Style,
   linkStyle,
   liStyle,
@@ -41,9 +41,9 @@ export default function About() {
             yerson <Text {...b1Style}>P</Text>
             ropulsion <Text {...b1Style}>G</Text>
             roup, with the goal of building a{" "}
-            <Text {...emStyle}>liquid engine</Text> for a suborbital sounding
+            <Text {...em2Style}>liquid engine</Text> for a suborbital sounding
             rocket. We are aiming to be one of the{" "}
-            <Text {...emStyle}>first teams in Canada</Text> to test and fly a
+            <Text {...em2Style}>first teams in Canada</Text> to test and fly a
             Student Researched and Developed bipropellant{" "}
             <Text {...b1Style}>liquid rocket engine</Text>.
           </Text>
@@ -51,9 +51,9 @@ export default function About() {
           <Text {...p2Style}>
             Our first engine and its supporting systems - the{" "}
             <Text {...b2Style}>Borealis</Text>, has{" "}
-            <Text {...emStyle}>completed the preliminary design phase</Text> and
-            is currently being{" "}
-            <Text {...emStyle}>manufactured for testing</Text>.
+            <Text {...em2Style}>completed the preliminary design phase</Text>{" "}
+            and is currently being{" "}
+            <Text {...em2Style}>manufactured for testing</Text>.
           </Text>
           <Text {...p2Style}>
             We will be conducting a series of tests in the next several months,
@@ -65,7 +65,7 @@ export default function About() {
             design methodology to develop a{" "}
             <Text {...b1Style}>flightweight engine and propellant system</Text>,
             then integrate it into an airframe for{" "}
-            <Text {...emStyle}>flight testing</Text>.
+            <Text {...em2Style}>flight testing</Text>.
           </Text>
           <br />
           <Text {...p1Style}>
@@ -79,18 +79,18 @@ export default function About() {
           <Text {...p1Style}>
             Our team takes on one of the{" "}
             <Text {...b2Style}>most challenging projects</Text> in the aerospace
-            sector, offering a <Text {...emStyle}>unique</Text> opportunity to
+            sector, offering a <Text {...em2Style}>unique</Text> opportunity to
             participate in a <Text {...b1Style}>research</Text>,{" "}
             <Text {...b1Style}>design</Text>,{" "}
             <Text {...b1Style}>manufacturing</Text>, and{" "}
             <Text {...b1Style}>testing</Text> process rarely found outside of{" "}
-            <Text {...emStyle}>cutting-edge space industry</Text>.
+            <Text {...em2Style}>cutting-edge space industry</Text>.
           </Text>
           <br />
           <Text {...p2Style}>
             In addition to the constant iterations of our liquid engine design,
             our team has accomplished a great deal within the{" "}
-            <Text {...emStyle}>Canadian rocketry community</Text>. Despite the
+            <Text {...em2Style}>Canadian rocketry community</Text>. Despite the
             difficulties of the pandemic over much of the past several years,
             our team members have:
           </Text>
@@ -98,7 +98,7 @@ export default function About() {
             <ListItem {...liStyle}>
               <ListIcon as={FaRocket} color="teal.300" />
               Designed, produced, and <Text {...b1Style}>hot-fired</Text> a{" "}
-              <Text {...emStyle}>resin-printed propane engine</Text>.
+              <Text {...em2Style}>resin-printed propane engine</Text>.
             </ListItem>
             <ListItem {...liStyle}>
               <ListIcon as={FaRocket} color="teal.300" />
@@ -123,8 +123,8 @@ export default function About() {
               >
                 research paper
               </Link>{" "}
-              on our <Text {...emStyle}>design methodology</Text> at the 2022{" "}
-              <Text {...emStyle}>CI/CS Combustion Conference</Text>.
+              on our <Text {...em2Style}>design methodology</Text> at the 2022{" "}
+              <Text {...em2Style}>CI/CS Combustion Conference</Text>.
             </ListItem>
             <ListItem {...liStyle}>
               <ListIcon as={FaRocket} color="teal.300" />
@@ -137,7 +137,7 @@ export default function About() {
                 Launch Canada 2022
               </Link>
               , the{" "}
-              <Text {...emStyle}>
+              <Text {...em2Style}>
                 first student rocketry competition ever held in Canada
               </Text>
               .
@@ -148,8 +148,8 @@ export default function About() {
                 &ldquo;Rocketry Bootcamp&rdquo;
               </Text>{" "}
               for our team as well as the TMU engineering community, a{" "}
-              <Text {...emStyle}>workshop series</Text> on{" "}
-              <Text {...emStyle}>rocket engine design and manufacturing</Text>.
+              <Text {...em2Style}>workshop series</Text> on{" "}
+              <Text {...em2Style}>rocket engine design and manufacturing</Text>.
             </ListItem>
           </List>
         </Box>

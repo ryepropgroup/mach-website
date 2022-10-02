@@ -24,7 +24,7 @@ import {
   b1Style,
   b2Style,
   bgStyle,
-  emStyle,
+  em2Style,
   h1Style,
   linkStyle,
   p1Style,
@@ -55,7 +55,7 @@ export default function Engine() {
           <br />
           <Text {...p1Style}>
             The <Text {...b2Style}>Borealis</Text> is a{" "}
-            <Text {...emStyle}>
+            <Text {...em2Style}>
               pressure-fed, bipropellant, semi-regeneratively cooled <br />
             </Text>{" "}
             <Text
@@ -71,7 +71,7 @@ export default function Engine() {
             Borealis is a{" "}
             <Text {...b1Style}>static instrumentation engine</Text>, collecting
             high-quality data for{" "}
-            <Text {...emStyle}>
+            <Text {...em2Style}>
               design validation, combustion research, and future development.
             </Text>
           </Text>
@@ -112,7 +112,7 @@ export default function Engine() {
           </Box>
           <br />
           <Text {...p2Style}>
-            Borealis is <Text {...emStyle}>fueled by</Text>{" "}
+            Borealis is <Text {...em2Style}>fueled by</Text>{" "}
             <Text {...b1Style}>ethanol</Text> and{" "}
             <Text {...b1Style}>nitrous oxide</Text>, a combination we&rsquo;ve
             been calling &ldquo;
@@ -177,10 +177,10 @@ export default function Engine() {
             a research and development engine while we work on flightweight
             successors. Major experiments are slated to test and collect
             extensive data on design variations for{" "}
-            <Text {...emStyle}>injectors</Text>,{" "}
-            <Text {...emStyle}>cooling systems</Text>,{" "}
-            <Text {...emStyle}>propellant ratio</Text>,{" "}
-            <Text {...emStyle}>and more</Text>.
+            <Text {...em2Style}>injectors</Text>,{" "}
+            <Text {...em2Style}>cooling systems</Text>,{" "}
+            <Text {...em2Style}>propellant ratio</Text>,{" "}
+            <Text {...em2Style}>and more</Text>.
           </Text>
           <br />
           <Text {...p1Style}>
