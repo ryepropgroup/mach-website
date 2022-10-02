@@ -14,7 +14,10 @@ import Navbar from "@/components/navbar";
 import SocialsFooter from "@/components/socialsFooter";
 import Header from "@/config";
 import {
+  b1Style,
+  b2Style,
   bgStyle,
+  emStyle,
   h1Style,
   linkStyle,
   liStyle,
@@ -33,68 +36,69 @@ export default function About() {
           <Heading {...h1Style}>About Us</Heading>
           <br />
           <Text {...p1Style}>
-            <Text as="span" color="teal.300">
-              MACH
-            </Text>{" "}
-            was founded in 2017 as <Text as="b">R</Text>yerson{" "}
-            <Text as="b">P</Text>ropulsion <Text as="b">G</Text>roup, with the
-            goal of building a liquid engine for a suborbital sounding rocket.
-            We are aiming to be one of the first teams in Canada to test and fly
-            a Student Researched and Developed bipropellant{" "}
-            <Text as="b">liquid rocket engine</Text>.
+            <Text {...b2Style}>MACH</Text> was founded in 2017 as{" "}
+            <Text {...b1Style}>R</Text>
+            yerson <Text {...b1Style}>P</Text>
+            ropulsion <Text {...b1Style}>G</Text>
+            roup, with the goal of building a{" "}
+            <Text {...emStyle}>liquid engine</Text> for a suborbital sounding
+            rocket. We are aiming to be one of the{" "}
+            <Text {...emStyle}>first teams in Canada</Text> to test and fly a
+            Student Researched and Developed bipropellant{" "}
+            <Text {...b1Style}>liquid rocket engine</Text>.
           </Text>
           <br />
           <Text {...p2Style}>
             Our first engine and its supporting systems - the{" "}
-            <Text as="span" color="teal.300">
-              Borealis
-            </Text>
-            , has completed the preliminary design phase and is currently being
-            manufactured for testing.
+            <Text {...b2Style}>Borealis</Text>, has{" "}
+            <Text {...emStyle}>completed the preliminary design phase</Text> and
+            is currently being{" "}
+            <Text {...emStyle}>manufactured for testing</Text>.
           </Text>
           <Text {...p2Style}>
             We will be conducting a series of tests in the next several months,
             working towards a{" "}
-            <Text as="b">static hot-fire within the year</Text>.
+            <Text {...b1Style}>static hot-fire within the year</Text>.
           </Text>
           <Text {...p2Style}>
             Using the experience and data from Borealis, we will refine our
             design methodology to develop a{" "}
-            <Text as="b">flightweight engine and propellant system</Text>, then
-            integrate it into an airframe for flight testing.
+            <Text {...b1Style}>flightweight engine and propellant system</Text>,
+            then integrate it into an airframe for{" "}
+            <Text {...emStyle}>flight testing</Text>.
           </Text>
           <br />
           <Text {...p1Style}>
             As a student design team, MACH offers more than just yearly
             competitions. Our primary goal is to provide a{" "}
-            <Text as="b">unique and challenging</Text>{" "}
-            <Text as="span" color="teal.300" font-weight={700}>
-              real-world engineering experience
-            </Text>{" "}
-            to our members.
+            <Text {...b1Style}>unique and challenging</Text>{" "}
+            <Text {...b2Style}>real-world engineering experience</Text> to our
+            members.
           </Text>
+          <br />
           <Text {...p1Style}>
             Our team takes on one of the{" "}
-            <Text as="span" color="teal.300" font-weight={700}>
-              most challenging projects
-            </Text>{" "}
-            in the aerospace sector, offering a unique opportunity to
-            participate in a <Text as="b">research</Text>,{" "}
-            <Text as="b">design</Text>, <Text as="b">manufacturing</Text>, and{" "}
-            <Text as="b">testing</Text> process rarely found outside of
-            cutting-edge space industry.
+            <Text {...b2Style}>most challenging projects</Text> in the aerospace
+            sector, offering a <Text {...emStyle}>unique</Text> opportunity to
+            participate in a <Text {...b1Style}>research</Text>,{" "}
+            <Text {...b1Style}>design</Text>,{" "}
+            <Text {...b1Style}>manufacturing</Text>, and{" "}
+            <Text {...b1Style}>testing</Text> process rarely found outside of{" "}
+            <Text {...emStyle}>cutting-edge space industry</Text>.
           </Text>
           <br />
           <Text {...p2Style}>
             In addition to the constant iterations of our liquid engine design,
-            our team has accomplished a great deal within the Canadian rocketry
-            community. Despite the difficulties of the pandemic over much of the
-            past several years, our team members have:
+            our team has accomplished a great deal within the{" "}
+            <Text {...emStyle}>Canadian rocketry community</Text>. Despite the
+            difficulties of the pandemic over much of the past several years,
+            our team members have:
           </Text>
           <List>
             <ListItem {...liStyle}>
               <ListIcon as={FaRocket} color="teal.300" />
-              Designed, produced, and hot-fired a resin-printed propane engine.
+              Designed, produced, and <Text {...b1Style}>hot-fired</Text> a{" "}
+              <Text {...emStyle}>resin-printed propane engine</Text>.
             </ListItem>
             <ListItem {...liStyle}>
               <ListIcon as={FaRocket} color="teal.300" />
@@ -106,8 +110,8 @@ export default function About() {
               >
                 hot-fire test
               </Link>{" "}
-              of a Rocketdyne LR-101 liquid engine, which helped bring the
-              Mercury astronauts to space.
+              of a <Text {...b1Style}>Rocketdyne LR-101 liquid engine</Text>,
+              which helped bring the Mercury astronauts to space.
             </ListItem>
             <ListItem {...liStyle}>
               <ListIcon as={FaRocket} color="teal.300" />
@@ -119,7 +123,8 @@ export default function About() {
               >
                 research paper
               </Link>{" "}
-              on our design methodology at the 2022 CI/CS Combustion Conference.
+              on our <Text {...emStyle}>design methodology</Text> at the 2022{" "}
+              <Text {...emStyle}>CI/CS Combustion Conference</Text>.
             </ListItem>
             <ListItem {...liStyle}>
               <ListIcon as={FaRocket} color="teal.300" />
@@ -131,13 +136,20 @@ export default function About() {
               >
                 Launch Canada 2022
               </Link>
-              , the first student rocketry competition ever held in Canada.
+              , the{" "}
+              <Text {...emStyle}>
+                first student rocketry competition ever held in Canada
+              </Text>
+              .
             </ListItem>
             <ListItem {...liStyle}>
               <ListIcon as={FaRocket} color="teal.300" />
-              Hosted <Text as="b">“Rocketry Bootcamp”</Text> for our team as
-              well as the TMU engineering community, a workshop series on rocket
-              engine design and manufacturing.
+              Hosted <Text {...b1Style}>
+                &ldquo;Rocketry Bootcamp&rdquo;
+              </Text>{" "}
+              for our team as well as the TMU engineering community, a{" "}
+              <Text {...emStyle}>workshop series</Text> on{" "}
+              <Text {...emStyle}>rocket engine design and manufacturing</Text>.
             </ListItem>
           </List>
         </Box>
