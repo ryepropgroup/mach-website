@@ -119,8 +119,8 @@ export default function Sponsors() {
               src="/mach-website/img/sponsors/Red_Rocket_Coffee.png"
             />
             <SponsorCard
-              alt="Altair One"
-              href="https://altairone.com/Marketplace"
+              alt="Altair"
+              href="https://altair.com"
               src="/mach-website/img/sponsors/Altair.png"
             />
             <SponsorCard

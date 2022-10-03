@@ -135,7 +135,7 @@ export default function Team() {
               systems. Along with her passion for rocketry she enjoys sailing
               and a few other unconventional hobbies!
             </LeadCard>
-            <LeadCard name="Jack Sinclair" pos="Safety Officer">
+            <LeadCard name="Jack Sinclair" pos="Safety Lead">
               Jack is a 1st year Aerospace Engineering student. He is
               MACH&rsquo;s Safety Officer and is working on MACH&rsquo;s Risk
               Assessments & Risk Modeling, Radio Communications Network, Joint
@@ -364,7 +364,8 @@ export default function Team() {
                   to accomplish them are expansive and ever-changing. Rocketry
                   is a field with very high risks, and the Safety subteam is
                   essential to minimize those risks and ensure MACH&rsquo;s
-                  continual operation and compliance with industry standards.
+                  continual operation and compliance with international
+                  standards.
                 </Text>
                 <Text {...p2Style}>
                   Currently, the Safety subteam is heavily involved in creating
@@ -378,7 +379,7 @@ export default function Team() {
                   This subteam offers extensive experience in industry standard
                   practices &amp; tools in{" "}
                   <Text {...em1Style}>
-                    data modeling, risk management, standard operating
+                    risk management, reliability modeling, standard operating
                     procedures, logistics management, legal &amp; CGP
                     compliance, cybersecurity, first aid training, radio
                     operations

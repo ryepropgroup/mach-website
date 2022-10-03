@@ -537,7 +537,7 @@ export default function FAQ() {
               <AccordionPanel>
                 <Text {...p2Style}>
                   Each week, each subteam conducts 1-hour meetings during the
-                  weekdays; we also host 2-hour general meetings with all
+                  weekdays; we also host 3-hour general meetings with all
                   subteams every weekend. Additionally, team members are
                   expected to work on their tasks for{" "}
                   <Text {...b1Style}>several hours</Text> outside of the weekly

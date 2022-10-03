@@ -12,7 +12,7 @@ export default function SocialsFooter() {
           icon={<AiOutlineInstagram size="50px" />}
         />
       </Link>
-      <Link mx="0.5%" href="https://www.linkedin.com/company/rupropulsion/">
+      <Link mx="0.5%" href="https://ca.linkedin.com/company/rupropulsion">
         <IconButton
           color="white"
           bg="black"
