@@ -46,6 +46,7 @@ export default function Team() {
           <br />
           <Text {...p1Style}>
             MACH is divided into five subteams. Our technical subteams are{" "}
+            <br />
             <Text {...em1Style}>Combustion Dynamics</Text>,{" "}
             <Text {...em1Style}>Propellant Management</Text>, and{" "}
             <Text {...em1Style}>Transfer &amp; Control</Text>, supported by the{" "}
@@ -395,7 +396,6 @@ export default function Team() {
                     external relations for the team.
                   </Text>
                 </Box>
-                <AccordionIcon color="teal.300" />
               </AccordionButton>
               <AccordionPanel>
                 <Text {...p2Style}>

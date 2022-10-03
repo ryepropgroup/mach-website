@@ -72,17 +72,16 @@ export default function Engine() {
             <Text {...b1Style}>static instrumentation engine</Text>, collecting
             high-quality data for{" "}
             <Text {...em2Style}>
+              <br />
               design validation, combustion research, and future development.
             </Text>
           </Text>
           <br />
-          <Box bg="gray.900" rounded="lg">
-            <Image
-              alt="Sectioned render of the Borealis Engine"
-              rounded="lg"
-              src="/mach-website/img/engine/Engine_Sectioned_Render.png"
-            />
-          </Box>
+          <Image
+            alt="Sectioned render of the Borealis Engine"
+            rounded="lg"
+            src="/mach-website/img/engine/Engine_Sectioned_Render.png"
+          />
           <br />
           <Heading {...h1Style} fontSize="40px">
             Design Specifications
@@ -149,27 +148,21 @@ export default function Engine() {
           </Text>
           <br />
           <SimpleGrid minChildWidth="392px" spacing="20px">
-            <Box bg="gray.900" rounded="lg">
-              <Image
-                alt="Instrumentation schematic of the Borealis Engine"
-                rounded="lg"
-                src="/mach-website/img/engine/Instrumentation_Schematic.png"
-              />
-            </Box>
-            <Box bg="gray.900" rounded="lg">
-              <Image
-                alt="Piping and instrumentation diagram of the Borealis engine"
-                rounded="lg"
-                src="/mach-website/img/engine/PM_PID_V3.2_Compacted.png"
-              />
-            </Box>
-            <Box bg="gray.900" rounded="lg">
-              <Image
-                alt="Compacted block diagram of the Borealis Engine"
-                rounded="lg"
-                src="/mach-website/img/engine/TC_Block_Diagram_Compacted.png"
-              />
-            </Box>
+            <Image
+              alt="Instrumentation schematic of the Borealis Engine"
+              rounded="lg"
+              src="/mach-website/img/engine/Instrumentation_Schematic.png"
+            />
+            <Image
+              alt="Piping and instrumentation diagram of the Borealis engine"
+              rounded="lg"
+              src="/mach-website/img/engine/PM_PID_V3.2_Compacted.png"
+            />
+            <Image
+              alt="Compacted block diagram of the Borealis Engine"
+              rounded="lg"
+              src="/mach-website/img/engine/TC_Block_Diagram_Compacted.png"
+            />
           </SimpleGrid>
           <br />
           <Text {...p2Style}>

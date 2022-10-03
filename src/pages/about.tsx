@@ -40,10 +40,14 @@ export default function About() {
             <Text {...b1Style}>R</Text>
             yerson <Text {...b1Style}>P</Text>
             ropulsion <Text {...b1Style}>G</Text>
-            roup, with the goal of building a{" "}
+            roup,
+            <br /> with the goal of building a{" "}
             <Text {...em2Style}>liquid engine</Text> for a suborbital sounding
-            rocket. We are aiming to be one of the{" "}
+            rocket.
+            <br />
+            We are aiming to be one of the{" "}
             <Text {...em2Style}>first teams in Canada</Text> to test and fly a
+            <br />
             Student Researched and Developed bipropellant{" "}
             <Text {...b1Style}>liquid rocket engine</Text>.
           </Text>
@@ -105,7 +109,7 @@ export default function About() {
               Participated in the setup and{" "}
               <Link
                 {...linkStyle}
-                href="/mach-website/uploadthestupidvideo"
+                href="https://www.youtube.com/watch?v=rvTrceeJUlc"
                 isExternal
               >
                 hot-fire test
@@ -118,7 +122,7 @@ export default function About() {
               Published and presented a{" "}
               <Link
                 {...linkStyle}
-                href="/mach-website/uploadresearchpaper"
+                href="/mach-website/doc/Nitrous Oxide Ethanol Bi-Propellant Rocket Engine Design Process FinalPaper.pdf"
                 isExternal
               >
                 research paper

@@ -19,14 +19,14 @@ export default function Sponsors() {
       <Box {...bgStyle} bg="black" />
       <Navbar />
       <Center>
-        <Box w="64vw">
+        <Box w="67vw">
           <Heading {...h1Style}>Our Sponsors</Heading>
           <br />
           <Text {...p1Style}>
             Without the genuine <Text {...b2Style}>intrigue</Text>,{" "}
             <Text {...b2Style}>vision</Text>, and{" "}
             <Text {...b2Style}>generosity</Text> of{" "}
-            <Text {...b1Style}>our sponsors</Text>,{" "}
+            <Text {...b1Style}>our sponsors</Text>,<br />
             <Text {...b1Style}>we would not be where we are today.</Text>
           </Text>
           <Text {...p1Style}>
@@ -35,6 +35,7 @@ export default function Sponsors() {
           <Text {...p1Style}>
             As one of the <Text {...b1Style}>youngest</Text> Canadian rocketry
             teams with one of the <Text {...b1Style}>hardest</Text> projects,
+            <br />
             MACH&rsquo;s progress is a testament to the sponsors{" "}
             <Text {...b2Style}>making it all happen</Text>.
           </Text>
