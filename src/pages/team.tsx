@@ -482,8 +482,7 @@ export default function Team() {
                 </ListItem>
                 <ListItem {...liStyle} ml="2.5%">
                   <ListIcon as={FaRocket} color="teal.300" />
-                  Preferred specialization in frontend UI/UX design and/or
-                  Next.js
+                  Preferred specialization in UI/UX design and/or Next.js
                 </ListItem>
                 <ListItem {...liStyle}>
                   <ListIcon as={FaRocket} color="teal.300" />

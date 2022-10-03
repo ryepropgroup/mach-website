@@ -1,6 +1,8 @@
 import {
   Box,
   Center,
+  Grid,
+  GridItem,
   Heading,
   Image,
   Link,
@@ -164,6 +166,33 @@ export default function Engine() {
               src="/mach-website/img/engine/TC_Block_Diagram_Compacted.png"
             />
           </SimpleGrid>
+          <Grid
+            gap="1vw"
+            templateRows="repeat(2, 1fr)"
+            templateColumns="repeat(3, 1fr)"
+          >
+            <GridItem w="42.75vw" colSpan={1} rowSpan={2}>
+              <Image
+                alt="Engine photo"
+                rounded="lg"
+                src="/mach-website/img/photos/DSC9101.jpg"
+              />
+            </GridItem>
+            <GridItem colSpan={2} rowSpan={1}>
+              <Image
+                alt="Engine photo"
+                rounded="lg"
+                src="/mach-website/img/photos/DSC7694.jpg"
+              />
+            </GridItem>
+            <GridItem colSpan={2} rowSpan={1}>
+              <Image
+                alt="Engine photo"
+                rounded="lg"
+                src="/mach-website/img/photos/DSC7686.jpg"
+              />
+            </GridItem>
+          </Grid>
           <br />
           <Text {...p2Style}>
             After our initial hot-fire, we&rsquo;ll continue to use Borealis as

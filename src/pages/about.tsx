@@ -1,7 +1,10 @@
 import {
   Box,
   Center,
+  Grid,
+  GridItem,
   Heading,
+  Image,
   Link,
   List,
   ListIcon,
@@ -52,6 +55,12 @@ export default function About() {
             <Text {...b1Style}>liquid rocket engine</Text>.
           </Text>
           <br />
+          <Image
+            alt="Team photo"
+            rounded="lg"
+            src="/mach-website/img/photos/DSC7741.jpg"
+          />
+          <br />
           <Text {...p2Style}>
             Our first engine and its supporting systems - the{" "}
             <Text {...b2Style}>Borealis</Text>, has{" "}
@@ -72,6 +81,34 @@ export default function About() {
             <Text {...em2Style}>flight testing</Text>.
           </Text>
           <br />
+          <Grid
+            gap="1vw"
+            templateRows="repeat(2, 1fr)"
+            templateColumns="repeat(3, 1fr)"
+          >
+            <GridItem w="43.75vw" colSpan={1} rowSpan={2}>
+              <Image
+                alt="Team photo"
+                rounded="lg"
+                src="/mach-website/img/photos/DSC8469.jpg"
+              />
+            </GridItem>
+            <GridItem colSpan={2} rowSpan={1}>
+              <Image
+                alt="Team photo"
+                rounded="lg"
+                src="/mach-website/img/photos/DSC5339.jpg"
+              />
+            </GridItem>
+            <GridItem colSpan={2} rowSpan={1}>
+              <Image
+                alt="Team photo"
+                rounded="lg"
+                src="/mach-website/img/photos/DSC0950.jpg"
+              />
+            </GridItem>
+          </Grid>
+          <br />
           <Text {...p1Style}>
             As a student design team, MACH offers more than just yearly
             competitions. Our primary goal is to provide a{" "}
@@ -90,6 +127,27 @@ export default function About() {
             <Text {...b1Style}>testing</Text> process rarely found outside of{" "}
             <Text {...em2Style}>cutting-edge space industry</Text>.
           </Text>
+          <br />
+          <Grid
+            gap="1vw"
+            templateRows="repeat(1, 1fr)"
+            templateColumns="repeat(2, 1fr)"
+          >
+            <GridItem w="31.5vw" colSpan={1} rowSpan={1}>
+              <Image
+                alt="Team photo"
+                rounded="lg"
+                src="/mach-website/img/photos/DSC7682.jpg"
+              />
+            </GridItem>
+            <GridItem colSpan={1} rowSpan={1}>
+              <Image
+                alt="Team photo"
+                rounded="lg"
+                src="/mach-website/img/photos/DSC8908.jpg"
+              />
+            </GridItem>
+          </Grid>
           <br />
           <Text {...p2Style}>
             In addition to the constant iterations of our liquid engine design,
@@ -156,6 +214,55 @@ export default function About() {
               <Text {...em2Style}>rocket engine design and manufacturing</Text>.
             </ListItem>
           </List>
+          <br />
+          <Grid
+            gap="1vw"
+            templateRows="repeat(2, 1fr)"
+            templateColumns="repeat(3, 1fr)"
+          >
+            <GridItem w="41.375vw" colSpan={1} rowSpan={2}>
+              <Image
+                alt="Team photo"
+                rounded="lg"
+                src="/mach-website/img/photos/IMG0044.jpg"
+              />
+            </GridItem>
+            <GridItem colSpan={2} rowSpan={1}>
+              <Image
+                alt="Team photo"
+                rounded="lg"
+                src="/mach-website/img/photos/IMG0043.jpg"
+              />
+            </GridItem>
+            <GridItem colSpan={2} rowSpan={1}>
+              <Image
+                alt="Team photo"
+                rounded="lg"
+                src="/mach-website/img/photos/DSC4369.jpg"
+              />
+            </GridItem>
+          </Grid>
+          <Grid
+            gap="1vw"
+            templateRows="repeat(1, 1fr)"
+            templateColumns="repeat(2, 1fr)"
+          >
+            <GridItem w="33.375vw" colSpan={1} rowSpan={1}>
+              <Image
+                alt="Team photo"
+                rounded="lg"
+                src="/mach-website/img/photos/DSC6345.jpg"
+              />
+            </GridItem>
+            <GridItem colSpan={1} rowSpan={1}>
+              <Image
+                alt="Team photo"
+                rounded="lg"
+                src="/mach-website/img/photos/VC1922.jpg"
+              />
+            </GridItem>
+          </Grid>
+          <br />
         </Box>
       </Center>
       <SocialsFooter />

@@ -1,6 +1,7 @@
-import { Box, Center, Heading, Link, Text } from "@chakra-ui/react";
+import { Box, Center, Heading, Link, SimpleGrid, Text } from "@chakra-ui/react";
 
 import Navbar from "@/components/navbar";
+import SponsorCard from "@/components/sponsorCard";
 import Header from "@/config";
 import {
   b1Style,
@@ -81,8 +82,66 @@ export default function Sponsors() {
             Partners
           </Heading>
           <br />
+          <SimpleGrid minChildWidth="400px" spacing="20px">
+            <SponsorCard
+              alt="Toronto Metropolitan University (TMU)"
+              href="https://www.torontomu.ca/"
+              src="/mach-website/img/sponsors/TMU.png"
+            />
+            <SponsorCard
+              alt="Metropolitan Undergraduate Engineering Society (MUES)"
+              href="https://www.mues.ca/"
+              src="/mach-website/img/sponsors/MUES.png"
+            />
+            <SponsorCard
+              alt="Design Fabrication Zone (DFZ)"
+              href="https://www.torontomu.ca/zone-learning/design-fabrication-zone/"
+              src="/mach-website/img/sponsors/DFZ.png"
+            />
+            <SponsorCard
+              alt="Launch Canada"
+              href="http://www.launchcanada.org/"
+              src="/mach-website/img/sponsors/Launch_Canada.png"
+            />
+            <SponsorCard
+              alt="Swagelok Central Ontario and Atlantic Canada"
+              href="https://centralontario.swagelok.com/"
+              src="/mach-website/img/sponsors/Swagelok.png"
+            />
+            <SponsorCard
+              alt="Megapro Tools"
+              href="https://megaprotools.com/"
+              src="/mach-website/img/sponsors/Megapro.png"
+            />
+            <SponsorCard
+              alt="Red Rocket Coffee"
+              href="https://www.shopredrocketcoffee.com/"
+              src="/mach-website/img/sponsors/Red_Rocket_Coffee.png"
+            />
+            <SponsorCard
+              alt="Altair One"
+              href="https://altairone.com/Marketplace"
+              src="/mach-website/img/sponsors/Altair.png"
+            />
+            <SponsorCard
+              alt="Solidworks"
+              href="https://www.solidworks.com/"
+              src="/mach-website/img/sponsors/Solidworks.png"
+            />
+            <SponsorCard
+              alt="Stein Industries Inc."
+              href="https://steinindustriesinc.com/"
+              src="/mach-website/img/sponsors/Stein.png"
+            />
+            <SponsorCard
+              alt="TeXtreme"
+              href="https://www.textreme.com/"
+              src="/mach-website/img/sponsors/TeXtreme.png"
+            />
+          </SimpleGrid>
         </Box>
       </Center>
+      <br />
     </>
   );
 }
