@@ -24,13 +24,13 @@ export default function Header({ title = titleDefault }) {
         <meta name="keywords" content={keywords.join(",")} />
         <meta name="robots" content="index,follow" />
         <meta name="distribution" content="web" />
-        {/* 
+        {/*
         Facebook Open Graph meta tags
         documentation: https://developers.facebook.com/docs/sharing/opengraph */}
         <meta name="og:title" content={title} />
         <meta name="og:type" content="site" />
         <meta name="og:url" content={url} />
-        <meta name="og:image" content={"/mach-website/icons/share.png"} />
+        <meta name="og:image" content={"/mach-website/icons/share.gif"} />
         <meta name="og:site_name" content={title} />
         <meta name="og:description" content={description} />
 

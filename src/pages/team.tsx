@@ -90,54 +90,66 @@ export default function Team() {
           <Text {...p2Style}>
             <br />
           </Text>
-          <Center w="56vw">
-            <SimpleGrid minChildWidth="200px" spacing="20px">
-              <LeadCard name="Umar Shabbir" pos="Team Director">
-                As a 4th year aerospace engineering student, Umar has been lucky
-                enough to work alongside leading industry professionals in the
-                world of rocketry during his undergrad! Besides a love for
-                anything combustible, he also loves photography, weird foods,
-                and fat cats.
-              </LeadCard>
-              <LeadCard name="Yiwei Luo" pos="Combustion Dynamics Lead">
-                A 4th year aerospace engineering student and lifelong enthusiast
-                of anything that flies. He has far too many hobbies and not
-                enough time, but tries to make some stuff and write some stuff.
-              </LeadCard>
-              <LeadCard name="Orion Moore" pos="Combustion Dynamics Lead?">
-                Write your bio already!!!!!!!!!!
-              </LeadCard>
-              <LeadCard name="Shivesh Maraj" pos="Propellant Management Lead">
-                Shivesh is a 3rd year aerospace engineering student. In addition
-                to his interests in space exploration and rocketry, he is an
-                avid golfer and a self-proclaimed amateur DJ.
-              </LeadCard>
-              <LeadCard name="Ahad Razak" pos="Propellant Management Lead">
-                Ahad is a 3rd year Aerospace student. His interests include
-                cooking, reading comics, and working out.
-              </LeadCard>
-              <LeadCard
-                name="Georgia Jovanovic"
-                pos="Transfer &amp; Control Hardware Lead"
-              >
-                Georgia is a 5th year electrical engineering student set to
-                graduate in April 2023. Along with her passion for rocketry she
-                enjoys sailing and a few other unconventional hobbies!
-              </LeadCard>
-              <LeadCard name="Jack Sinclair" pos="Safety Officer">
-                Jack is a 1st year Aerospace Engineering student. His interests
-                are gaming, space exploration and habitats, and videos of
-                raccoons eating.
-              </LeadCard>
-              <LeadCard name="Laxan Puveendran" pos="Finance Lead">
-                Laxan is a 3rd year industrial engineering student. He&rsquo;s
-                the finance lead for MACH, who&rsquo;s worked on creating the
-                team budget and processing cheque reimbursements for team
-                members. His interests include playing soccer, gaming, and
-                watching movies.
-              </LeadCard>
-            </SimpleGrid>
-          </Center>
+          <SimpleGrid minChildWidth="300px" spacing="20px">
+            <LeadCard name="Umar Shabbir" pos="Team Director">
+              As a 4th year aerospace engineering student and MACH&rsquo;s team
+              director, Umar is a project manager in training during his
+              undergrad has been lucky enough to work alongside leading industry
+              professionals in the world of rocketry! Besides a love for
+              anything combustible, he also loves photography, weird foods, and
+              fat cats.
+            </LeadCard>
+            <LeadCard name="Yiwei Luo" pos="Combustion Dynamics Lead">
+              A 4th year aerospace engineering student, lifelong enthusiast of
+              anything that flies, and a Combustion Dynamics lead for the MACH
+              design team. He has far too many hobbies and not enough time, but
+              tries to make some stuff and write some stuff.
+            </LeadCard>
+            <LeadCard name="Orion Moore" pos="Combustion Dynamics Lead">
+              Orion is a Mechanical Engineering Graduate currently working at
+              Honda. He&rsquo;s been with MACH from the beginning and currently
+              serves as a design consultant for the team. He specializes in
+              parametric design of rocket engine combustion chambers, injectors
+              and cooling systems. He&rsquo;s also an avid movie buff, and
+              he&rsquo;s trying to teach himself how to draw and write.
+            </LeadCard>
+            <LeadCard name="Shivesh Maraj" pos="Propellant Management Lead">
+              Shivesh is a 3rd year aerospace engineering student and one of the
+              current propellant management leads for MACH. In addition to his
+              interests in space exploration and rocketry, Shivesh is an avid
+              golfer and a self-proclaimed amateur DJ.
+            </LeadCard>
+            <LeadCard name="Ahad Razak" pos="Propellant Management Lead">
+              Ahad is a 3rd year Aerospace student. He&rsquo;s one of the leads
+              for MACHs Propellant management subteam, working on building the
+              propellant delivery system. His interests include cooking, reading
+              comics, and working out.
+            </LeadCard>
+            <LeadCard
+              name="Georgia Jovanovic"
+              pos="Transfer &amp; Control Hardware Lead"
+            >
+              Georgia is a 5th year electrical engineering student set to
+              graduate in April 2023. She is the transfer and control (hardware)
+              lead for MACH with a keen interest in circuits and communication
+              systems. Along with her passion for rocketry she enjoys sailing
+              and a few other unconventional hobbies!
+            </LeadCard>
+            <LeadCard name="Jack Sinclair" pos="Safety Officer">
+              Jack is a 1st year Aerospace Engineering student. He is
+              MACH&rsquo;s Safety Officer and is working on MACH&rsquo;s Risk
+              Assessments & Risk Modeling, Radio Communications Network, Joint
+              health and Safety Committee, and Cybersecurity. His interests are
+              gaming, space exploration and habitats, and videos of raccoons
+              eating.
+            </LeadCard>
+            <LeadCard name="Laxan Puveendran" pos="Finance Lead">
+              Laxan is a 3rd year industrial engineering student. He&rsquo;s the
+              finance lead for MACH, who&rsquo;s worked on creating the team
+              budget and processing cheque reimbursements for team members. His
+              interests include playing soccer, gaming, and watching movies.
+            </LeadCard>
+          </SimpleGrid>
           <br />
           <Heading
             {...h2Style}
@@ -451,26 +463,41 @@ export default function Team() {
             <Box m="1%">
               <Text {...p2Style}>
                 Please note that our general recruitment cycle is currently
-                closed. However, we are still open to select new members who
-                meet any of the following prerequisites:
+                closed. However, we are still open to recruiting select new
+                members who meet any of the following prerequisites:
               </Text>
               <List>
                 <ListItem {...liStyle}>
                   <ListIcon as={FaRocket} color="teal.300" />
-                  Senior-year or graduate engineering students, particularly
-                  those specializing in avionics and CFD
+                  Senior-year or graduate engineering or computer science
+                  students
+                </ListItem>
+                <ListItem {...liStyle} ml="2.5%">
+                  <ListIcon as={FaRocket} color="teal.300" />
+                  Preferred specialization in avionics and/or CFD
                 </ListItem>
                 <ListItem {...liStyle}>
                   <ListIcon as={FaRocket} color="teal.300" />
-                  Computer science students with experience in [??]
+                  Students with experience in Web development
+                </ListItem>
+                <ListItem {...liStyle} ml="2.5%">
+                  <ListIcon as={FaRocket} color="teal.300" />
+                  Preferred specialization in frontend UI/UX design and/or
+                  Next.js
                 </ListItem>
                 <ListItem {...liStyle}>
                   <ListIcon as={FaRocket} color="teal.300" />
-                  Webdevs so our webdevs can stop doing webdev
+                  Students with an interest in Business Development
+                </ListItem>
+                <ListItem {...liStyle} ml="2.5%">
+                  <ListIcon as={FaRocket} color="teal.300" />
+                  e.g. Social media marketing, graphic design, sponsorship
+                  outreach, external communications, etc.
                 </ListItem>
                 <ListItem {...liStyle}>
                   <ListIcon as={FaRocket} color="teal.300" />
-                  Safety &amp; bizdev pls
+                  Students interested in helping MACH with our safety
+                  procedures, guidelines, and documentation
                 </ListItem>
               </List>
             </Box>
