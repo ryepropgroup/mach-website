@@ -79,7 +79,7 @@ export default function Index() {
           </Link>
           <Text {...normalStyle}>,</Text>
         </Box>
-        <Box ml="33vw">
+        <Box ml="17vw">
           <Text {...normalStyle}>building a {"bipropellant "}</Text>
           <Text {...lreStyle}>liquid rocket engine</Text>
           <Text {...normalStyle}>.</Text>
