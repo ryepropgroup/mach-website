@@ -13,6 +13,7 @@ import {
 } from "@chakra-ui/react";
 import { FaRocket } from "react-icons/fa";
 
+import CopyrightFooter from "@/components/copyrightFooter";
 import Navbar from "@/components/navbar";
 import SocialsFooter from "@/components/socialsFooter";
 import Header from "@/config";
@@ -266,6 +267,7 @@ export default function About() {
         </Box>
       </Center>
       <SocialsFooter />
+      <CopyrightFooter />
     </>
   );
 }

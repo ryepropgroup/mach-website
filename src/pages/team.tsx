@@ -16,6 +16,7 @@ import {
 } from "@chakra-ui/react";
 import { FaRocket } from "react-icons/fa";
 
+import CopyrightFooter from "@/components/copyrightFooter";
 import LeadCard from "@/components/leadCard";
 import Navbar from "@/components/navbar";
 import SocialsFooter from "@/components/socialsFooter";
@@ -505,6 +506,7 @@ export default function Team() {
         </Box>
       </Center>
       <SocialsFooter />
+      <CopyrightFooter />
     </>
   );
 }

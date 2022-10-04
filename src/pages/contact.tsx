@@ -27,6 +27,7 @@ import {
 } from "react-icons/ai";
 import { MdOutlineEmail, MdPersonOutline } from "react-icons/md";
 
+import CopyrightFooter from "@/components/copyrightFooter";
 import Navbar from "@/components/navbar";
 import Header from "@/config";
 import { bgStyle, h1Style, p2Style } from "@/styles";
@@ -281,7 +282,7 @@ export default function Contact() {
           </Box>
         </Box>
       </Flex>
-      <br />
+      <CopyrightFooter />
     </>
   );
 }

@@ -1,6 +1,8 @@
 import { Box, Center, Heading, Link, SimpleGrid, Text } from "@chakra-ui/react";
 
+import CopyrightFooter from "@/components/copyrightFooter";
 import Navbar from "@/components/navbar";
+import SocialsFooter from "@/components/socialsFooter";
 import SponsorCard from "@/components/sponsorCard";
 import Header from "@/config";
 import {
@@ -141,7 +143,8 @@ export default function Sponsors() {
           </SimpleGrid>
         </Box>
       </Center>
-      <br />
+      <SocialsFooter />
+      <CopyrightFooter />
     </>
   );
 }
