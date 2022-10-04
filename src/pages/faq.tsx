@@ -18,7 +18,6 @@ import {
   b1Style,
   b2Style,
   bgStyle,
-  em1Style,
   em2Style,
   h1Style,
   h3Style,
@@ -38,15 +37,18 @@ export default function FAQ() {
           <Heading {...h1Style}>Frequently Asked Questions</Heading>
           <br />
           <Text {...p1Style}>
-            Rockets are complicated. It took us a very long time to learn what
-            we have, and we are constantly learning more.
+            <Text {...b1Style}>Rockets are complicated.</Text> It took us a very
+            long time to learn what we have, and{" "}
+            <Text {...b1Style}>we are constantly learning more.</Text>
           </Text>
+          <br />
           <Text {...p1Style}>
             We&rsquo;ve collected some questions we&rsquo;ve received from
             varying levels of technical background, and hopefully this will
             answer some of your questions too!
           </Text>
-          <Text {...p1Style}>
+          <br />
+          <Text {...p2Style}>
             We&rsquo;ve tried our best to make these answers concise yet
             accurate, but rockets are complicated. If we&rsquo;ve simplified too
             much or got too technical, or you have more questions that we
