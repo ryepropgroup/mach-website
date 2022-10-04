@@ -1,6 +1,7 @@
 import {
   Box,
   Button,
+  Center,
   Flex,
   FormControl,
   FormLabel,
@@ -10,15 +11,15 @@ import {
   InputGroup,
   InputLeftElement,
   Link,
-  Select,
   Stack,
+  Text,
   Textarea,
   Tooltip,
   useClipboard,
   useToast,
   VStack,
 } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 import {
   AiOutlineInstagram,
   AiOutlineLinkedin,
@@ -28,28 +29,48 @@ import { MdOutlineEmail, MdPersonOutline } from "react-icons/md";
 
 import Navbar from "@/components/navbar";
 import Header from "@/config";
-import { bgStyle, h1Style } from "@/styles";
+import { bgStyle, h1Style, p2Style } from "@/styles";
+
+interface ContactForm {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+  honeypot: string;
+}
+
+const defaultFormValues: ContactForm = {
+  name: "",
+  email: "",
+  subject: "",
+  message: "",
+  honeypot: "",
+};
 
 export default function Contact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [customSubject, setCustomSubject] = useState("");
-  const [message, setMessage] = useState("");
-  const [honeypot, setHoneypot] = useState("");
+  const [form, setForm] = useState(defaultFormValues);
   const [isValid, setIsValid] = useState(false);
   const { hasCopied, onCopy } = useClipboard("mach@ryerson.ca");
   const toast = useToast();
+
   useEffect(() => {
+    const { name, email, subject, message } = form;
     setIsValid(
-      name &&
-        email &&
+      !!(
+        name &&
+        /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email) &&
         subject &&
-        message && // check all req'd fields are filled
-        /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email) // check for email validity
+        message
+      ) // check all req'd fields are filled and that email address is valid
     );
-    if (subject == "Other") setIsValid(!!customSubject);
-  }, [name, email, subject, message, customSubject]);
+  }, [form]);
+
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
   return (
     <>
       <Header title="MACH :: Contact Us" />
@@ -74,48 +95,60 @@ export default function Contact() {
                     hasArrow
                     label={hasCopied ? "Email Copied!" : "Copy Email"}
                   >
-                    <IconButton
-                      color="gray.100"
-                      fontSize="3xl"
-                      _hover={{
-                        bg: "blue.400",
-                      }}
-                      aria-label="email"
-                      icon={<AiOutlineMail size="28px" />}
-                      isRound
-                      onClick={onCopy}
-                      size="lg"
-                      variant="ghost"
-                    />
+                    <Center>
+                      <IconButton
+                        alignSelf="flex-start"
+                        color="gray.100"
+                        fontSize="3xl"
+                        _hover={{
+                          bg: "blue.400",
+                        }}
+                        aria-label="email"
+                        icon={<AiOutlineMail size="28px" />}
+                        isRound
+                        onClick={onCopy}
+                        size="lg"
+                        variant="ghost"
+                      />
+                      <Text {...p2Style}>mach@ryerson.ca</Text>
+                    </Center>
                   </Tooltip>
                   <Link
                     href="https://ca.linkedin.com/company/rupropulsion"
                     isExternal
                   >
-                    <IconButton
-                      color="gray.100"
-                      _hover={{
-                        bg: "blue.400",
-                      }}
-                      aria-label="linkedin"
-                      icon={<AiOutlineLinkedin size="28px" />}
-                      isRound
-                      size="lg"
-                      variant="ghost"
-                    />
+                    <Center>
+                      <IconButton
+                        alignSelf="flex-start"
+                        color="gray.100"
+                        _hover={{
+                          bg: "blue.400",
+                        }}
+                        aria-label="linkedin"
+                        icon={<AiOutlineLinkedin size="28px" />}
+                        isRound
+                        size="lg"
+                        variant="ghost"
+                      />
+                      <Text {...p2Style}>@rupropulsion</Text>
+                    </Center>
                   </Link>
                   <Link href="https://www.instagram.com/mach_tmu/">
-                    <IconButton
-                      color="gray.100"
-                      _hover={{
-                        bg: "blue.400",
-                      }}
-                      aria-label="instagram"
-                      icon={<AiOutlineInstagram size="28px" />}
-                      isRound
-                      size="lg"
-                      variant="ghost"
-                    />
+                    <Center>
+                      <IconButton
+                        alignSelf="flex-start"
+                        color="gray.100"
+                        _hover={{
+                          bg: "blue.400",
+                        }}
+                        aria-label="instagram"
+                        icon={<AiOutlineInstagram size="28px" />}
+                        isRound
+                        size="lg"
+                        variant="ghost"
+                      />
+                      <Text {...p2Style}>@mach_tmu</Text>
+                    </Center>
                   </Link>
                 </Stack>
                 <Box
@@ -134,7 +167,7 @@ export default function Contact() {
                         </InputLeftElement>
                         <Input
                           name="name"
-                          onChange={(e) => setName(e.target.value)}
+                          onChange={handleChange}
                           placeholder="Your Name"
                           type="text"
                         />
@@ -148,54 +181,37 @@ export default function Contact() {
                         </InputLeftElement>
                         <Input
                           name="email"
-                          onChange={(e) => setEmail(e.target.value)}
+                          onChange={handleChange}
                           placeholder="Your Email"
                           type="email"
                         />
                       </InputGroup>
                     </FormControl>
+
                     <FormControl isRequired>
                       <FormLabel>Subject</FormLabel>
                       <InputGroup>
-                        <Select
-                          onChange={(e) => {
-                            setSubject(e.target.value);
-                            if (e.target.value !== "Other")
-                              setCustomSubject("");
-                          }}
-                          placeholder="Subject"
-                        >
-                          <option>Sponsor MACH</option>
-                          <option>Join MACH</option>
-                          <option>Other</option>
-                        </Select>
+                        <Input
+                          name="subject"
+                          onChange={handleChange}
+                          placeholder="Your Subject"
+                          type="subject"
+                        />
                       </InputGroup>
                     </FormControl>
-                    {subject === "Other" && (
-                      <FormControl>
-                        <FormLabel>If other, please specify subject</FormLabel>
-                        <InputGroup>
-                          <Input
-                            name="subject"
-                            onChange={(e) => setCustomSubject(e.target.value)}
-                            placeholder="Your Custom Subject"
-                            type="subject"
-                          />
-                        </InputGroup>
-                      </FormControl>
-                    )}
+
                     <FormControl isRequired>
                       <FormLabel>Message</FormLabel>
                       <Textarea
                         resize="none"
                         name="message"
-                        onChange={(e) => setMessage(e.target.value)}
+                        onChange={handleChange}
                         placeholder="Your Message"
                         rows={6}
                       />
                       <Input
                         name="honeypot"
-                        onChange={(e) => setHoneypot(e.target.value)}
+                        onChange={handleChange}
                         style={{ display: "none" }}
                         type="text"
                       />
@@ -213,12 +229,7 @@ export default function Contact() {
                         fetch("https://api.staticforms.xyz/submit", {
                           method: "POST",
                           body: JSON.stringify({
-                            name,
-                            email,
-                            subject:
-                              subject === "Other" ? customSubject : subject,
-                            message,
-                            honeypot,
+                            ...form,
                             replyTo: "@",
                             accessKey: "2d0f1899-6886-4f40-ad3c-72275f41d888",
                           }),
@@ -229,14 +240,7 @@ export default function Contact() {
                           )
                           .then((r) => {
                             if (r.success) {
-                              [
-                                setName,
-                                setEmail,
-                                setSubject,
-                                setCustomSubject,
-                                setMessage,
-                                setHoneypot,
-                              ].forEach((f) => f(""));
+                              setForm(defaultFormValues);
                               toast({
                                 title: "Form submitted!",
                                 description:
