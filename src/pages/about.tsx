@@ -134,7 +134,7 @@ export default function About() {
             templateRows="repeat(1, 1fr)"
             templateColumns="repeat(2, 1fr)"
           >
-            <GridItem w="31.5vw" colSpan={1} rowSpan={1}>
+            <GridItem w="33.5vw" colSpan={1} rowSpan={1}>
               <Image
                 alt="Team photo"
                 rounded="lg"
@@ -145,7 +145,7 @@ export default function About() {
               <Image
                 alt="Team photo"
                 rounded="lg"
-                src="/mach-website/img/photos/DSC8908.jpg"
+                src="/mach-website/img/photos/DSC6969.jpg"
               />
             </GridItem>
           </Grid>
@@ -225,14 +225,14 @@ export default function About() {
               <Image
                 alt="Team photo"
                 rounded="lg"
-                src="/mach-website/img/photos/IMG0044.jpg"
+                src="/mach-website/img/photos/DSC0044.jpg"
               />
             </GridItem>
             <GridItem colSpan={2} rowSpan={1}>
               <Image
                 alt="Team photo"
                 rounded="lg"
-                src="/mach-website/img/photos/IMG0043.jpg"
+                src="/mach-website/img/photos/DSC0043.jpg"
               />
             </GridItem>
             <GridItem colSpan={2} rowSpan={1}>
@@ -259,7 +259,7 @@ export default function About() {
               <Image
                 alt="Team photo"
                 rounded="lg"
-                src="/mach-website/img/photos/VC1922.jpg"
+                src="/mach-website/img/photos/DSC1922.jpg"
               />
             </GridItem>
           </Grid>

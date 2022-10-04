@@ -114,6 +114,19 @@ export default function Team() {
               and cooling systems. He&rsquo;s also an avid movie buff, and
               he&rsquo;s trying to teach himself how to draw and write.
             </LeadCard>
+            <LeadCard name="William Pirie" pos="Combustion Dynamics Lead">
+              Will is a 3rd year aerospace engineering student currently on an
+              engineering co-op. While by and large interested in the world of
+              science, he has leaned heavily toward the field of rocket
+              propulsion. He works full-time assembling state-of-the-art solid
+              rocket engines and balances the rest of the time between MACH
+              (designing liquid rocket engines), and at Launch Canada
+              (developing parts for other liquid rocket engines). Outside of
+              aerospace, he is also a synthesist/composer of electronic music
+              and has a long lasting passion for creating fine art photography.
+              He has a tendency to find new things that capture his interest,
+              and will always go down the rabbit hole to know more.
+            </LeadCard>
             <LeadCard name="Shivesh Maraj" pos="Propellant Management Lead">
               Shivesh is a 3rd year aerospace engineering student and one of the
               current propellant management leads for MACH. In addition to his
