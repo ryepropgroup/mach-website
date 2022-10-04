@@ -1,8 +1,8 @@
 import Head from "next/head";
 
 const titleDefault = "MACH";
-const url = "";
-const description = "";
+const url = "https://ryepropgroup.github.io/mach-website";
+const description = "Website for the Metropolitan Aerospace & Combustion Hub";
 const author = "MACH";
 const keywords: string[] = [];
 
