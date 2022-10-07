@@ -29,6 +29,7 @@ import { MdOutlineEmail, MdPersonOutline } from "react-icons/md";
 
 import CopyrightFooter from "@/components/copyrightFooter";
 import Navbar from "@/components/navbar";
+import WIPBanner from "@/components/wipBanner";
 import Header from "@/config";
 import { bgStyle, h1Style, p2Style } from "@/styles";
 
@@ -76,6 +77,7 @@ export default function Contact() {
     <>
       <Header title="MACH :: Contact Us" />
       <Box {...bgStyle} bg="black" />
+      <WIPBanner />
       <Navbar />
       <Flex align="center" justify="center" bg="black" id="contact">
         <Box borderRadius="lg">

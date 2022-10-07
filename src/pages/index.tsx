@@ -2,6 +2,7 @@ import { Box, Link, LinkProps, Text, TextProps } from "@chakra-ui/react";
 
 import BackgroundVideo from "@/components/backgroundVideo";
 import Navbar from "@/components/navbar";
+import WIPBanner from "@/components/wipBanner";
 import Header from "@/config";
 import { bgStyle } from "@/styles";
 
@@ -51,6 +52,7 @@ export default function Index() {
         <Box {...bgStyle} bg="blackAlpha.100" />
       </Box>
       <Box>
+        <WIPBanner />
         <Navbar />
         <Box ml="17vw">
           <Text {...initialStyle}>M</Text>

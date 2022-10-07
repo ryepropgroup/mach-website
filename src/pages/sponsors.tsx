@@ -4,6 +4,7 @@ import CopyrightFooter from "@/components/copyrightFooter";
 import Navbar from "@/components/navbar";
 import SocialsFooter from "@/components/socialsFooter";
 import SponsorCard from "@/components/sponsorCard";
+import WIPBanner from "@/components/wipBanner";
 import Header from "@/config";
 import {
   b1Style,
@@ -20,6 +21,7 @@ export default function Sponsors() {
     <>
       <Header title="MACH :: Our Sponsors" />
       <Box {...bgStyle} bg="black" />
+      <WIPBanner />
       <Navbar />
       <Center>
         <Box w="67vw">

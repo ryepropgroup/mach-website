@@ -20,6 +20,7 @@ import CopyrightFooter from "@/components/copyrightFooter";
 import LeadCard from "@/components/leadCard";
 import Navbar from "@/components/navbar";
 import SocialsFooter from "@/components/socialsFooter";
+import WIPBanner from "@/components/wipBanner";
 import Header from "@/config";
 import {
   b1Style,
@@ -40,6 +41,7 @@ export default function Team() {
     <>
       <Header title="MACH :: Our Team" />
       <Box {...bgStyle} bg="black" />
+      <WIPBanner />
       <Navbar />
       <Center>
         <Box w="64vw">

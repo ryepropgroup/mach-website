@@ -16,6 +16,7 @@ import { FaRocket } from "react-icons/fa";
 import CopyrightFooter from "@/components/copyrightFooter";
 import Navbar from "@/components/navbar";
 import SocialsFooter from "@/components/socialsFooter";
+import WIPBanner from "@/components/wipBanner";
 import Header from "@/config";
 import {
   b1Style,
@@ -34,6 +35,7 @@ export default function About() {
     <>
       <Header title="MACH :: About Us" />
       <Box {...bgStyle} bg="black" />
+      <WIPBanner />
       <Navbar />
       <Center>
         <Box w="64vw">
