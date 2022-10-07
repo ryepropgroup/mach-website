@@ -45,7 +45,7 @@ export default function LeadCard({
         <Image
           alt={name}
           rounded="lg"
-          src={`/mach-website/img/leads/${name.split(" ").join("_")}.jpg`}
+          src={`/img/leads/${name.split(" ").join("_")}.jpg`}
         />
         <Center>
           <Accordion allowToggle>

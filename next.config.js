@@ -68,5 +68,5 @@ module.exports = (_phase, { defaultConfig }) => {
       finalConfig[key] = wConfig[key];
     }
   });
-  return { ...finalConfig, basePath: "/mach-website" };
+  return finalConfig;
 };

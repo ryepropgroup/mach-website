@@ -56,7 +56,7 @@ export default function FAQ() {
             accurate, but rockets are complicated. If we&rsquo;ve simplified too
             much or got too technical, or you have more questions that we
             haven&rsquo;t addressed here, please feel free to{" "}
-            <Link {...linkStyle} href="/mach-website/contact">
+            <Link {...linkStyle} href="/contact">
               contact us
             </Link>
             ; we&rsquo;re always happy to talk about rockets.
@@ -522,7 +522,7 @@ export default function FAQ() {
                   result, our general recruitment isn&rsquo;t open year-round,{" "}
                   <Text {...b1Style}>
                     please see the{" "}
-                    <Link {...linkStyle} href="/mach-website/team">
+                    <Link {...linkStyle} href="/team">
                       Team page
                     </Link>{" "}
                     for current recruitment status.

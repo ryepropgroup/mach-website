@@ -58,11 +58,7 @@ export default function About() {
             <Text {...b1Style}>liquid rocket engine</Text>.
           </Text>
           <br />
-          <Image
-            alt="Team photo"
-            rounded="lg"
-            src="/mach-website/img/photos/DSC7741.jpg"
-          />
+          <Image alt="Team photo" rounded="lg" src="/img/photos/DSC7741.jpg" />
           <br />
           <Text {...p2Style}>
             Our first engine and its supporting systems - the{" "}
@@ -93,21 +89,21 @@ export default function About() {
               <Image
                 alt="Team photo"
                 rounded="lg"
-                src="/mach-website/img/photos/DSC8469.jpg"
+                src="/img/photos/DSC8469.jpg"
               />
             </GridItem>
             <GridItem colSpan={2} rowSpan={1}>
               <Image
                 alt="Team photo"
                 rounded="lg"
-                src="/mach-website/img/photos/DSC5339.jpg"
+                src="/img/photos/DSC5339.jpg"
               />
             </GridItem>
             <GridItem colSpan={2} rowSpan={1}>
               <Image
                 alt="Team photo"
                 rounded="lg"
-                src="/mach-website/img/photos/DSC0950.jpg"
+                src="/img/photos/DSC0950.jpg"
               />
             </GridItem>
           </Grid>
@@ -140,14 +136,14 @@ export default function About() {
               <Image
                 alt="Team photo"
                 rounded="lg"
-                src="/mach-website/img/photos/DSC7682.jpg"
+                src="/img/photos/DSC7682.jpg"
               />
             </GridItem>
             <GridItem colSpan={1} rowSpan={1}>
               <Image
                 alt="Team photo"
                 rounded="lg"
-                src="/mach-website/img/photos/DSC6969.jpg"
+                src="/img/photos/DSC6969.jpg"
               />
             </GridItem>
           </Grid>
@@ -183,7 +179,7 @@ export default function About() {
               Published and presented a{" "}
               <Link
                 {...linkStyle}
-                href="/mach-website/doc/Nitrous Oxide Ethanol Bi-Propellant Rocket Engine Design Process FinalPaper.pdf"
+                href="/doc/Nitrous Oxide Ethanol Bi-Propellant Rocket Engine Design Process FinalPaper.pdf"
                 isExternal
               >
                 research paper
@@ -227,21 +223,21 @@ export default function About() {
               <Image
                 alt="Team photo"
                 rounded="lg"
-                src="/mach-website/img/photos/DSC0044.jpg"
+                src="/img/photos/DSC0044.jpg"
               />
             </GridItem>
             <GridItem colSpan={2} rowSpan={1}>
               <Image
                 alt="Team photo"
                 rounded="lg"
-                src="/mach-website/img/photos/DSC0043.jpg"
+                src="/img/photos/DSC0043.jpg"
               />
             </GridItem>
             <GridItem colSpan={2} rowSpan={1}>
               <Image
                 alt="Team photo"
                 rounded="lg"
-                src="/mach-website/img/photos/DSC4369.jpg"
+                src="/img/photos/DSC4369.jpg"
               />
             </GridItem>
           </Grid>
@@ -254,14 +250,14 @@ export default function About() {
               <Image
                 alt="Team photo"
                 rounded="lg"
-                src="/mach-website/img/photos/DSC6345.jpg"
+                src="/img/photos/DSC6345.jpg"
               />
             </GridItem>
             <GridItem colSpan={1} rowSpan={1}>
               <Image
                 alt="Team photo"
                 rounded="lg"
-                src="/mach-website/img/photos/DSC1922.jpg"
+                src="/img/photos/DSC1922.jpg"
               />
             </GridItem>
           </Grid>

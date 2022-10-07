@@ -463,14 +463,14 @@ export default function Team() {
           <Text {...p2Style}>
             If what we&rsquo;re doing sounds awesome and you&rsquo;d like to
             join MACH, please reach out to us through the{" "}
-            <Link {...linkStyle} href="/mach-website/contact">
+            <Link {...linkStyle} href="/contact">
               contact
             </Link>{" "}
             form.
           </Text>
           <Text {...p2Style}>
             Please also check out our{" "}
-            <Link {...linkStyle} href="/mach-website/faq">
+            <Link {...linkStyle} href="/faq">
               FAQ
             </Link>{" "}
             to learn more about what we&rsquo;re doing and what to expect as

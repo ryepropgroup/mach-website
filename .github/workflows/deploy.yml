@@ -15,7 +15,9 @@ jobs:
       - name: 'Install dependencies'
         run: yarn install --frozen-lockfile --ignore-scripts
       - name: 'Build app'
-        run: yarn export && touch ./out/.nojekyll
+        run: yarn export
+      - name: 'Configure GitHub Pages'
+        run: touch ./out/.nojekyll && echo "mach-tmu.space" > CNAME
       - name: 'Deploy app'
         uses: crazy-max/ghaction-github-pages@v3
         with:

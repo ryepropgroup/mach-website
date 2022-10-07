@@ -76,7 +76,7 @@ export default function Sponsors() {
             <Text {...b2Style}>Canadian aerospace engineers</Text> and{" "}
             <Text {...b2Style}>rocket scientists</Text>, please get in touch
             with us through the{" "}
-            <Link {...linkStyle} href="/mach-website/contact">
+            <Link {...linkStyle} href="/contact">
               contacts page
             </Link>
             !
@@ -90,57 +90,57 @@ export default function Sponsors() {
             <SponsorCard
               alt="Toronto Metropolitan University (TMU)"
               href="https://www.torontomu.ca/"
-              src="/mach-website/img/sponsors/TMU.png"
+              src="/img/sponsors/TMU.png"
             />
             <SponsorCard
               alt="Metropolitan Undergraduate Engineering Society (MUES)"
               href="https://www.mues.ca/"
-              src="/mach-website/img/sponsors/MUES.png"
+              src="/img/sponsors/MUES.png"
             />
             <SponsorCard
               alt="Design Fabrication Zone (DFZ)"
               href="https://www.torontomu.ca/zone-learning/design-fabrication-zone/"
-              src="/mach-website/img/sponsors/DFZ.png"
+              src="/img/sponsors/DFZ.png"
             />
             <SponsorCard
               alt="Launch Canada"
               href="http://www.launchcanada.org/"
-              src="/mach-website/img/sponsors/Launch_Canada.png"
+              src="/img/sponsors/Launch_Canada.png"
             />
             <SponsorCard
               alt="Swagelok Central Ontario and Atlantic Canada"
               href="https://centralontario.swagelok.com/"
-              src="/mach-website/img/sponsors/Swagelok.png"
+              src="/img/sponsors/Swagelok.png"
             />
             <SponsorCard
               alt="Megapro Tools"
               href="https://megaprotools.com/"
-              src="/mach-website/img/sponsors/Megapro.png"
+              src="/img/sponsors/Megapro.png"
             />
             <SponsorCard
               alt="Red Rocket Coffee"
               href="https://www.shopredrocketcoffee.com/"
-              src="/mach-website/img/sponsors/Red_Rocket_Coffee.png"
+              src="/img/sponsors/Red_Rocket_Coffee.png"
             />
             <SponsorCard
               alt="Altair"
               href="https://altair.com"
-              src="/mach-website/img/sponsors/Altair.png"
+              src="/img/sponsors/Altair.png"
             />
             <SponsorCard
               alt="Solidworks"
               href="https://www.solidworks.com/"
-              src="/mach-website/img/sponsors/Solidworks.png"
+              src="/img/sponsors/Solidworks.png"
             />
             <SponsorCard
               alt="Stein Industries Inc."
               href="https://steinindustriesinc.com/"
-              src="/mach-website/img/sponsors/Stein.png"
+              src="/img/sponsors/Stein.png"
             />
             <SponsorCard
               alt="TeXtreme"
               href="https://www.textreme.com/"
-              src="/mach-website/img/sponsors/TeXtreme.png"
+              src="/img/sponsors/TeXtreme.png"
             />
           </SimpleGrid>
         </Box>

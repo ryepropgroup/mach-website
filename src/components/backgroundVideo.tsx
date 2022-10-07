@@ -22,14 +22,14 @@ export default function BackgroundVideo() {
     <>
       <video
         style={{ ...style, display: idx === 1 ? "none" : "block" }}
-        src="/mach-website/video/ignition.webm"
+        src="/video/ignition.webm"
         autoPlay
         muted
         onEnded={() => setIdx((x) => x + 1)}
       />
       <video
         style={{ ...style, display: idx === 0 ? "none" : "block" }}
-        src="/mach-website/video/loop.webm"
+        src="/video/loop.webm"
         muted
         loop
         ref={ref}

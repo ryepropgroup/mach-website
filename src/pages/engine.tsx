@@ -85,7 +85,7 @@ export default function Engine() {
           <Image
             alt="Sectioned render of the Borealis Engine"
             rounded="lg"
-            src="/mach-website/img/engine/Engine_Sectioned_Render.png"
+            src="/img/engine/Engine_Sectioned_Render.png"
           />
           <br />
           <Heading {...h1Style} fontSize="40px">
@@ -156,17 +156,17 @@ export default function Engine() {
             <Image
               alt="Instrumentation schematic of the Borealis Engine"
               rounded="lg"
-              src="/mach-website/img/engine/Instrumentation_Schematic.png"
+              src="/img/engine/Instrumentation_Schematic.png"
             />
             <Image
               alt="Piping and instrumentation diagram of the Borealis engine"
               rounded="lg"
-              src="/mach-website/img/engine/PM_PID_V3.2_Compacted.png"
+              src="/img/engine/PM_PID_V3.2_Compacted.png"
             />
             <Image
               alt="Compacted block diagram of the Borealis Engine"
               rounded="lg"
-              src="/mach-website/img/engine/TC_Block_Diagram_Compacted.png"
+              src="/img/engine/TC_Block_Diagram_Compacted.png"
             />
           </SimpleGrid>
           <Grid
@@ -178,21 +178,21 @@ export default function Engine() {
               <Image
                 alt="Engine photo"
                 rounded="lg"
-                src="/mach-website/img/photos/DSC9101.jpg"
+                src="/img/photos/DSC9101.jpg"
               />
             </GridItem>
             <GridItem colSpan={2} rowSpan={1}>
               <Image
                 alt="Engine photo"
                 rounded="lg"
-                src="/mach-website/img/photos/DSC7694.jpg"
+                src="/img/photos/DSC7694.jpg"
               />
             </GridItem>
             <GridItem colSpan={2} rowSpan={1}>
               <Image
                 alt="Engine photo"
                 rounded="lg"
-                src="/mach-website/img/photos/DSC7686.jpg"
+                src="/img/photos/DSC7686.jpg"
               />
             </GridItem>
           </Grid>
@@ -214,11 +214,11 @@ export default function Engine() {
           <br />
           <Text {...p1Style}>
             See if we already have answers in our{" "}
-            <Link {...linkStyle} href="/mach-website/faq">
+            <Link {...linkStyle} href="/faq">
               FAQ
             </Link>
             , or{" "}
-            <Link {...linkStyle} href="/mach-website/contact">
+            <Link {...linkStyle} href="/contact">
               contact us
             </Link>
             !

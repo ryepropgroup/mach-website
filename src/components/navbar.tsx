@@ -33,7 +33,7 @@ export default function Navbar() {
               onClick={() => {
                 window.location.href = "/mach-website";
               }}
-              src="/mach-website/img/mach_logo.png"
+              src="/img/mach_logo.png"
             ></Image>
             {isDesktop ? (
               <Flex justify="space-between" flex="1" pl="10">
@@ -72,7 +72,7 @@ const NavItem = ({ item }: { item: string }) => {
   }, [item]);
   return (
     <Button variant="link">
-      <Link href={`/mach-website/${item.toLowerCase()}`}>
+      <Link href={`/${item.toLowerCase()}`}>
         <Text
           color="gray.200"
           fontFamily="Poppins, sans-serif"
