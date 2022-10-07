@@ -31,7 +31,7 @@ export default function Navbar() {
               cursor="pointer"
               alt="mach logo"
               onClick={() => {
-                window.location.href = "/mach-website";
+                window.location.href = "/";
               }}
               src="/img/mach_logo.png"
             ></Image>
