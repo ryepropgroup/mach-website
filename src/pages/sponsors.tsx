@@ -142,6 +142,11 @@ export default function Sponsors() {
               href="https://www.textreme.com/"
               src="/img/sponsors/TeXtreme.png"
             />
+            <SponsorCard
+              alt="Flownex"
+              href="https://flownex.com/"
+              src="/img/sponsors/Flownex.png"
+            />
           </SimpleGrid>
         </Box>
       </Center>
