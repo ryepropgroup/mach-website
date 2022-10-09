@@ -147,6 +147,11 @@ export default function Sponsors() {
               href="https://flownex.com/"
               src="/img/sponsors/Flownex.png"
             />
+            <SponsorCard
+              alt="SimplePath Farms"
+              href="https://www.simplepathfarms.com/"
+              src="/img/sponsors/SimplePath.svg"
+            />
           </SimpleGrid>
         </Box>
       </Center>
