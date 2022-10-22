@@ -152,6 +152,16 @@ export default function Sponsors() {
               href="https://www.simplepathfarms.com/"
               src="/img/sponsors/SimplePath.svg"
             />
+            <SponsorCard
+              alt="Vibrant Performance"
+              href="https://vibrantperformance.com/"
+              src="/img/sponsors/VibrantPerformance.png"
+            />
+            <SponsorCard
+              alt="Hoskin Scientific LTD."
+              href="https://www.hoskin.ca/"
+              src="/img/sponsors/Hoskin.png"
+            />
           </SimpleGrid>
         </Box>
       </Center>
