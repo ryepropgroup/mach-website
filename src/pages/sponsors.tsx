@@ -162,6 +162,11 @@ export default function Sponsors() {
               href="https://www.hoskin.ca/"
               src="/img/sponsors/Hoskin.png"
             />
+            <SponsorCard
+              alt="Kulite"
+              href="https://kulite.com/"
+              src="/img/sponsors/kulite.png"
+            />
           </SimpleGrid>
         </Box>
       </Center>
