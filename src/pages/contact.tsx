@@ -31,7 +31,17 @@ import CopyrightFooter from "@/components/copyrightFooter";
 import Navbar from "@/components/navbar";
 import WIPBanner from "@/components/wipBanner";
 import Header from "@/config";
-import { bgStyle, h1Style, p2Style } from "@/styles";
+import {
+  b1Style,
+  b2Style,
+  bgStyle,
+  em2Style,
+  h1Style,
+  h3Style,
+  linkStyle,
+  p1Style,
+  p2Style,
+} from "@/styles";
 
 interface ContactForm {
   name: string;
@@ -79,11 +89,15 @@ export default function Contact() {
       <Box {...bgStyle} bg="black" />
       <WIPBanner />
       <Navbar />
+      <Center>
+        <Box w="67vw">
+          <Heading {...h1Style}>Get in Touch</Heading>
+        </Box>
+      </Center>
       <Flex align="center" justify="center" bg="black" id="contact">
         <Box borderRadius="lg">
           <Box>
             <VStack spacing={{ base: 4, md: 8, lg: 20 }}>
-              <Heading {...h1Style}>Get in Touch</Heading>
               <Stack
                 direction={{ base: "column", md: "row" }}
                 spacing={{ base: 4, md: 8, lg: 20 }}
