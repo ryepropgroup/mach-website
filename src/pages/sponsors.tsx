@@ -104,7 +104,7 @@ export default function Sponsors() {
             />
             <SponsorCard
               alt="Launch Canada"
-              href="http://www.launchcanada.org/"
+              href="https:///www.launchcanada.org/"
               src="/img/sponsors/Launch_Canada.png"
             />
             <SponsorCard

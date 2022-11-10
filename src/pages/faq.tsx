@@ -62,6 +62,14 @@ export default function FAQ() {
             ; we&rsquo;re always happy to talk about rockets.
           </Text>
           <br />
+          <Text {...em2Style}></Text>
+          <Heading
+            {...h3Style}
+            bgGradient="linear(to-r, cyan.300 0%, yellow.500 25%)"
+            bgClip="text"
+          >
+            About Rockets
+          </Heading>
           <Accordion allowMultiple defaultIndex={[-1]}>
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
@@ -106,9 +114,8 @@ export default function FAQ() {
                   cannot be throttled, shut off, or reignited.{" "}
                   <Text {...em2Style}>
                     The majority of hobby and student rocketry teams use premade
-                    commercial off-the-shelf (COTS) solid motors for propulsion
+                    commercial off-the-shelf (COTS) solid motors for propulsion.
                   </Text>
-                  .
                 </Text>
                 <Text {...p2Style}>
                   By contrast,{" "}
@@ -251,246 +258,14 @@ export default function FAQ() {
             </AccordionItem>
           </Accordion>
           <br />
-          <Accordion allowMultiple defaultIndex={[-1]}>
-            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
-              <h2>
-                <AccordionButton>
-                  <Text {...h3Style}>
-                    What do you hope to learn from Borealis?
-                  </Text>
-                  <AccordionIcon color="teal.300" />
-                </AccordionButton>
-              </h2>
-              <AccordionPanel>
-                <Text {...p2Style}>
-                  The primary technical goal of the Borealis engine is to{" "}
-                  <Text {...b1Style}>collect high quality combustion data</Text>
-                  . This data will be used to{" "}
-                  <Text {...b1Style}>
-                    validate and improve our design methodology
-                  </Text>
-                  , and{" "}
-                  <Text {...b1Style}>
-                    conduct research on the relatively little-explored
-                    combustion of ethanol-nitrous oxide rockets
-                  </Text>
-                  . The first hot-fire of the Borealis is a huge milestone for
-                  us, but only the beginning. The Borealis is reusable and
-                  modular, allowing us to prototype various injector and coolant
-                  system designs for future engines, as well as the effects of
-                  different propellant flow rates and ratios.
-                </Text>
-                <Text {...p2Style}>
-                  Perhaps more importantly, through the development and
-                  construction of our first engine and supporting systems, our
-                  team has gained{" "}
-                  <Text {...b1Style}>an incredible amount of experience</Text>.
-                  This invaluable knowledge of engine, coolant, propellant,
-                  telemetry, and control system design will allow MACH to take
-                  on even bigger projects, and give our members an incredible
-                  head start to their engineering careers.
-                </Text>
-              </AccordionPanel>
-            </AccordionItem>
-            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
-              <h2>
-                <AccordionButton>
-                  <Text {...h3Style}>
-                    What&rsquo;s the plan for your next engine?
-                  </Text>
-                  <AccordionIcon color="teal.300" />
-                </AccordionButton>
-              </h2>
-              <AccordionPanel>
-                <Text {...p2Style}>
-                  Our first flightweight engine and propellant system is
-                  currently in the design phase.{" "}
-                  <Text {...b1Style}>
-                    We are planning a carbon phenolic ablative engine, coupled
-                    with structural stacked ethanol and self-pressurized
-                    supercharged nitrous oxide tanks
-                  </Text>
-                  . The airframe integration will be a collaborative project
-                  with an established solid rocketry team experienced in
-                  aerostructures and avionics. Another serious consideration for
-                  our team is a regeneratively cooled Kerolox engine, depending
-                  on budget and administrative approval.
-                </Text>
-              </AccordionPanel>
-            </AccordionItem>
-            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
-              <h2>
-                <AccordionButton>
-                  <Text {...h3Style}>
-                    What are your long-term plans after that?
-                  </Text>
-                  <AccordionIcon color="teal.300" />
-                </AccordionButton>
-              </h2>
-              <AccordionPanel>
-                <Text {...p2Style}>
-                  Liquid rocket engines can achieve horrendous levels of
-                  complexity, so a successful flight test is only the beginning
-                  of our journey. Long-term projects of varying ambitions are
-                  under consideration, such as{" "}
-                  <Text {...b1Style}>spaceshot</Text> (a rocket which reaches
-                  over 100 km of altitude),{" "}
-                  <Text {...b1Style}>throttle control</Text>,{" "}
-                  <Text {...b1Style}>in-flight reignition</Text>,{" "}
-                  <Text {...b1Style}>propulsive landing</Text>, and{" "}
-                  <Text {...b1Style}>many more</Text>. With rapid ongoing
-                  innovations in rocket technology and accessible manufacturing,
-                  MACH will never stop aiming higher.
-                </Text>
-              </AccordionPanel>
-            </AccordionItem>
-          </Accordion>
-          <br />
-          <Accordion allowMultiple defaultIndex={[-1]}>
-            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
-              <h2>
-                <AccordionButton>
-                  <Text {...h3Style}>
-                    What fuel and oxidizer does Borealis use?
-                  </Text>
-                  <AccordionIcon color="teal.300" />
-                </AccordionButton>
-              </h2>
-              <AccordionPanel>
-                <Text {...p2Style}>
-                  The Borealis engine uses{" "}
-                  <Text {...b1Style}>
-                    ethanol as the fuel and nitrous oxide as the oxidizer
-                  </Text>
-                  ; we&rsquo;ve been calling this relatively uncommon
-                  combination &ldquo;<Text {...b2Style}>EthaNOS</Text>&rdquo;
-                  for short. Our choice in propellants for Borealis was
-                  initially informed by our total inexperience at the time and
-                  budget limitations. Although ethanol and nitrous oxide have
-                  significant performance disadvantages, they are{" "}
-                  <Text {...b1Style}>
-                    some of the safest propellants to handle
-                  </Text>{" "}
-                  (by the standards of rocketry). Our top priority is the safety
-                  of our members, which was the primary rationale behind our
-                  propellant choice. After the procedural and hands-on
-                  experience gained through a number of cold-flow and hot-fire
-                  tests with both inert and live propellants, we are confident
-                  in seeking approval for more conventional propellant
-                  combinations like Kerolox.
-                </Text>
-                <Text {...p2Style}>
-                  During the research phase of our engine design, we realized
-                  that a relatively miniscule amount of research has been
-                  published on ethanol and nitrous oxide rocket engines.
-                  Although this resulted in less references to draw upon, it
-                  also represented{" "}
-                  <Text {...b1Style}>
-                    an opportunity to do combustion research and explore
-                    completely new flightweight system designs
-                  </Text>
-                  . After publishing a paper on our design methodology, we
-                  intend to follow it up with more{" "}
-                  <Text {...b1Style}>
-                    novel research using experimental data collected during our
-                    hot-fires
-                  </Text>
-                  , as well as even more new research on injector designs,
-                  chamber cooling, propellant ratios, and much more. Our
-                  progress so far has led us to believe that there is{" "}
-                  <Text {...b1Style}>
-                    real potential for low-cost liquid rocket propulsion using
-                    EthaNOS
-                  </Text>
-                  , such as the self-pressurization capabilities of nitrous
-                  oxide and excellent cooling potential of ethanol.
-                </Text>
-              </AccordionPanel>
-            </AccordionItem>
-            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
-              <h2>
-                <AccordionButton>
-                  <Text {...h3Style}>Why is water used as coolant?</Text>
-                  <AccordionIcon color="teal.300" />
-                </AccordionButton>
-              </h2>
-              <AccordionPanel>
-                <Text {...p2Style}>
-                  A counterintuitive quirk of rocket engines is the scalability
-                  of cooling systems -{" "}
-                  <Text {...b1Style}>larger engines are easier to cool</Text>.
-                  This is because combustion temperature is only dependent on
-                  the propellant combination, so a larger engine spreads a
-                  similar heat load across a much larger surface area.{" "}
-                  <Text {...b1Style}>
-                    Water is one of the best coolants available
-                  </Text>
-                  , and we are confident it will provide a{" "}
-                  <Text {...b1Style}>very large margin of safety</Text> for our
-                  first hot-fire test. As Borealis is a static instrumentation
-                  engine, the weight penalty of an external cooling system was
-                  not a factor for us. Our thin chamber walls will also allow us
-                  to collect the{" "}
-                  <Text {...b1Style}>best combustion data possible</Text>{" "}
-                  compared to alternative methods like heatsink engines.
-                </Text>
-                <Text {...p2Style}>
-                  From the beginning, our coolant system was also designed to
-                  withstand very high pressures and ethanol flow. After our
-                  initial hot-fire,{" "}
-                  <Text {...b1Style}>
-                    we will use Borealis to conduct extensive regenerative
-                    cooling tests by using various ethanol-water mixtures and
-                    flow rates
-                  </Text>
-                  . The results of this testing will be the topic of another
-                  research paper as well as inform the viability of a
-                  flightweight regenerative ethanol-nitrous oxide liquid rocket.
-                </Text>
-              </AccordionPanel>
-            </AccordionItem>
-            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
-              <h2>
-                <AccordionButton>
-                  <Text {...h3Style}>
-                    What tests are planned before the hot-fire?
-                  </Text>
-                  <AccordionIcon color="teal.300" />
-                </AccordionButton>
-              </h2>
-              <AccordionPanel>
-                <Text {...p2Style}>
-                  As excited as we are to begin hot-fire testing of the
-                  Borealis, it is even more important that we do so safely and
-                  collect useful data out of our testing. As a result, our
-                  testing schedule is{" "}
-                  <Text {...b1Style}>
-                    heavily informed by industry standard rocket engine
-                    development
-                  </Text>
-                  . Beginning with a <Text {...b1Style}>hydrostatic</Text> test
-                  to validate the structural design of our parts, we will move
-                  on to <Text {...b1Style}>cold-flow</Text> testing with inert
-                  propellant stand-ins. After these initial tests, we will
-                  conduct a series of{" "}
-                  <Text {...b1Style}>additional flow tests</Text> for
-                  fine-tuning our injector, propellant, and ignitor systems. In
-                  addition to these comprehensive tests, we will conduct various{" "}
-                  <Text {...b1Style}>system-level experiments</Text> to validate
-                  transducer thermal isolation, cavitating venturi design,
-                  sensor data acquisition, and so much more. This is a packed
-                  testing schedule but we are confident that our team can pull
-                  it off{" "}
-                  <Text {...b1Style}>
-                    to ensure a safe and nominal hot-fire test in the{" "}
-                    <Text {...b2Style}>summer of 2023</Text>
-                  </Text>
-                  .
-                </Text>
-              </AccordionPanel>
-            </AccordionItem>
-          </Accordion>
-          <br />
+          <Heading
+            {...h3Style}
+            bgGradient="linear(to-r, cyan.300 0%, yellow.500 25%)"
+            bgClip="text"
+          >
+            About Joining
+          </Heading>
+
           <Accordion allowMultiple defaultIndex={[-1]}>
             <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
               <h2>
@@ -619,8 +394,359 @@ export default function FAQ() {
               </AccordionPanel>
             </AccordionItem>
           </Accordion>
+          <br />
+          <Heading
+            {...h3Style}
+            bgGradient="linear(to-r, cyan.300 0%, yellow.500 25%)"
+            bgClip="text"
+          >
+            About Borealis
+          </Heading>
+          <Accordion allowMultiple defaultIndex={[-1]}>
+            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
+              <h2>
+                <AccordionButton>
+                  <Text {...h3Style}>
+                    What do you hope to learn from Borealis?
+                  </Text>
+                  <AccordionIcon color="teal.300" />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel>
+                <Text {...p2Style}>
+                  The primary technical goal of the Borealis engine is to{" "}
+                  <Text {...b1Style}>collect high quality combustion data</Text>
+                  . This data will be used to{" "}
+                  <Text {...b1Style}>
+                    validate and improve our design methodology
+                  </Text>
+                  , and{" "}
+                  <Text {...b1Style}>
+                    conduct research on the relatively little-explored
+                    combustion of ethanol-nitrous oxide rockets
+                  </Text>
+                  . The first hot-fire of the Borealis is a huge milestone for
+                  us, but only the beginning. The Borealis is reusable and
+                  modular, allowing us to prototype various injector and coolant
+                  system designs for future engines, as well as the effects of
+                  different propellant flow rates and ratios.
+                </Text>
+                <Text {...p2Style}>
+                  Perhaps more importantly, through the development and
+                  construction of our first engine and supporting systems, our
+                  team has gained{" "}
+                  <Text {...b1Style}>an incredible amount of experience</Text>.
+                  This invaluable knowledge of engine, coolant, propellant,
+                  telemetry, and control system design will allow MACH to take
+                  on even bigger projects, and give our members an incredible
+                  head start to their engineering careers.
+                </Text>
+              </AccordionPanel>
+            </AccordionItem>
+            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
+              <h2>
+                <AccordionButton>
+                  <Text {...h3Style}>
+                    What&rsquo;s the plan for your next engine?
+                  </Text>
+                  <AccordionIcon color="teal.300" />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel>
+                <Text {...p2Style}>
+                  Our first flightweight engine and propellant system is
+                  currently in the design phase.{" "}
+                  <Text {...b1Style}>
+                    We are planning a carbon phenolic ablative engine, coupled
+                    with structural stacked ethanol and self-pressurized
+                    supercharged nitrous oxide tanks
+                  </Text>
+                  . The airframe integration will be a collaborative project
+                  with an established solid rocketry team experienced in
+                  aerostructures and avionics. Another serious consideration for
+                  our team is a regeneratively cooled Kerolox engine, depending
+                  on budget and administrative approval.
+                </Text>
+              </AccordionPanel>
+            </AccordionItem>
+            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
+              <h2>
+                <AccordionButton>
+                  <Text {...h3Style}>
+                    What are your long-term plans after that?
+                  </Text>
+                  <AccordionIcon color="teal.300" />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel>
+                <Text {...p2Style}>
+                  Liquid rocket engines can achieve horrendous levels of
+                  complexity, so a successful flight test is only the beginning
+                  of our journey. Long-term projects of varying ambitions are
+                  under consideration, such as{" "}
+                  <Text {...b1Style}>spaceshot</Text> (a rocket which reaches
+                  over 100 km of altitude),{" "}
+                  <Text {...b1Style}>throttle control</Text>,{" "}
+                  <Text {...b1Style}>in-flight reignition</Text>,{" "}
+                  <Text {...b1Style}>propulsive landing</Text>, and{" "}
+                  <Text {...b1Style}>many more</Text>. With rapid ongoing
+                  innovations in rocket technology and accessible manufacturing,
+                  MACH will never stop aiming higher.
+                </Text>
+              </AccordionPanel>
+            </AccordionItem>
+          </Accordion>
+          <br />
+          <Heading
+            {...h3Style}
+            bgGradient="linear(to-r, cyan.300 0%, yellow.500 25%)"
+            bgClip="text"
+          >
+            Getting Technical
+          </Heading>
+          <Accordion allowMultiple defaultIndex={[-1]}>
+            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
+              <h2>
+                <AccordionButton>
+                  <Text {...h3Style}>
+                    What fuel and oxidizer does Borealis use?
+                  </Text>
+                  <AccordionIcon color="teal.300" />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel>
+                <Text {...p2Style}>
+                  The Borealis engine uses{" "}
+                  <Text {...b1Style}>
+                    ethanol as the fuel and nitrous oxide as the oxidizer
+                  </Text>
+                  ; we&rsquo;ve been calling this relatively uncommon
+                  combination &ldquo;<Text {...b2Style}>EthaNOS</Text>&rdquo;
+                  for short. Our choice in propellants for Borealis was
+                  initially informed by our total inexperience at the time and
+                  budget limitations. Although ethanol and nitrous oxide have
+                  significant performance disadvantages, they are{" "}
+                  <Text {...b1Style}>
+                    some of the safest propellants to handle
+                  </Text>{" "}
+                  (by the standards of rocketry). Our top priority is the safety
+                  of our members, which was the primary rationale behind our
+                  propellant choice. After the procedural and hands-on
+                  experience gained through a number of cold-flow and hot-fire
+                  tests with both inert and live propellants, we are confident
+                  in seeking approval for more conventional propellant
+                  combinations like Kerolox.
+                </Text>
+                <Text {...p2Style}>
+                  During the research phase of our engine design, we realized
+                  that a relatively miniscule amount of research has been
+                  published on ethanol and nitrous oxide rocket engines.
+                  Although this resulted in less references to draw upon, it
+                  also represented{" "}
+                  <Text {...b1Style}>
+                    an opportunity to do combustion research and explore
+                    completely new flightweight system designs
+                  </Text>
+                  . After publishing a paper on our design methodology, we
+                  intend to follow it up with more{" "}
+                  <Text {...b1Style}>
+                    novel research using experimental data collected during our
+                    hot-fires
+                  </Text>
+                  , as well as even more new research on injector designs,
+                  chamber cooling, propellant ratios, and much more. Our
+                  progress so far has led us to believe that there is{" "}
+                  <Text {...b1Style}>
+                    real potential for low-cost liquid rocket propulsion using
+                    EthaNOS
+                  </Text>
+                  , such as the self-pressurization capabilities of nitrous
+                  oxide and excellent cooling potential of ethanol.
+                </Text>
+              </AccordionPanel>
+            </AccordionItem>
+            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
+              <h2>
+                <AccordionButton>
+                  <Text {...h3Style}>What is “regenerative cooling”?</Text>
+                  <AccordionIcon color="teal.300" />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel>
+                <Text {...p2Style}>
+                  Rocket engines are notoriously known as contained and directed
+                  explosions. In the pursuit of not blowing up, rocket engineers
+                  have constantly pushed the limits of material sciences and
+                  thermodynamics. Even though air-breathing engines in cars or
+                  planes use fuels like kerosene and ethanol, the atmospheric
+                  air they burn with is comparatively thin and low in oxygen.
+                  When those same fuels are combusted with dedicated oxidizers
+                  injected at very high pressures,{" "}
+                  <Text {...b1Style}>
+                    the combustion temperatures become hot enough to melt nearly
+                    any material.
+                  </Text>
+                  &nbsp;Not only is the melting point of the chamber, injector,
+                  and nozzle a concern, but materials become weaker at high
+                  temperatures - an undesirable trait for containing an ongoing
+                  explosion. Since the temperature and pressure inside the
+                  combustion chamber are the main determinants of performance,
+                  lowering those conditions to material limitations would be
+                  counterproductive.
+                  <br />
+                </Text>
+                <Text {...p2Style}>
+                  Ablative, film, and regenerative cooling are the main methods
+                  of preventing engine-rich exhaust. Regenerative cooling is by
+                  far the most effective of the three, and of course, the most
+                  complex.{" "}
+                  <Text {...b1Style}>
+                    This process pumps fuel or oxidizer through the outside of
+                    the nozzle and combustion chamber, before injecting it back
+                    into the engine to be ignited.
+                  </Text>
+                  Not only does this method keep the hottest parts of the engine
+                  from melting, but it also preheats the propellant for better
+                  atomization during injection. While this sounds simple in
+                  theory, implementing it has a number of challenges which may
+                  take a large part of several years to explain and resolve.
+                </Text>
+              </AccordionPanel>
+            </AccordionItem>
+            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
+              <h2>
+                <AccordionButton>
+                  <Text {...h3Style}>Why is water used as coolant?</Text>
+                  <AccordionIcon color="teal.300" />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel>
+                <Text {...p2Style}>
+                  A counterintuitive quirk of rocket engines is the scalability
+                  of cooling systems -{" "}
+                  <Text {...b1Style}>larger engines are easier to cool</Text>.
+                  This is because combustion temperature is only dependent on
+                  the propellant combination, so a larger engine spreads a
+                  similar heat load across a much larger surface area.{" "}
+                  <Text {...b1Style}>
+                    Water is one of the best coolants available
+                  </Text>
+                  , and we are confident it will provide a{" "}
+                  <Text {...b1Style}>very large margin of safety</Text> for our
+                  first hot-fire test. As Borealis is a static instrumentation
+                  engine, the weight penalty of an external cooling system was
+                  not a factor for us. Our thin chamber walls will also allow us
+                  to collect the{" "}
+                  <Text {...b1Style}>best combustion data possible</Text>{" "}
+                  compared to alternative methods like heatsink engines.
+                </Text>
+                <Text {...p2Style}>
+                  From the beginning, our coolant system was also designed to
+                  withstand very high pressures and ethanol flow. After our
+                  initial hot-fire,{" "}
+                  <Text {...b1Style}>
+                    we will use Borealis to conduct extensive regenerative
+                    cooling tests by using various ethanol-water mixtures and
+                    flow rates
+                  </Text>
+                  . The results of this testing will be the topic of another
+                  research paper as well as inform the viability of a
+                  flightweight regenerative ethanol-nitrous oxide liquid rocket.
+                </Text>
+              </AccordionPanel>
+            </AccordionItem>
+            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
+              <h2>
+                <AccordionButton>
+                  <Text {...h3Style}>
+                    What does “self-pressurizing” mean? What is “supercharging”?
+                  </Text>
+                  <AccordionIcon color="teal.300" />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel>
+                <Text {...p2Style}>
+                  For pressure-fed liquid engines, an inert pressurant like
+                  nitrogen or helium is typically used to push the propellants
+                  into the injector. This is the case with the vast majority of
+                  pressure-fed rockets, as stable liquid propellants like
+                  kerosene are incompressible, and cryogenic propellants like
+                  oxygen and hydrogen cannot vaporize fast enough to
+                  repressurize the tanks at the flow rates required for a
+                  rocket. Uniquely, nitrous oxide exists in both liquid and gas
+                  phases at ambient temperatures and common tank pressures. This
+                  means that{" "}
+                  <Text {...b1Style}>
+                    as the oxidizer is fed into the engine, the remaining liquid
+                    nitrous oxide rapidly evaporates to repressurize the tank.
+                  </Text>
+                </Text>
+                <Text {...p2Style}>
+                  <Text {...b1Style}>
+                    “Supercharging” refers to the practice of increasing the
+                    tank pressure even further by adding inert nitrogen.
+                  </Text>
+                  Supercharging allows more of the nitrous oxide to remain
+                  liquid, which means more of it can be used before the back
+                  pressure drops too low to feed the engine.
+                </Text>
+                <Text {...p2Style}>
+                  These two properties combined essentially{" "}
+                  <Text {...b1Style}>
+                    allow a nitrous oxide tank to double as the oxidizer and
+                    pressurant tank,
+                  </Text>
+                  eliminating the weight and complexity of a third pressure
+                  vessel and its associated systems.
+                </Text>
+              </AccordionPanel>
+            </AccordionItem>
+
+            <AccordionItem style={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
+              <h2>
+                <AccordionButton>
+                  <Text {...h3Style}>
+                    What tests are planned before the hot-fire?
+                  </Text>
+                  <AccordionIcon color="teal.300" />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel>
+                <Text {...p2Style}>
+                  As excited as we are to begin hot-fire testing of the
+                  Borealis, it is even more important that we do so safely and
+                  collect useful data out of our testing. As a result, our
+                  testing schedule is{" "}
+                  <Text {...b1Style}>
+                    heavily informed by industry standard rocket engine
+                    development
+                  </Text>
+                  . Beginning with a <Text {...b1Style}>hydrostatic</Text> test
+                  to validate the structural design of our parts, we will move
+                  on to <Text {...b1Style}>cold-flow</Text> testing with inert
+                  propellant stand-ins. After these initial tests, we will
+                  conduct a series of{" "}
+                  <Text {...b1Style}>additional flow tests</Text> for
+                  fine-tuning our injector, propellant, and ignitor systems. In
+                  addition to these comprehensive tests, we will conduct various{" "}
+                  <Text {...b1Style}>system-level experiments</Text> to validate
+                  transducer thermal isolation, cavitating venturi design,
+                  sensor data acquisition, and so much more. This is a packed
+                  testing schedule but we are confident that our team can pull
+                  it off{" "}
+                  <Text {...b1Style}>
+                    to ensure a safe and nominal hot-fire test in the{" "}
+                    <Text {...b2Style}>summer of 2023</Text>
+                  </Text>
+                  .
+                </Text>
+              </AccordionPanel>
+            </AccordionItem>
+          </Accordion>
+          <br />
         </Box>
       </Center>
+
       <SocialsFooter />
       <CopyrightFooter />
     </>
