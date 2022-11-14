@@ -167,6 +167,11 @@ export default function Sponsors() {
               href="https://kulite.com/"
               src="/img/sponsors/kulite.png"
             />
+            <SponsorCard
+              alt="Automation Direct"
+              href="https://www.automationdirect.com/"
+              src="/img/sponsors/automationdirect.png"
+            />
           </SimpleGrid>
         </Box>
       </Center>
