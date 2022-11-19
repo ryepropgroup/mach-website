@@ -21,8 +21,8 @@ export default function Navbar() {
       as="section"
       pos="static"
       align="flex-start"
-      pb={{ base: "12", md: "24" }}
-      pl="10"
+      // pb={{ base: "8", md: "24" }}
+      // pl="10"
     >
       <Box as="nav" bg="bg-surface" shadow={useColorModeValue("sm", "sm-dark")}>
         <Container py={{ base: "4", lg: "5" }}>
