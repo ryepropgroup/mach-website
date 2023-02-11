@@ -102,7 +102,10 @@ export default function Team() {
               anything combustible, he also loves photography, weird foods, and
               fat cats.
             </LeadCard>
-            <LeadCard name="Yiwei Luo" pos="Combustion Dynamics Lead">
+            <LeadCard
+              name="Yiwei Luo"
+              pos="Technical Director & Combustion Dynamics Lead"
+            >
               A 4th year aerospace engineering student, lifelong enthusiast of
               anything that flies, and a Combustion Dynamics lead for the MACH
               design team. He has far too many hobbies and not enough time, but
