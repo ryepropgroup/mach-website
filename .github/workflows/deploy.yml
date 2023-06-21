@@ -17,7 +17,7 @@ jobs:
       - name: 'Build app'
         run: yarn export
       - name: 'Configure GitHub Pages'
-        run: touch ./out/.nojekyll && echo "mach-tmu.space" > ./out/CNAME
+        run: touch ./out/.nojekyll && echo "old.mach-tmu.space" > ./out/CNAME
       - name: 'Deploy app'
         uses: crazy-max/ghaction-github-pages@v3
         with:
